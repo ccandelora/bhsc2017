@@ -10,10 +10,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228010617) do
+ActiveRecord::Schema.define(version: 20140731142901) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pages", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "public_pins", force: :cascade do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_public_pins_on_user_id", using: :btree
+  end
+
+  create_table "reservation_weeks", force: :cascade do |t|
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.date     "res_date"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "wed"
+    t.boolean  "thur"
+    t.boolean  "fri"
+    t.boolean  "sat"
+    t.boolean  "sun"
+    t.boolean  "mon"
+    t.boolean  "tue"
+    t.boolean  "dinner"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "reservation_week_id"
+    t.string   "sex"
+    t.string   "res_member_type"
+    t.date     "reservation_date"
+    t.index ["reservation_week_id"], name: "index_reservations_on_reservation_week_id", using: :btree
+    t.index ["user_id"], name: "index_reservations_on_user_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -30,6 +74,10 @@ ActiveRecord::Schema.define(version: 20140228010617) do
     t.datetime "updated_at"
     t.string   "name"
     t.integer  "role"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end

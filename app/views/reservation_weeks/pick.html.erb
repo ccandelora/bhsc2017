@@ -1,0 +1,33 @@
+<h1>Edit Reservation Note</h1>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Reservation Date</th>
+        <th>Note</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @reservation_weeks.each do |reservation_week| %>
+        <tr>
+          <td><%= l(reservation_week.res_date, format: :notime) %> - <%= l(reservation_week.res_date + 7.days, format: :notime) %></td>
+          <td><%= reservation_week.note %></td>
+          <td>
+            <%= link_to edit_reservation_week_path(reservation_week) do %>
+            <span class="glyphicon glyphicon-edit"></span>
+            Edit
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'Create a New Reservation Note', new_reservation_week_path %>

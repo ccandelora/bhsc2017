@@ -1,0 +1,80 @@
+<h1>Reservations</h1>
+<div class="table-responsive">
+	<h2> <%= l(@reservation_week.res_date, format: :notime) %> - <%= l(@reservation_week.res_date + 7.days, format: :notime) %> </h2>
+	<% if !@reservation_week.note.blank? %>
+	 <h3> <%= @reservation_week.note %> </h3>
+	<% end %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Type</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Dinner</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @reservations.each do |reservation| %>
+        <tr>
+          <td><%= reservation.name %></td>
+          <td><%= reservation.sex.capitalize %></td>
+          <td><%= reservation.res_member_type.capitalize %></td>
+          <% if reservation.wed? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.thur? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.fri? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.sat? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.sun? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.mon? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.tue? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <% end %>
+          <% if reservation.dinner? %>
+            <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+          <% else %>
+            <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+          <% end %>
+          <td><%= reservation.comment.html_safe %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Reservation', new_reservation_path %>

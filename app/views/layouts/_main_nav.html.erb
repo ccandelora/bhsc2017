@@ -1,0 +1,103 @@
+<div class="header-main">
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Main Navigation & Logo -->
+    <div class="main-navigation">
+      <div class="row">
+
+        <!-- Main Navigation -->
+        <div class="col-md-12 columns">
+          <nav class="navbar navbar-default gfx-mega nav-left" role="navigation">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header"> <a class="navbar-toggle" data-toggle="collapse" data-target="#gfx-collapse"></a>
+              <div class="logo"> <a href="index.html"><%= image_tag 'brettllogo.png', lat: 'Logo', width: '75px' %></a> </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="gfx-collapse">
+              <ul class="nav navbar-nav gfx-nav">
+                <li>
+                  <%= link_to root_path do %>
+                    <div class="iconbox vertical animation fadeInLeft"> <span class="livicon" data-n="home" data-s="20" data-color="#EB2D2E" data-hovercolor="#EB2D2E" data-op="1" data-onparent="true" alt="home"></span>
+                    </div>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to 'Membership', membership_path %>
+                </li>
+                <li>
+                  <%= link_to 'Guests FAQ', guest_path%>
+                </li>
+                <% if user_signed_in? %>
+                  <li>
+                    <%= link_to  destroy_user_session_path, :method=>'delete'  do%>
+                      <div class="iconbox vertical animation fadeInLeft"> <span class="livicon" data-n="disconnect" data-s="20" data-color="#EB2D2E" data-hovercolor="#EB2D2E" data-op="1" data-onparent="true" alt="logout"></span>
+                      </div>
+                    <% end %>
+                  </li>
+
+                  <li class="dropdown gfx-mega-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Members Area<b class="caret"></b></a>
+                    <ul class="dropdown-menu nav navbar-right">
+                      <li>
+                        <div class="gfx-mega-content">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-3">
+                              <ul class="mega-menu-list">
+                                <li><%= link_to 'Reservations', reservations_path %></li>
+                                <li><%= link_to 'Notes', notes_path %></li>
+                                <li><%= link_to 'Library', library_path %></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <% if current_user.admin? %>
+                    <li class="dropdown gfx-mega-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Administration Area <b class="caret"></b></a>
+                      <ul class="dropdown-menu nav navbar-right">
+                        <li>
+                          <div class="gfx-mega-content">
+                            <div class="row">
+                              <div class="col-lg-3 col-sm-3">
+                                <ul class="mega-menu-list">
+                                  <li><%= link_to 'Reservations', reservations_path %></li>
+                                  <li><%= link_to 'Notes', notes_path %></li>
+                                  <li><%= link_to 'Library', library_path %></li>
+                                  <li><%= link_to 'Users', users_path %></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  <% end %>
+                <% else %>
+                  <li>
+                    <%= link_to new_user_session_path do %>
+                      <div class="iconbox vertical animation fadeInLeft"> <span class="livicon" data-n="user" data-s="20" data-color="#EB2D2E" data-hovercolor="#EB2D2E" data-op="1" data-onparent="true"></span>
+                      </div>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+          </nav>
+        </div>
+        <!-- /Main Navigation -->
+
+      </div>
+    </div>
+    <!-- /Main Navigation & Logo -->
+
+  </div>
+  <!-- /Container -->
+
+</div>
+<!-- /Header Main Container -->

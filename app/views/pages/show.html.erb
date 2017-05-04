@@ -1,0 +1,17 @@
+<h1>Created Page</h1>
+<div id="pages" >
+  <div class="box panel panel-default">
+    <h2><%= @page.title %></h2>
+    <div class="panel panel-body">
+      <p><%= @page.text.html_safe %></p>
+        <div class="action">
+          <%= link_to edit_page_path(@page) do %>
+            <span class="glyphicon glyphicon-edit"></span> Edit
+          <% end %>
+          <%= link_to @page, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <span class="glyphicon glyphicon-trash"></span> Delete
+          <% end %>
+       </div>
+    </div>
+  </div>
+</div>
