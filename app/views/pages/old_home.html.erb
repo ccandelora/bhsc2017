@@ -1,0 +1,45 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<div class="fl">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div id="reportrange" class="pull-right">
+        <i class="fa fa-calendar fa-lg"></i>
+        <span>Pick A Reservation Week</span> <b class="caret"></b>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+var a = moment().day("Wednessday").week(Number).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 6).format('MMMM D, YYYY').toString();
+var b = moment().day("Wednessday").week(Number).add('days', 7).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 13).format('MMMM D, YYYY').toString();
+var c = moment().day("Wednessday").week(Number).add('days', 14).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 20).format('MMMM D, YYYY').toString();
+var d = moment().day("Wednessday").week(Number).add('days',21 ).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 27).format('MMMM D, YYYY').toString();
+var e = moment().day("Wednessday").week(Number).add('days',28 ).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 34).format('MMMM D, YYYY').toString();
+var f = moment().day("Wednessday").week(Number).add('days', 35 ).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 41).format('MMMM D, YYYY').toString();
+var g = moment().day("Wednessday").week(Number).add('days', 42 ).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 48).format('MMMM D, YYYY').toString();
+var h = moment().day("Wednessday").week(Number).add('days', 49 ).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 55).format('MMMM D, YYYY').toString();
+var obj = {};
+obj[a] = [moment().day("Wednessday").week(Number), moment().day("Wednessday").week(Number).add('days', 6)];
+obj[b] = [moment().day("Wednessday").week(Number).add('days', 7), moment().day("Wednessday").week(Number).add('days', 13)];
+obj[c] = [moment().day("Wednessday").week(Number).add('days', 14), moment().day("Wednessday").week(Number).add('days', 20)];
+obj[d] = [moment().day("Wednessday").week(Number).add('days',21 ), moment().day("Wednessday").week(Number).add('days', 27)];
+obj[e] = [moment().day("Wednessday").week(Number).add('days',28 ), moment().day("Wednessday").week(Number).add('days', 34)];
+obj[f] = [moment().day("Wednessday").week(Number).add('days', 35 ), moment().day("Wednessday").week(Number).add('days', 41)];
+obj[g] = [moment().day("Wednessday").week(Number).add('days', 42 ), moment().day("Wednessday").week(Number).add('days', 48)];
+obj[h] = [moment().day("Wednessday").week(Number).add('days', 49 ), moment().day("Wednessday").week(Number).add('days', 55)];
+$('#reportrange').daterangepicker(
+    {
+      ranges: obj,
+      startDate: moment().subtract('days', 29),
+      endDate: moment()
+    },
+    function(start, end) {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    }
+);
+</script>
+

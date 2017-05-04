@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reservation date:</strong>
+  <%= @reservation.reservation_date %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reservation.name %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @reservation.sex %>
+</p>
+
+<p>
+  <strong>Member Type:</strong>
+  <%= @reservation.res_member_type %>
+</p>
+
+
+<p>
+  <strong>Wed:</strong>
+  <%= @reservation.wed %>
+</p>
+
+<p>
+  <strong>Thur:</strong>
+  <%= @reservation.thur %>
+</p>
+
+<p>
+  <strong>Fri:</strong>
+  <%= @reservation.fri %>
+</p>
+
+<p>
+  <strong>Sat:</strong>
+  <%= @reservation.sat %>
+</p>
+
+<p>
+  <strong>Sun:</strong>
+  <%= @reservation.sun %>
+</p>
+
+<p>
+  <strong>Mon:</strong>
+  <%= @reservation.mon %>
+</p>
+
+<p>
+  <strong>Tue:</strong>
+  <%= @reservation.tue %>
+</p>
+
+<p>
+  <strong>Dinner:</strong>
+  <%= @reservation.dinner %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @reservation.comment %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

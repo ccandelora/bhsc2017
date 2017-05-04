@@ -1,0 +1,22 @@
+<%= link_to 'Back', public_pins_path %>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading center">
+        <%= image_tag @public_pin.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+        <p><%= @public_pin.description %></p>
+        <p><strong><%= @public_pin.user.name if @public_pin.user %></strong></p>
+
+        <% if @public_pin.user == current_user %>
+         <%= link_to edit_public_pin_path(@public_pin) do %>
+            <span class="glyphicon glyphicon-edit"></span> Edit
+          <% end %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
