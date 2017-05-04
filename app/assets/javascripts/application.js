@@ -31,4 +31,5 @@
 //= require themejs/jquery.easypiechart.min.js
 //= require twitter/jquery.tweet.js
 //= require videojs/video.js
+//= require moment.min.js
 //= require themejs/application.js
