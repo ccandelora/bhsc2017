@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Res date:</strong>
+  <%= @reservation_week.res_date %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @reservation_week.note %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_week_path(@reservation_week) %> |
+<%= link_to 'Back', reservation_weeks_path %>
