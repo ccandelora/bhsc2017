@@ -32,3 +32,8 @@
 //= require twitter/jquery.tweet.js
 //= require videojs/video.js
 //= require themejs/application.js
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap-sprockets
+//= require_tree .
