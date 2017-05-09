@@ -13,8 +13,9 @@
   <div class="form-group">
     <div class="fl">
       <div class="panel panel-default">
+        <h3>Date</h3>
         <div class="panel-body">
-          <div id="reportrange" class="pull-right">
+          <div id="reportrange">
             <i class="fa fa-calendar fa-lg"></i>
             <% if @reservation.reservation_date.nil? %>
                <span>Pick A Reservation Week</span> <b class="caret"></b>
@@ -26,9 +27,13 @@
       </div>
     </div>
   </div>
-  <p></p>
-  <%= f.input :reservation_date, as: :hidden %>
-  <%= f.input :name %>
+    <%= f.input :reservation_date, as: :hidden %>
+  <div class="box panel panel-default">
+    <h3> Name </h3>
+    <div class="panel panel-body">
+      <%= f.input :name, label: false%>
+    </div>
+  </div>
   <div class="box panel panel-default">
     <h3> Sex </h3>
     <div class="panel panel-body">
@@ -44,20 +49,27 @@
   <div class="box panel panel-default">
     <h3> Select the days you are staying and if you want the house dinner.</h3>
     <div class="panel panel-body">
-      <%= f.input_field :wed, :as => :boolean, :inline_label => 'Wednesday' %>
-      <%= f.input_field :thur, :as => :boolean, :inline_label => 'Thursday' %>
-      <%= f.input_field :fri, :as => :boolean, :inline_label => 'Friday' %>
-      <%= f.input_field :sat, :as => :boolean, :inline_label => 'Saturday' %>
-      <%= f.input_field :sun, :as => :boolean, :inline_label => 'Sunday' %>
-      <%= f.input_field :mon, :as => :boolean , :inline_label => 'Monday' %>
-      <%= f.input_field :tue, :as => :boolean, :inline_label => 'Tuesday' %>
-      <%= f.input_field :dinner, :as => :boolean, :inline_label => 'Dinner' %>
+      <%= f.input :wed, :as => :boolean, :label => 'Wednesday' %>
+      <%= f.input :thur, :as => :boolean, :label => ' Thursday' %>
+      <%= f.input :fri, :as => :boolean, :label => ' Friday' %>
+      <%= f.input :sat, :as => :boolean, :label => ' Saturday' %>
+      <%= f.input :sun, :as => :boolean, :label => ' Sunday' %>
+      <%= f.input :mon, :as => :boolean , :label => ' Monday' %>
+      <%= f.input :tue, :as => :boolean, :label => ' Tuesday' %>
+      <%= f.input :dinner, :as => :boolean, :label => ' Dinner' %>
     </div>
   </div>
-  <p>
-    <%= f.input :comment, as: :bootsy %>
-  </p>
-  <%= f.button :submit, 'Create Reservation', class: 'btn btn-primary' %>
+  <div class="box panel panel-default">
+    <h3> Comment</h3>
+    <div class="panel panel-body">
+      <%= f.input :comment, as: :bootsy, label: false %>
+    </div>
+  </div>
+  <div class="box panel panel-default">
+    <div class="panel panel-body">
+      <%= f.button :submit, 'Create Reservation', class: 'btn btn-primary' %>
+    </div>
+  </div>
 <% end %>
 <script type="text/javascript">
 var a = moment().day("Wednessday").week(Number).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 6).format('MMMM D, YYYY').toString();

@@ -16,6 +16,9 @@ gem 'simple_form'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 gem 'bootsy'
+gem 'momentjs-rails'
+gem 'bootstrap-daterangepicker-rails'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'foreman'

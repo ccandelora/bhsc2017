@@ -1,3 +1,7 @@
+/*
+ *= require bootstrap
+ *= require daterangepicker-bs3
+ */
 @import 'bootstrap';
 @import 'avendor-font-styles';
 @import 'revolutionslider/settings';
@@ -8,3 +12,4 @@
 @import 'owl-carousel/owl.transitions';
 @import 'avendor';
 @import 'colors/color-default';
+@import 'reservations';

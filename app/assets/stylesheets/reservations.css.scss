@@ -1,0 +1,13 @@
+.calendar {
+  display: none;
+}
+.range_inputs {
+  display: none;
+}
+.ranges {
+  ul {
+    li:last-child {
+      display: none;
+    }
+  }
+}

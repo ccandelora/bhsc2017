@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery-1.11.1.min.js
+
 //= require bootstrap.min.js
 //= require themejs/jquery.countdown.js
 //= require themejs/jquery.queryloader2.min.js
