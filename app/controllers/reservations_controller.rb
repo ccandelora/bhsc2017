@@ -18,6 +18,10 @@ class ReservationsController < ApplicationController
     get_reservation_week_detail
   end
 
+  def reslookup
+    @reservations = Reservation.new
+  end
+
   # GET /reservations/1
   def show
   end

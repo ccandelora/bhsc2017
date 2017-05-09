@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :reservations do
     get 'pick', on: :collection
     post 'lookup', on: :collection
+    get 'reslookup', on: :collection
   end
 
   resources :public_pins
