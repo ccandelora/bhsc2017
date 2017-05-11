@@ -1,14 +1,17 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Res date:</strong>
-  <%= @reservation_week.res_date %>
-</p>
-
-<p>
-  <strong>Note:</strong>
-  <%= @reservation_week.note %>
-</p>
-
-<%= link_to 'Edit', edit_reservation_week_path(@reservation_week) %> |
-<%= link_to 'Back', reservation_weeks_path %>
+<div class="box panel panel-default">
+  <div class="panel panel-body">
+    <div id="notice"><%= notice %></div>
+    <div>
+      <h3>Res date:</h3>
+      <%= @reservation_week.res_date %>
+    </div>
+    <div>
+      <h3>Note:</h3>
+      <%= @reservation_week.note %>
+    </div>
+  </div>
+  <div class="panel panel-footer"
+    <%= link_to 'Edit', edit_reservation_week_path(@reservation_week) %> |
+    <%= link_to 'Back', reservation_weeks_path %>
+  </div>
+</div>

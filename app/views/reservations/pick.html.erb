@@ -32,54 +32,54 @@
                 <td><%= reservation.sex.capitalize %></td>
                 <td><%= reservation.res_member_type.capitalize %></td>
                 <% if reservation.wed? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.thur? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.fri? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.sat? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.sun? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.mon? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.tue? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <% if reservation.dinner? %>
-                  <td> <span class="glyphicon glyphicon-ok-circle"></span></td>
+                  <td> <span class="fa fa-check" aria-hidden="true"></span></td>
                 <% else %>
-                  <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+                  <td><span></span></td>
                 <% end %>
                 <td><%= reservation.comment.html_safe %></td>
                 <td>
                   <%= link_to edit_reservation_path(reservation) do %>
-                    <span class="glyphicon glyphicon-edit"></span> Edit
+                    <span class="fa fa-pencil" aria-hidden="true"></span> Edit
                   <% end %>
                 </td>
                 <td>
                   <%= link_to reservation, method: :delete, data: { confirm: 'Are you sure?' } do %>
-                    <span class="glyphicon glyphicon-trash"></span> Delete
+                    <span class="fa fa-trash" aria-hidden="true"></span> Delete
                   <% end %>
                 </td>
               </tr>
