@@ -1,0 +1,38 @@
+<%= simple_form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@user.errors.count, "error") %> prohibited this reservation from being saved:</h2>
+
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+  <% end %>
+  <div class="form-group">
+    <div class="fl">
+      <div class="box panel panel-default">
+        <h3> Name </h3>
+        <div class="panel panel-body">
+          <%= f.input :name, label: false%>
+        </div>
+      </div>
+      <div class="box panel panel-default">
+        <h3> Email </h3>
+        <div class="panel panel-body">
+          <%= f.input :email, label: false%>
+        </div>
+      </div>
+      <div class="box panel panel-default">
+        <h3> Role </h3>
+        <div class="panel panel-body">
+          <%= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+        </div>
+      </div>
+      <div class="box panel panel-default">
+        <%= f.submit 'Save User', :class => 'button-xs' %>
+      </div>
+    </div>
+  </div>
+<% end %>
