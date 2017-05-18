@@ -3,13 +3,13 @@ class UsersController < ApplicationController
   after_action :verify_authorized
 
   def index
-    @users = User.all
+    @users = User.order(:email)
     authorize User
   end
 
   def show
     @user = User.find(params[:id])
-    authorize @user
+    authorize current_user
   end
 
   def update
@@ -29,10 +29,15 @@ class UsersController < ApplicationController
     redirect_to users_path, :notice => "User deleted."
   end
 
+  def edit
+    @user = User.find(params[:id])
+    authorize current_user
+  end
+
   private
 
   def secure_params
-    params.require(:user).permit(:role)
+    params.require(:user).permit(:name, :email, :role)
   end
 
 end

@@ -1,0 +1,79 @@
+<div class="box panel panel-default">
+  <div class="panel panel-body">
+    <div id="notice"><%= notice %></div>
+    <% date1 = @reservation.reservation_date.strftime("%m/%d/%Y") %>
+    <% date2 = @reservation.reservation_date + 1.week - 1.day %>
+    <div>
+      <h3>Reservation Date: <%= date1 %> - <%= date2.strftime("%m/%d/%Y") %> </h3>
+    </div>
+    <div>
+      <h3>Name: <%= @reservation.name %> </h3>
+    </div>
+    <div>
+      <h3>Sex: <%= @reservation.sex %> </h3>
+    </div>
+    <div>
+      <h3>Wed:
+      <% if @reservation.wed %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Thurs:
+      <% if  @reservation.thur %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Fri:
+      <% if  @reservation.fri %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Sat:
+      <% if  @reservation.sat %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Sun:
+      <% if  @reservation.sun %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Mon:
+      <% if  @reservation.mon %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Tues:
+      <% if  @reservation.tue %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Dinner:
+      <% if  @reservation.dinner %>
+          <i class="fa fa-check" aria-hidden="true"></i>
+      <% end %>
+      </h3>
+    </div>
+    <div>
+      <h3>Comment: <%= @reservation.comment %></h3>
+    </div>
+  </div>
+  <div class="panel panel-footer">
+    <%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+    <%= link_to 'Back', reservations_path %>
+  </div>
+</div>

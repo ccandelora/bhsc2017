@@ -1,0 +1,22 @@
+.calendar {
+  display: none;
+}
+.range_inputs {
+  display: none;
+}
+.ranges {
+  ul {
+    li:last-child {
+      display: none;
+    }
+  }
+}
+textarea {
+  width:100%;
+}
+.reservation_name {
+  .string {
+    width:100%;
+    height: 50px;
+  }
+}

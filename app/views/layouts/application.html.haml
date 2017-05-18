@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+    %title= content_for?(:title) ? yield(:title) : 'Brettl Hupfer Ski and Sports Club'
+    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Bhsc Pundit'}"}
+    = stylesheet_link_tag 'application', media: 'all'
+    %link{rel: 'stylesheet', type: 'text/css', href: 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,600,700,800,900'}
+    %link{rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Playball'}
+    = javascript_include_tag 'mom'
+
+  %body.bg-pattern1{data: {spy: 'scroll', target: '.navbar'}}
+    .preloader
+    #page-top.page-wrapper
+      .header-wrapper
+        = render 'layouts/navigation'
+      = yield
+      .footer-wrapper
+        = render 'layouts/footer'
+
+  = javascript_include_tag 'application'
+  = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'
+  = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBPrJPTDtXicdeG3LGw0TPHvmTREZ8IxUo&sensor=false'
