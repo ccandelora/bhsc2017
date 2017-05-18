@@ -1,3 +1,11 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1738409496377754";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="header-wrapper">
   <%= render 'layouts/slider' %>
 </div>
@@ -421,6 +429,26 @@
     <div class="white-space space-big"></div>
     <div class="row">
       <div class="col-md-12">
+        <h3 class="fancy-title text-center"><span>Latest From Facebook</span></h3>
+        <p class="lead text-center">Check out our lastest posts.</p>
+        <div class="white-space space-small"></div>
+      </div>
+    </div>
+  </div>
+  <!-- FB thing -->
+  <center>
+    <div class="fb-page" data-href="https://www.facebook.com/brettl.hupfers/" data-tabs="timeline"  data-width="500"  data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/brettl.hupfers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/brettl.hupfers/">Brettl-Hupfers Ski &amp; Sports Club</a></blockquote></div>
+  </center>
+  <!-- /FB thing -->
+
+
+
+  <!-- Container -->
+  <!--
+  <div class="container">
+    <div class="white-space space-big"></div>
+    <div class="row">
+      <div class="col-md-12">
         <h3 class="fancy-title text-center"><span>Latest From Instagram</span></h3>
         <p class="lead text-center">Check out our lastest pics.<br/>
           in the last period.</p>
@@ -430,6 +458,7 @@
     <div class="row">
       <div class="col-md-12">
         <!-- Carousel -->
+  <!--
         <div class="carousel-box" >
           <div class="carousel carousel-simple" data-carousel-autoplay="9000" data-carousel-items="3" data-carousel-nav="false" data-carousel-pagination="true"  data-carousel-speed="1000">
             <div class="carousel-item"> <a href="blog-single-post.html"><%= image_tag'blog/blog1-alt.jpg' %></a>
@@ -500,6 +529,7 @@
           </div>
         </div>
         <!-- /Carousel -->
+  <!--
       </div>
     </div>
     <div class="white-space space-big"></div>
