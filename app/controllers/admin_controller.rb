@@ -27,3 +27,4 @@ class AdminController < ApplicationController
     @users = Users.all
     authorize current_user
   end
+end
