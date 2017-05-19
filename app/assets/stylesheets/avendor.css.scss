@@ -556,6 +556,9 @@ section {
 	content:'\f0c9';
 	font-family:FontAwesome;
 }
+.slider-wrapper {
+  display: none;
+}
  @media (min-width: 992px) {
 .navbar-nav > li > a {
 	padding: 9px 16px 12px;
