@@ -1,6 +1,7 @@
 /*
  *= require bootstrap
  *= require daterangepicker-bs3
+ *= require font-awesome
  */
 @import 'bootstrap';
 @import 'avendor-font-styles';
@@ -13,4 +14,3 @@
 @import 'avendor';
 @import 'colors/color-default';
 @import 'reservations';
-@import 'font-awesome.min';
