@@ -33,10 +33,7 @@
                 </li>
                 <% if user_signed_in? %>
                   <li>
-                    <%= link_to  destroy_user_session_path, :method=>'delete'  do%>
-                      <div class="iconbox vertical animation fadeInLeft"> <span class="livicon" data-n="disconnect" data-s="20" data-color="#EB2D2E" data-hovercolor="#EB2D2E" data-op="1" data-onparent="true" alt="logout"></span>
-                      </div>
-                    <% end %>
+                    <%= link_to  'Log Out', destroy_user_session_path, :method=>'delete'%>
                   </li>
 
                   <li class="dropdown gfx-mega-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Members Area<b class="caret"></b></a>
@@ -78,10 +75,7 @@
                   <% end %>
                 <% else %>
                   <li>
-                    <%= link_to new_user_session_path do %>
-                      <div class="iconbox vertical animation fadeInLeft"> <span class="livicon" data-n="user" data-s="20" data-color="#EB2D2E" data-hovercolor="#EB2D2E" data-op="1" data-onparent="true"></span>
-                      </div>
-                    <% end %>
+                    <%= link_to ' Log In', new_user_session_path %>
                   </li>
                 <% end %>
               </ul>
