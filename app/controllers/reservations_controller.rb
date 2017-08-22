@@ -5,7 +5,7 @@ class ReservationsController < ApplicationController
 
   # GET /reservations
   def index
-    @reservations = Reservation.first
+    @reservations = Reservation.new
   end
 
   def pick
