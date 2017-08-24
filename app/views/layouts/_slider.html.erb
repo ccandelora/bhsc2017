@@ -1,4 +1,23 @@
 <!-- Slider Container -->
+<div class="homepage-hero-module">
+  <div class="video-container">
+    <div class="filter"></div>
+    <%= video_tag(["The_Slope.mp4", "The_Slope.webm"], class: "fillWidth", autoplay: true, loop: true) %>
+    <!--<video autoplay loop class="fillWidth">
+      <source src="PATH_TO_MP4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+      <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+    -->
+    <div class="poster hidden">
+      <%= image_tag 'The_Slope/The_Slope.jpg' %>
+      <!--<img src="PATH_TO_JPEG" alt="">-->
+    </div>
+    <div class="heroText">
+      <h1>The Brettl Hupfer Ski & Sports Club</h1>
+      <h2>We Love The Outdoors!</h2>
+    </div>
+  </div>
+</div>
 
 <div class="slider-wrapper">
 
