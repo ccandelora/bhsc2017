@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'contact' => 'pages#contact'
   get 'guest' => 'pages#guest'
   get 'library' => 'pages#library'
-  get 'membership' => 'pages#membership'
+  get 'membership' => 'visitors#membership', as: 'membership'
   get 'notes' =>  'pages#note'
   get 'race' => 'pages#race'
   get 'social'=> 'pages#social'
