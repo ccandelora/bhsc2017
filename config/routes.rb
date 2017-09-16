@@ -18,9 +18,9 @@ Rails.application.routes.draw do
   #resources :pages
 
   get 'contact' => 'pages#contact'
-  get 'guest' => 'pages#guest'
   get 'library' => 'pages#library'
   get 'membership' => 'visitors#membership', as: 'membership'
+  get 'guest' => 'visitors#guest', as: 'guest'
   get 'notes' =>  'pages#note'
   get 'race' => 'pages#race'
   get 'social'=> 'pages#social'
