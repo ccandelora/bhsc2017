@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root to: 'visitors#index'
-  devise_for :users
+  devise_for :users, :path => 'u'
   resources :users
+
 
   resources :reservation_weeks do
     get 'pick', on: :collection
@@ -25,4 +26,5 @@ Rails.application.routes.draw do
   get 'race' => 'pages#race'
   get 'social'=> 'pages#social'
   #get 'pages' => 'pages#index'
+  #get 'users/new' => 'users#create'
 end

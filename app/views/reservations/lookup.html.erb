@@ -1,4 +1,4 @@
-<h1>Reservations</h1>
+<h1 class="wp">Reservations</h1>
 <div class="table-responsive">
 	<h2> <%= l(@reservation_week.res_date, format: :notime) %> - <%= l(@reservation_week.res_date + 7.days, format: :notime) %> </h2>
 	<% if !@reservation_week.note.blank? %>

@@ -8,7 +8,7 @@
       <div class="row">
 
         <!-- Main Navigation -->
-        <div class="col-md-12 columns">
+        <div class="col-md-12 columns main-nav">
           <nav class="navbar navbar-default gfx-mega nav-left" role="navigation">
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,10 +20,7 @@
             <div class="collapse navbar-collapse" id="gfx-collapse">
               <ul class="nav navbar-nav gfx-nav">
                 <li>
-                  <%= link_to root_path do %>
-                    <div class="iconbox vertical animation fadeInLeft"> <span class="livicon" data-n="home" data-s="20" data-color="#EB2D2E" data-hovercolor="#EB2D2E" data-op="1" data-onparent="true" alt="home"></span>
-                    </div>
-                  <% end %>
+                  <%= link_to 'Home', root_path %>
                 </li>
                 <li>
                   <%= link_to 'Membership', membership_path %>
