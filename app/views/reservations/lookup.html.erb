@@ -1,78 +1,86 @@
 <h1 class="wp">Reservations</h1>
 <div class="table-responsive">
-	<h2> <%= l(@reservation_week.res_date, format: :notime) %> - <%= l(@reservation_week.res_date + 7.days, format: :notime) %> </h2>
-	<% if !@reservation_week.note.blank? %>
-	 <h3> <%= @reservation_week.note %> </h3>
-	<% end %>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Sex</th>
-        <th>Type</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Dinner</th>
-        <th>Comment</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @reservations.each do |reservation| %>
+  <% if @reservation_week.blank? %>
+      <h2 style="padding-left:10px;">
+        Sorry no reservations have been booked for this week yet.
+        <br/>
+        Check back later.
+      </h2>
+  <% else %>
+    <h2> <%= l(@reservation_week.res_date, format: :notime) %> - <%= l(@reservation_week.res_date + 7.days, format: :notime) %> </h2>
+    <% if !@reservation_week.note.blank? %>
+     <h3> <%= @reservation_week.note %> </h3>
+    <% end %>
+    <table class="table table-striped">
+      <thead>
         <tr>
-          <td><%= reservation.name %></td>
-          <td><%= reservation.sex.capitalize %></td>
-          <td><%= reservation.res_member_type.capitalize %></td>
-          <% if reservation.wed? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.thur? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.fri? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.sat? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.sun? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.mon? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.tue? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <% if reservation.dinner? %>
-            <td> <span class="fa fa-check" aria-hidden="true"></span></td>
-          <% else %>
-            <td><span></span></td>
-          <% end %>
-          <td><%= reservation.comment.html_safe %></td>
+          <th>Name</th>
+          <th>Sex</th>
+          <th>Type</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Dinner</th>
+          <th>Comment</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+
+      <tbody>
+        <% @reservations.each do |reservation| %>
+          <tr>
+            <td><%= reservation.name %></td>
+            <td><%= reservation.sex.capitalize %></td>
+            <td><%= reservation.res_member_type.capitalize %></td>
+            <% if reservation.wed? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.thur? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.fri? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.sat? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.sun? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.mon? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.tue? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <% if reservation.dinner? %>
+              <td> <span class="fa fa-check" aria-hidden="true"></span></td>
+            <% else %>
+              <td><span></span></td>
+            <% end %>
+            <td><%= reservation.comment.html_safe %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
 </div>
 
 <br>
