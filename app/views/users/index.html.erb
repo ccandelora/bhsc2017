@@ -2,6 +2,7 @@
   <div class="row">
     <h3 class="wp">Users</h3>
     <div class="column">
+      <%= link_to 'Add New User', new_user_path %>
       <table class="table">
         <tbody>
           <% @users.each do |user| %>

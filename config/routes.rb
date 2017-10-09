@@ -18,11 +18,15 @@ Rails.application.routes.draw do
 
   #resources :pages
 
+  resources :notes do
+    get 'pick', on: :collection
+  end
+
   get 'contact' => 'pages#contact'
   get 'library' => 'pages#library'
   get 'membership' => 'visitors#membership', as: 'membership'
   get 'guest' => 'visitors#guest', as: 'guest'
-  get 'notes' =>  'pages#note'
+  #get 'notes' =>  'pages#note'
   get 'race' => 'pages#race'
   get 'social'=> 'pages#social'
   #get 'pages' => 'pages#index'
