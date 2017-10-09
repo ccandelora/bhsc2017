@@ -1,0 +1,22 @@
+<!-- Main Container -->
+<div class="main-wrapper">
+  <!-- Container -->
+  <div class="container">
+    <h1 class="wp">Notes</h1>
+    <% if !@notes.nil? %>
+      <% @notes.each do |note| %>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2><%= note.title %></h2>
+            <p><%= note.message %> </br> <%= note.description %> </p>
+            <hr>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p><strong>Sorry there are no active notes at this time. Please check back later.</strong></p>
+        </div>
+      </div>
+    <% end %>
