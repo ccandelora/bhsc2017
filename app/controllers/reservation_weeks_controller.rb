@@ -30,20 +30,20 @@ class ReservationWeeksController < ApplicationController
   # POST /reservation_weeks
   # POST /reservation_weeks.json
   def create
-    if !find_reservation_week_detail.nil?
+    binding.pry
+    /if !find_reservation_week_detail.nil?
       respond_to do |format|
         format.html { redirect_to edit_reservation_week_path(@reservation_week) }
       end
-    else
-      @reservation_week = ReservationWeek.new(reservation_week_params)
-      respond_to do |format|
-        if @reservation_week.save
-          format.html { redirect_to @reservation_week, notice: 'Reservation week was successfully created.' }
-          format.json { render action: 'show', status: :created, location: @reservation_week }
-        else
-          format.html { render action: 'new' }
-          format.json { render json: @reservation_week.errors, status: :unprocessable_entity }
-        end
+    else/
+    @reservation_week = ReservationWeek.new(reservation_week_params)
+    respond_to do |format|
+      if @reservation_week.save
+        format.html { redirect_to @reservation_week, notice: 'Reservation week was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @reservation_week }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @reservation_week.errors, status: :unprocessable_entity }
       end
     end
   end
