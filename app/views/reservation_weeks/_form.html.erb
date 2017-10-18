@@ -28,7 +28,7 @@
   </div>
   <%= f.input :res_date , as: :hidden%>
   <%= f.input :note, as: :bootsy %>
-  <%= f.button :submit, 'Save Reservation Note', class: 'btn btn-primary' %>
+  <%= f.submit 'Submit', class: 'btn btn-primary' %>
 <% end %>
 <script type="text/javascript">
 var a = moment().day("Wednessday").week(Number).format('MMMM D, YYYY').toString() + ' - ' + moment().day("Wednessday").week(Number).add('days', 6).format('MMMM D, YYYY').toString();
