@@ -17,6 +17,10 @@ class PagesController < ApplicationController
   def library
   end
 
+  def ullr_lunch_2017
+
+  end
+
   def membership
     @page = Page.find(1)
   end

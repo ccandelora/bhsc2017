@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   #get 'notes' =>  'pages#note'
   get 'race' => 'pages#race'
   get 'social'=> 'pages#social'
+  get 'ullr_lunch_2017' => 'pages#ullr_lunch_2017'
   #get 'pages' => 'pages#index'
   #get 'users/new' => 'users#create'
 end
