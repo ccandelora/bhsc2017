@@ -326,10 +326,10 @@
       <div class="row">
         <div class="col-md-6">
           <div class="white-space space-xsmall"></div>
-          <p class="lead text-center color-white">You hooked yet? Contact us now!</p>
+          <p class="lead text-center color-white">You hooked yet? <%= link_to 'Contact us now!', membership_path %></p>
         </div>
         <div class="col-md-6">
-          <div class="text-center"><a class="btn btn-white btn-alt btn-lg" href="#">See More?</a></div>
+          <div class="text-center"><%= link_to 'See More?', membership_path, :class => "btn btn-white btn-alt btn-lg" %></div>
         </div>
       </div>
       <div class="white-space space-small"></div>
