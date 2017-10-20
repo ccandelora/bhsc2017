@@ -28,6 +28,7 @@ class NotesController < ApplicationController
   end
 
   def destroy
+    @note = Note.find(params[:id])
     @note.destroy
     respond_to do |format|
       format.html { redirect_to notes_url }
