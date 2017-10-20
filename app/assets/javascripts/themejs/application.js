@@ -637,7 +637,7 @@ if (gfx('#google-map-footer').length>0) {
 		google.maps.event.addDomListener(window,"resize",function(){var e=n.getCenter();
 		google.maps.event.trigger(n,"resize"),n.setCenter(e)});
 
-		var g='<div class="map-marker"><h4 class="color-dark xbold">Brettl Hupfer Ski & Sports Club</h4><p>1 George Street</p><p>Bartlett, New Hampshire</p></div>',a=new google.maps.InfoWindow({content:g})
+		var g='<div class="map-marker"><h4 class="color-dark xbold">Brettl_Hupfers Ski & Sports Club</h4><p>1 George Street</p><p>Bartlett, New Hampshire</p></div>',a=new google.maps.InfoWindow({content:g})
 		,t=new google.maps.MarkerImage("/assets/brettllogo_small.png",new google.maps.Size(75,75),
 		new google.maps.Point(0,0),new google.maps.Point(15,15)),
 		i=new google.maps.LatLng(44.0779411, -71.2837962),
