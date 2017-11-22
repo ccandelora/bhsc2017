@@ -7,8 +7,8 @@
       <% @notes.each do |note| %>
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h2><%= note.title %></h2>
-            <p><%= note.message %> </br> <%= note.description %> </p>
+            <h2><%= note.title.html_safe %></h2>
+            <p><%= note.message.html_safe %> </br> <%= note.description.html_safe %> </p>
             <hr>
           </div>
         </div>

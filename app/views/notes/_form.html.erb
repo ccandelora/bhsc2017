@@ -11,8 +11,8 @@
         </div>
     <% end %>
     <%= f.input :title %>
-    <%= f.input :message, as: :bootsy %>
-    <%= f.input :description, as: :bootsy %>
+    <%= f.input :message, as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } } %>
+    <%= f.input :description, as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }%>
     <%= f.input :order %>
     <%= f.button :submit, 'Save Note', class: 'btn btn-primary' %>
 <% end %>
