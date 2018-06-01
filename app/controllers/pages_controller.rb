@@ -36,6 +36,10 @@ class PagesController < ApplicationController
      @page = Page.find(3)
   end
 
+  def volleyball
+
+  end
+
   # GET /pages/new
   def new
     @page = Page.new

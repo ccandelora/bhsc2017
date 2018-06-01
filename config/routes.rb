@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   get 'race' => 'pages#race'
   get 'social'=> 'pages#social'
   get 'ullr_lunch_2017' => 'pages#ullr_lunch_2017'
+  get 'volleyball' => 'pages#volleyball', as: 'volleyball'
   #get 'pages' => 'pages#index'
   #get 'users/new' => 'users#create'
 end
