@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:galetahub/ckeditor.git
+  revision: f6ce3a98b29efec16fcff7bcf34b1e4e6827d835
+  specs:
+    ckeditor (5.0.0)
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -73,8 +80,6 @@ GEM
       mime-types (>= 1.16)
     childprocess (1.0.1)
       rake (< 13.0)
-    ckeditor (5.0.0)
-      orm_adapter (~> 0.5.0)
     coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -301,7 +306,7 @@ DEPENDENCIES
   bootsy
   byebug
   capybara
-  ckeditor
+  ckeditor!
   coffee-rails (~> 4.2)
   database_cleaner
   devise
