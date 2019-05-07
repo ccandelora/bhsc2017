@@ -18,7 +18,7 @@ gem 'will_paginate-bootstrap'
 gem 'bootsy'
 gem 'momentjs-rails'
 gem 'bootstrap-daterangepicker-rails'
-gem 'ckeditor', :git => 'git@github.com:galetahub/ckeditor.git'
+gem 'ckeditor', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
