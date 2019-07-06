@@ -31,6 +31,9 @@
                 <li>
                   <%= link_to 'volleyball', volleyball_path%>
                 </li>
+                <li>
+                  <%= link_to 'AT Week', at_week_path%>
+                </li>
                 <% if user_signed_in? %>
                   <li>
                     <%= link_to  'Log Out', destroy_user_session_path, :method=>'delete'%>
