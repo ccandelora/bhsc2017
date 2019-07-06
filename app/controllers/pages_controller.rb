@@ -40,6 +40,10 @@ class PagesController < ApplicationController
 
   end
 
+  def at_week
+
+  end
+
   # GET /pages/new
   def new
     @page = Page.new
