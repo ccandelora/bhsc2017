@@ -66,6 +66,15 @@
     </div>
   </div>
   <div class="box panel panel-default">
+    <h3> Guest</h3>
+    <div class="panel panel-body">
+      <%= text(:guest, :name) %>
+      <%= email_field(:guest, :email) %>
+
+      <%= f.input :email, as: :bootsy, label: false %>
+    </div>
+  </div>
+  <div class="box panel panel-default">
     <div class="panel panel-body">
       <%= f.submit 'Submit', class: 'btn btn-primary' %>
     </div>

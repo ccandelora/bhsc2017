@@ -42,6 +42,8 @@ class ReservationsController < ApplicationController
       @reservation.reservation_week_id = get_reservation_week.id
     end
 
+    for
+
     if @reservation.save
       redirect_to @reservation, notice: 'Reservation was successfully created.'
     else
