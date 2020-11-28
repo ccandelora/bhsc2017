@@ -60,6 +60,18 @@
     </div>
   </div>
   <div class="box panel panel-default">
+    <h3> Name </h3>
+    <div class="panel panel-body">
+      <%= f.input :name, label: false%>
+    </div>
+  </div>
+  <div class="box panel panel-default">
+    <div class="panel panel-body">
+      <div id="guest_container"></div>
+      <button type='button' id="add_guest" onClick="addGuest()">Add Guest</button>
+    </div>
+  </div>
+  <div class="box panel panel-default">
     <h3> Comment</h3>
     <div class="panel panel-body">
       <%= f.input :comment, as: :bootsy, label: false %>
@@ -71,6 +83,19 @@
     </div>
   </div>
 <% end %>
+
+<template id="guest_template">
+  <div class="guest_template">
+    <label for="guest[GUEST_ID][name]">Name</label>
+    <input type="text" name='guest[GUEST_ID][name]'>
+    <label for="guest[GUEST_ID][sex]">Sex</label>
+    <input type="radio" name="guest[GUEST_ID][sex]" value="male" checked>
+    <label>Male</label>
+    <input type="radio" name="guest[GUEST_ID][sex]" value="female">
+    <label>Female</label>
+    <button type="button" onClick = "deleteGuest(GUEST_ID)">Delete Guest</button>
+  </div>
+</template>
 <script type="text/javascript">
 //set how many weeks out we allow users to scheudle
 const WEEKS_OUT = 25
@@ -97,5 +122,27 @@ $('#reportrange').daterangepicker(
 //hack to hide calendar since i need to move on
 $('.drp-calendar').css("display","none");
 
+//keep track of guest template and how many have been created
+const GUEST_TEMPLATE = document.getElementById('guest_template')
+const guestContainer =  document.getElementById('guest_container')
+var count = 0
+//create guest entries
+function addGuest() {
+  var guestTemplateClone = GUEST_TEMPLATE.content.cloneNode(true).querySelector('.guest_template');
+  guestTemplateClone.innerHTML = guestTemplateClone.innerHTML.replaceAll('GUEST_ID',count)
+  guestTemplateClone.setAttribute("id", `guest_${count}`);
+
+  guestContainer.append(guestTemplateClone)
+  count++
+}
+
+function deleteGuest(id) {
+  console.log(`delete guest id: ${id}`)
+  document.getElementById(`guest_${id}`).remove()
+}
+
 </script>
+
+
+
 
