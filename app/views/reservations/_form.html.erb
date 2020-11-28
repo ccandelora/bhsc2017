@@ -42,7 +42,7 @@
   </div>
   <div class="box panel panel-default">
     <h3>Member Type</h3> 
-    <div class="panel panel-body">
+    <div class="panel panel-body" id="member_type">
       <%= f.collection_radio_buttons :res_member_type, [['Full Member', 'Full Member'], ['Associate Member', 'Associate Member'], ['Race Member', 'Race Member'], ['Guest', 'Guest']], :first, :last, :item_wrapper_tag => :div %>
     </div>
     <h3>Number of Guests</h3>
@@ -109,6 +109,20 @@ $('.drp-calendar').css("display","none");
     </div>
   <script src="https://www.paypal.com/sdk/js?client-id=AeEGqylg_doqLpNwRY4sHgP8eg-Hqs1ZCz1fxIJ1cDaE2KZHN7wJNc2CUC76XSiUHiiM0WLsG968KzJE&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script>
+    const RATES = {
+      'Full Member': 20,
+      'Associate Member': 15,
+      'Guest': 30,
+      'Race Member': 10
+    }
+
+    function calculateValue() {
+      var memberType = $('input[name="reservation[res_member_type]"]:checked').val();
+      var total = RATES[memberType]
+      total += parseInt(document.getElementById('reservation_guests').value) * RATES.Guest
+      
+      return total
+    }
     function initPayPalButton() {
       paypal.Buttons({
         style: {
@@ -120,6 +134,7 @@ $('.drp-calendar').css("display","none");
         },
 
         createOrder: function(data, actions) {
+          const chargeValue = calculateValue()
           return actions.order.create({
             purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
           });
