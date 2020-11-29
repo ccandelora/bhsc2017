@@ -29,6 +29,8 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   def new
     @reservation = current_user.reservations.build
+    @reservation.guests.build
+
   end
 
   # GET /reservations/1/edit
@@ -43,6 +45,8 @@ class ReservationsController < ApplicationController
     end
 
     if @reservation.save
+      #save guests to reservation
+
       redirect_to @reservation, notice: 'Reservation was successfully created.'
     else
       render action: 'new'
@@ -94,7 +98,7 @@ class ReservationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservation_params
-      params.require(:reservation).permit(:reservation_date, :name, :wed, :thur, :fri, :sat, :sun, :mon, :tue, :dinner, :comment, :sex, :res_member_type, :user_id)
+      params.require(:reservation).permit(:reservation_date, :name, :wed, :thur, :fri, :sat, :sun, :mon, :tue, :dinner, :comment, :sex, :res_member_type, :user_id, :guests)
     end
 
     def require_login
