@@ -43,10 +43,8 @@
   <div class="box panel panel-default">
     <h3>Member Type</h3> 
     <div class="panel panel-body" id="member_type">
-      <%= f.collection_radio_buttons :res_member_type, [['Full Member', 'Full Member'], ['Associate Member', 'Associate Member']], :first, :last, :item_wrapper_tag => :div %>
+      <%= f.collection_radio_buttons :res_member_type, [['Full Member', 'Full Member'], ['Associate Member', 'Associate Member'], ['Guest','Guest']], :first, :last, :item_wrapper_tag => :div %>
     </div>
-    <h3>Number of Guests</h3>
-    <%= f.input :guests, label: false%>
   </div>
   <div class="box panel panel-default">
     <h3> Select the days you are staying and if you want the house dinner.</h3>
@@ -128,7 +126,6 @@ $('.drp-calendar').css("display","none");
     function calculateValue() {
       const memberType = $('input[name="reservation[res_member_type]"]:checked').val();
       var total = RATES[memberType]
-      total += parseInt(document.getElementById('reservation_guests').value) * RATES.Guest
       total *= countDaysSelected()
       
       return total
