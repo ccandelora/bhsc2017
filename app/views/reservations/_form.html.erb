@@ -1,5 +1,6 @@
-<script src="https://www.paypal.com/sdk/js?client-id=AeEGqylg_doqLpNwRY4sHgP8eg-Hqs1ZCz1fxIJ1cDaE2KZHN7wJNc2CUC76XSiUHiiM0WLsG968KzJE&currency=USD" data-sdk-integration-source="button-factory"></script>
 <div id='config' data-environment=<%= Rails.env %> data-form=<%= form %>></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AeEGqylg_doqLpNwRY4sHgP8eg-Hqs1ZCz1fxIJ1cDaE2KZHN7wJNc2CUC76XSiUHiiM0WLsG968KzJE&currency=USD" data-sdk-integration-source="button-factory"></script>
+
 <%= simple_form_for(@reservation) do |f| %>
   <% if @reservation.errors.any? %>
     <div id="error_explanation">
@@ -71,7 +72,11 @@
   <div class="box panel panel-default">
     <div class="panel panel-body">
     <% if form == 'create' %>
-      <script>paypal?.Buttons().render('body');</script>
+      <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
     <% else %>
       <%= f.submit 'Submit', class: 'btn btn-primary' %>
     <% end %>
@@ -104,13 +109,9 @@ $('#reportrange').daterangepicker(
 //hack to hide calendar since i need to move on
 $('.drp-calendar').css("display","none");
 
-</script>
-<script src= '<%= "https://www.paypal.com/sdk/js?client-id=" + Rails.env == 'development' ? 'AVOPmhWTvCRsy3WaEoJGeDqkK93WeLcjQTUA6ji-r1c1nxhC35mGwCUxztUKMcBjiP-DQ4eAbF8ozbmG' : 'ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8' %>' />
-<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
+</script><!--
+ <script src= <%= "https://www.paypal.com/sdk/js?client-id=" + (Rails.env == 'development' ? 'AVOPmhWTvCRsy3WaEoJGeDqkK93WeLcjQTUA6ji-r1c1nxhC35mGwCUxztUKMcBjiP-DQ4eAbF8ozbmG' : 'ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8') + '&currency=USD' %>><script/>
+<script src= 'https://www.paypal.com/sdk/js?client-id=ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8' /> -->
   <script>
     const RATES = {
       'Full Member': 10,
