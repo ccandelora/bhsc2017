@@ -4,7 +4,7 @@
     <% if ENV['COVIDOFF'] %>
       <h2> Online reservations are currently closed. If you would like to make a reservation please email <a href = "mailto: brettl.hupfers@gmail.com">brettl.hupfers@gmail.com</a></h2>
     <% else %>
-      <%= render 'form' %>
+      <%= render 'form', form: 'create' %>
     <% end %>
 	</div>
 </div>

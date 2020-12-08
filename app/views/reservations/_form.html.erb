@@ -1,3 +1,6 @@
+<div id='config' data-environment=<%= Rails.env %> data-form=<%= form %>></div>
+<script src="https://www.paypal.com/sdk/js?client-id=ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8&currency=USD" data-sdk-integration-source="button-factory"></script>
+
 <%= simple_form_for(@reservation) do |f| %>
   <% if @reservation.errors.any? %>
     <div id="error_explanation">
@@ -41,9 +44,9 @@
     </div>
   </div>
   <div class="box panel panel-default">
-    <h3>Member Type</h3>
-    <div class="panel panel-body">
-      <%= f.collection_radio_buttons :res_member_type, [['Full Member', 'Full Member'], ['Associate Member', 'Associate Member'], ['Race Member', 'Race Member'], ['Guest', 'Guest']], :first, :last, :item_wrapper_tag => :div %>
+    <h3>Member Type</h3> 
+    <div class="panel panel-body" id="member_type">
+      <%= f.collection_radio_buttons :res_member_type, [['Full Member', 'Full Member'], ['Associate Member', 'Associate Member'], ['Guest','Guest']], :first, :last, :item_wrapper_tag => :div %>
     </div>
   </div>
   <div class="box panel panel-default">
@@ -65,9 +68,18 @@
       <%= f.input :comment, as: :bootsy, label: false %>
     </div>
   </div>
+  <%=  f.hidden_field  :confirmation_number, id:'confirmation_number' %>
   <div class="box panel panel-default">
     <div class="panel panel-body">
+    <% if form == 'create' %>
+      <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+    <% else %>
       <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <% end %>
     </div>
   </div>
 <% end %>
@@ -99,3 +111,66 @@ $('.drp-calendar').css("display","none");
 
 </script>
 
+  <script>
+    const RATES = {
+      'Full Member': 10,
+      'Associate Member': 35,
+      'Guest': 45,
+      'Race Member': 10
+    }
+    const dayArray = ['sun','mon','tue','wed','thur','fri','sat']
+    const form = document.getElementById('new_reservation')
+    
+    function countDaysSelected() {
+      var checkedDays = dayArray.filter((day) => {
+        return document.getElementById(`reservation_${day}`).checked
+      })
+      return checkedDays.length
+    }
+
+    
+
+    function calculateValue() {
+      const memberType = $('input[name="reservation[res_member_type]"]:checked').val();
+      var total = RATES[memberType]
+      total *= countDaysSelected()
+      
+      return total
+    }
+
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          const chargeValue = calculateValue()
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"USD","value": calculateValue()}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          //TODO add paypal transaction id to reservation
+          return actions.order.capture().then(function(details) {
+            console.log(details)
+            document.getElementById('confirmation_number').value = details.id
+            form.submit()
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+
+  //give paypal a chance to load
+  setTimeout(() => {initPayPalButton();}, 1000);
+
+  </script>

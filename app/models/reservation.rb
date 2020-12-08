@@ -2,7 +2,7 @@ class Reservation < ActiveRecord::Base
 	belongs_to :user
   belongs_to :reservation_week
 
-  validates :reservation_date, :name, :sex, :res_member_type,  presence: true
+  validates :reservation_date, :name, :sex, :res_member_type, :confirmation_number, presence: true
   validate :res_date_cannot_be_in_the_past
 
   def res_date_cannot_be_in_the_past

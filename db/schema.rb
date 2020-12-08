@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171003221944) do
+ActiveRecord::Schema.define(version: 20201205231527) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20171003221944) do
     t.string   "sex"
     t.string   "res_member_type"
     t.date     "reservation_date"
+    t.string   "confirmation_number"
     t.index ["reservation_week_id"], name: "index_reservations_on_reservation_week_id", using: :btree
     t.index ["user_id"], name: "index_reservations_on_user_id", using: :btree
   end
