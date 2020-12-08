@@ -1,5 +1,5 @@
 <div id='config' data-environment=<%= Rails.env %> data-form=<%= form %>></div>
-<script src="https://www.paypal.com/sdk/js?client-id=AeEGqylg_doqLpNwRY4sHgP8eg-Hqs1ZCz1fxIJ1cDaE2KZHN7wJNc2CUC76XSiUHiiM0WLsG968KzJE&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8&currency=USD" data-sdk-integration-source="button-factory"></script>
 
 <%= simple_form_for(@reservation) do |f| %>
   <% if @reservation.errors.any? %>
@@ -109,9 +109,8 @@ $('#reportrange').daterangepicker(
 //hack to hide calendar since i need to move on
 $('.drp-calendar').css("display","none");
 
-</script><!--
- <script src= <%= "https://www.paypal.com/sdk/js?client-id=" + (Rails.env == 'development' ? 'AVOPmhWTvCRsy3WaEoJGeDqkK93WeLcjQTUA6ji-r1c1nxhC35mGwCUxztUKMcBjiP-DQ4eAbF8ozbmG' : 'ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8') + '&currency=USD' %>><script/>
-<script src= 'https://www.paypal.com/sdk/js?client-id=ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8' /> -->
+</script>
+
   <script>
     const RATES = {
       'Full Member': 10,
@@ -121,13 +120,15 @@ $('.drp-calendar').css("display","none");
     }
     const dayArray = ['sun','mon','tue','wed','thur','fri','sat']
     const form = document.getElementById('new_reservation')
-
+    
     function countDaysSelected() {
       var checkedDays = dayArray.filter((day) => {
         return document.getElementById(`reservation_${day}`).checked
       })
       return checkedDays.length
     }
+
+    
 
     function calculateValue() {
       const memberType = $('input[name="reservation[res_member_type]"]:checked').val();
@@ -136,6 +137,7 @@ $('.drp-calendar').css("display","none");
       
       return total
     }
+
     function initPayPalButton() {
       paypal.Buttons({
         style: {
@@ -167,5 +169,8 @@ $('.drp-calendar').css("display","none");
         }
       }).render('#paypal-button-container');
     }
-    initPayPalButton();
+
+  //give paypal a chance to load
+  setTimeout(() => {initPayPalButton();}, 1000);
+
   </script>
