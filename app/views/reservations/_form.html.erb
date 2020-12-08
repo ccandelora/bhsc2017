@@ -1,4 +1,5 @@
 <script src="https://www.paypal.com/sdk/js?client-id=AeEGqylg_doqLpNwRY4sHgP8eg-Hqs1ZCz1fxIJ1cDaE2KZHN7wJNc2CUC76XSiUHiiM0WLsG968KzJE&currency=USD" data-sdk-integration-source="button-factory"></script>
+<div id='config' data-environment=<%= Rails.env %> data-form=<%= form %>></div>
 <%= simple_form_for(@reservation) do |f| %>
   <% if @reservation.errors.any? %>
     <div id="error_explanation">
@@ -69,8 +70,11 @@
   <%=  f.hidden_field  :confirmation_number, id:'confirmation_number' %>
   <div class="box panel panel-default">
     <div class="panel panel-body">
-    <script>paypal?.Buttons().render('body');</script>
-
+    <% if form == 'create' %>
+      <script>paypal?.Buttons().render('body');</script>
+    <% else %>
+      <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <% end %>
     </div>
   </div>
 <% end %>
@@ -101,7 +105,7 @@ $('#reportrange').daterangepicker(
 $('.drp-calendar').css("display","none");
 
 </script>
-<script src="https://www.paypal.com/sdk/js?client-id=AeEGqylg_doqLpNwRY4sHgP8eg-Hqs1ZCz1fxIJ1cDaE2KZHN7wJNc2CUC76XSiUHiiM0WLsG968KzJE">></script>
+<script src= '<%= "https://www.paypal.com/sdk/js?client-id=" + Rails.env == 'development' ? 'AVOPmhWTvCRsy3WaEoJGeDqkK93WeLcjQTUA6ji-r1c1nxhC35mGwCUxztUKMcBjiP-DQ4eAbF8ozbmG' : 'ATsHCwJYVY7xxd4XFFAgj_uqaTn3i58bP8PEMVkj-dTJn2qxovfluU1FT3Ze3arHd-xdAThzQXbHO3M8' %>' />
 <div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
