@@ -64,7 +64,6 @@ ActiveRecord::Schema.define(version: 20201205231527) do
     t.string   "sex"
     t.string   "res_member_type"
     t.date     "reservation_date"
-    t.integer  "guests",              limit: 2
     t.string   "confirmation_number"
     t.index ["reservation_week_id"], name: "index_reservations_on_reservation_week_id", using: :btree
     t.index ["user_id"], name: "index_reservations_on_user_id", using: :btree
