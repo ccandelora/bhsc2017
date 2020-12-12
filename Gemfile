@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.6.0'
+ruby '2.6.6'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'font-awesome-rails'
 gem 'haml-rails'
