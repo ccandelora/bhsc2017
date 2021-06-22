@@ -1,6 +1,9 @@
 <div class="box panel panel-default">
   <div class="panel panel-body wp">
     <div id="notice"><%= notice %></div>
+    <div>
+    <p>To pay for your stay, please click <%= link_to 'here', payment_path %> 
+    </div>
     <% date1 = @reservation.reservation_date.strftime("%m/%d/%Y") %>
     <% date2 = @reservation.reservation_date + 1.week - 1.day %>
     <div>
