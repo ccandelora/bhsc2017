@@ -32,6 +32,7 @@ Rails.application.routes.draw do
   get 'ullr_lunch_2017' => 'pages#ullr_lunch_2017'
   get 'volleyball' => 'pages#volleyball', as: 'volleyball'
   get 'at_week' => 'pages#at_week', as: 'at_week'
+  get 'payment' => 'pages#payment', as: 'payment'
   #get 'pages' => 'pages#index'
   #get 'users/new' => 'users#create'
 end
