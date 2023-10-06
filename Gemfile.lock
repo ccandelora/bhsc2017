@@ -85,10 +85,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-
     database_cleaner (1.7.0)
     devise (4.7.1)
       bcrypt (~> 3.0)
@@ -173,9 +171,7 @@ GEM
     pundit (2.1.0)
       activesupport (>= 3.0.0)
     racc (1.6.1)
-
-    rack (2.2.3)
-
+    rack (2.2.8)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.7.2)
@@ -279,7 +275,6 @@ GEM
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (1.2.10)
-
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
