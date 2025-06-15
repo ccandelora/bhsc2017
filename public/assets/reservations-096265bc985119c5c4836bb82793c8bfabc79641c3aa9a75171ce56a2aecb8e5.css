@@ -1,0 +1,25 @@
+/* line 1, app/assets/stylesheets/reservations.css.scss */
+.calendar {
+  display: none !important;
+}
+
+/* line 4, app/assets/stylesheets/reservations.css.scss */
+.range_inputs {
+  display: none !important;
+}
+
+/* line 9, app/assets/stylesheets/reservations.css.scss */
+.ranges ul li:last-child {
+  display: none !important;
+}
+
+/* line 14, app/assets/stylesheets/reservations.css.scss */
+textarea {
+  width: 100%;
+}
+
+/* line 18, app/assets/stylesheets/reservations.css.scss */
+.reservation_name .string {
+  width: 100%;
+  height: 50px;
+}

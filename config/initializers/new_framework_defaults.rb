@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 #
-# This file contains migration options to ease your Rails 5.0 upgrade.
+# This file contains migration options to ease your Rails upgrade.
 #
 # Read the Rails 5.0 release notes for more info on each option.
 
@@ -17,8 +17,8 @@ ActiveSupport.to_time_preserves_timezone = true
 # Require `belongs_to` associations by default. Previous versions had false.
 Rails.application.config.active_record.belongs_to_required_by_default = true
 
-# Do not halt callback chains when a callback returns false. Previous versions had true.
-ActiveSupport.halt_callback_chains_on_return_false = false
-
 # Configure SSL options to enable HSTS with subdomains. Previous versions had false.
 Rails.application.config.ssl_options = { hsts: { subdomains: true } }
+
+# Use the new cache serialization format
+Rails.application.config.active_support.cache_format_version = 7.1

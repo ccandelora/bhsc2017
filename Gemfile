@@ -1,58 +1,58 @@
 source 'https://rubygems.org'
-ruby '2.6.6'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+ruby '3.2.2'
+
+gem 'rails', '7.1.0'
+gem 'sprockets-rails'
+gem 'pg', '~> 1.5'
+gem 'puma', '~> 6.0'
+gem 'importmap-rails'
+gem 'turbo-rails'
+gem 'stimulus-rails'
+gem 'jbuilder'
+gem 'redis', '~> 5.0'
+gem 'bootsnap', require: false
+gem 'did_you_mean', '~> 1.6.3'
+
+# Original gems updated for Rails 7 compatibility
 gem 'font-awesome-rails'
-gem 'haml-rails'
-gem 'tilt', '~> 2.0.10'
-gem 'erubis', '~> 2.7.0'
-gem 'pry-rails'
-gem 'pg', '~> 1.5', '>= 1.5.5'
-gem 'puma', '~> 5.6'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'haml-rails', '~> 2.1'
 gem 'simple_form'
-gem 'will_paginate', '~> 3.0'
-gem 'will_paginate-bootstrap'
-gem 'bootsy'
+gem 'devise', '~> 4.9'
+gem 'pundit', '~> 2.3'
+gem 'sassc-rails'
+gem 'bootstrap', '~> 5.3'
+gem 'jquery-rails'
 gem 'momentjs-rails'
 gem 'bootstrap-daterangepicker-rails'
-gem 'ckeditor', '~> 4.2'
+gem 'ckeditor', '~> 5.1'
+gem 'high_voltage'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap-style'
+gem 'image_processing', '~> 1.2'
+gem 'coffee-rails'
 
 group :development, :test do
-  gem 'byebug', platform: :mri
-  gem 'foreman'
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'pry-rails'
 end
+
 group :development do
   gem 'web-console'
-  gem 'listen', '~> 3.0.5'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-end
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'high_voltage'
-gem 'pundit'
-group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'rails_layout'
-  gem 'spring-commands-rspec'
+  gem 'listen'
 end
-group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'faker'
-  gem 'rspec-rails'
-end
+
 group :test do
   gem 'capybara'
+  gem 'selenium-webdriver'
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'selenium-webdriver'
 end
-group :production do
-  gem 'rails_12factor'
-end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

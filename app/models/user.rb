@@ -7,9 +7,15 @@ class User < ApplicationRecord
   end
 
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
+  # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  # Skip confirmation requirement
+  def confirmation_required?
+    false
+  end
+
   has_many :reservations
   has_many :reservation_weeks, :through => :reservations
   has_many :pins

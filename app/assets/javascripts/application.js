@@ -34,7 +34,7 @@
 //= require themejs/application.js
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require bootstrap-sprockets
-//= require ckeditor/init
+//= require bootstrap
+//= require moment
+//= require daterangepicker
 //= require_tree .
