@@ -1,0 +1,6920 @@
+/* Preload */
+/* line 2, app/assets/stylesheets/avendor.css.scss */
+.QOverlay {
+  background-color: #000000;
+  z-index: 99999;
+}
+
+/* line 6, app/assets/stylesheets/avendor.css.scss */
+.QLoader {
+  background-color: #CCCCCC;
+  height: 1px;
+}
+
+/* line 10, app/assets/stylesheets/avendor.css.scss */
+.QAmt {
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 50px;
+  height: 50px;
+  width: 100px;
+  margin: -60px 0 0 -50px;
+}
+
+/* line 20, app/assets/stylesheets/avendor.css.scss */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 9999;
+  /* makes sure it stays on top */
+}
+
+/* line 29, app/assets/stylesheets/avendor.css.scss */
+body {
+  background-color: #fff;
+  color: #778899;
+  font-family: 'Raleway', sans-serif;
+  text-rendering: optimizelegibility;
+}
+
+/* line 35, app/assets/stylesheets/avendor.css.scss */
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 42, app/assets/stylesheets/avendor.css.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 45, app/assets/stylesheets/avendor.css.scss */
+a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, select::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  outline: none !important;
+}
+
+/* line 49, app/assets/stylesheets/avendor.css.scss */
+.text-right, .text-left {
+  color: black;
+}
+
+/* line 52, app/assets/stylesheets/avendor.css.scss */
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/*body backgrounds*/
+/* line 61, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern1 {
+  background-image: url(/assets/bg/bg-pattern1-f25d2fb14915a2d9cecd8de3d989ec4063f47dc68d9b1b9f281de7040278fc36.png) repeat fixed center 0;
+}
+
+/* line 64, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern2 {
+  background-image: url(/assets/bg/bg-pattern2-3e02a5f3f6901bc580b32ed8717903703cc0abc599a15a7b156c61d07619df74.png) repeat fixed center 0;
+}
+
+/* line 67, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern3 {
+  background-image: url(/assets/bg/bg-pattern3-38a604f3dd42887560d95f5ed934545093a80ae76f9752c9b48d09320cdc72f5.png) repeat fixed center 0;
+}
+
+/* line 70, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern4 {
+  background-image: url(/assets/bg/bg-pattern4-7472e4edec9cd86bee5425636a099dc5dd531070385a2d8197b3299635b0d307.png) repeat fixed center 0;
+}
+
+/* line 73, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern5 {
+  background-image: url(/assets/bg/bg-pattern5-be643799d6f3d93f014d0b81b894bb87881f3c4cefe1c687dafb69753fbb14e8.png) repeat fixed center 0;
+}
+
+/* line 76, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern6 {
+  background-image: url(/assets/bg/bg-pattern6-f41ef4dff5cb1ab06846e2e9584d49bacff2948b50fed7062d905ffb8262f807.png) repeat fixed center 0;
+}
+
+/* line 79, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern7 {
+  background-image: url(/assets/bg/bg-pattern7-e583efffad445c09c7756621a33804c6d7d174ece1d2f8cc99cc246e189a7660.png) repeat fixed center 0;
+}
+
+/* line 82, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern8 {
+  background-image: url(/assets/bg/bg-pattern8-a8ece956bc84c272ac33d4a218cc2838a8839083fd9396a8f30e669596e60aa1.png) repeat fixed center 0;
+}
+
+/* line 85, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern9 {
+  background-image: url(/assets/bg/bg-pattern9-bc6a903c180455d19af522a694609d7d8253dd0af48029797afa7fed2ff3587a.png) repeat fixed center 0;
+}
+
+/* line 88, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern10 {
+  background-image: url(/assets/bg/bg-pattern10-3c491c9f93258ade3036044ef375562c45e50e78f0599586454841c6d8ce2a5e.png) repeat fixed center 0;
+}
+
+/* line 91, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern11 {
+  background-image: url(/assets/bg/bg-pattern11-8c3aef5749980524c14354587bb2b82128079ea0dc67b0d2173a2b8cb8752dab.png) repeat fixed center 0;
+}
+
+/* line 94, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern12 {
+  background-image: url(/assets/bg/bg-pattern12-59943d6cf4ec2e6e310deae75561b8152d71b68e17ff52f3e412bed18237e17e.png) repeat fixed center 0;
+}
+
+/* line 97, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern13 {
+  background-image: url(/assets/bg/bg-pattern13-1b9d3edc695efbad65ff7066d3e02ef46cc48819bdbbe4fc7fc8c886479a5bc1.png) repeat fixed center 0;
+}
+
+/* line 100, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern14 {
+  background-image: url(/assets/bg/bg-pattern14-bc5f3eeff63e158f456c78c61dfb3f1f292ad60fa4f1084202c06efcb7c89a37.png) repeat fixed center 0;
+}
+
+/* line 103, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern15 {
+  background-image: url(/assets/bg/bg-pattern15-d7210a21c9b0db3cff905365c2433649f79fb275e9eb194ef5bd77041805bca8.png) repeat fixed center 0;
+}
+
+/* line 106, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern16 {
+  background-image: url(/assets/bg/bg-pattern16-b32b53ae805c7ec0978a788145f937f06ba4416915355e104b1e1d1bfeb38fb4.png) repeat fixed center 0;
+}
+
+/* line 109, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern17 {
+  background-image: url(/assets/bg/bg-pattern17-ce7890052214e01e338a266873447e24cce65446dd3df839ecf89f258124956e.png) repeat fixed center 0;
+}
+
+/* line 112, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern18 {
+  background-image: url(/assets/bg/bg-pattern18-d8984d58b49ee0f01c74c2c19dea4bb6784ae1efa36c067780eca5973216ccba.png) repeat fixed center 0;
+}
+
+/* line 115, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern19 {
+  background-image: url(/assets/bg/bg-pattern19-c8d7cbe4aae040f9f35b98eb1bc44300a3e07b646cc7e1a22933eea6b4afca64.png) repeat fixed center 0;
+}
+
+/* line 118, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern20 {
+  background-image: url(/assets/bg/bg-pattern20-ab63932edf829ac235948b3504902f0d606281d0a909010dfa50c0cfa70badd2.png) repeat fixed center 0;
+}
+
+/* line 121, app/assets/stylesheets/avendor.css.scss */
+.bg-pattern21 {
+  background-image: url(/assets/bg/bg-pattern21-b70bf6172af683aa3bf24d5e46dd1dd16f6d60b7b5714f1a3cd2fb8307129f6f.png) repeat fixed center 0;
+}
+
+/* line 124, app/assets/stylesheets/avendor.css.scss */
+.bg-custom {
+  background-image: url(/assets/bg/custom-206775ff577e16d297434cdc75ba774d51f723c942bc2aa3d470c4f5cfcb4dd8.jpg) repeat fixed center 0;
+}
+
+/*===============================
+========== Boxed Version ==========
+===============================*/
+/* line 131, app/assets/stylesheets/avendor.css.scss */
+.page-wrapper.boxed {
+  max-width: 1210px;
+  margin: 40px auto;
+  -webkit-box-shadow: 0 3px 14px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow: 0 3px 14px rgba(50, 50, 50, 0.15);
+  box-shadow: 0 3px 14px rgba(50, 50, 50, 0.15);
+}
+
+/* line 138, app/assets/stylesheets/avendor.css.scss */
+.page-wrapper.boxed .header-main {
+  max-width: 1210px;
+  margin: 0px auto;
+}
+
+/*===============================
+========== Boostrap Overwrite ==========
+===============================*/
+/*===============================
+========== Grid Blocks ==========
+===============================*/
+/* line 151, app/assets/stylesheets/avendor.css.scss */
+.page-wrapper {
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Sections */
+/* Full Width Container */
+/* line 161, app/assets/stylesheets/avendor.css.scss */
+.fullsize {
+  color: inherit;
+  width: 100%;
+  position: relative;
+}
+
+/* line 166, app/assets/stylesheets/avendor.css.scss */
+.container-inner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*========== Slide Top Panel Container ==========*/
+/* line 171, app/assets/stylesheets/avendor.css.scss */
+.slide-pannel-wrapper {
+  position: relative;
+  top: 0;
+  width: 100%;
+  color: #FFF;
+}
+
+/* line 177, app/assets/stylesheets/avendor.css.scss */
+.slide-pannel-wrapper h1, .slide-pannel-wrapper h2, .slide-pannel-wrapper h3, .slide-pannel-wrapper h4, .slide-pannel-wrapper h5, .slide-pannel-wrapper h6 {
+  color: #fff;
+}
+
+/* line 180, app/assets/stylesheets/avendor.css.scss */
+.page-wrapper.boxed .slide-pannel-wrapper {
+  max-width: 1210px;
+}
+
+/* line 183, app/assets/stylesheets/avendor.css.scss */
+#slide-panel {
+  display: none;
+  padding: 20px 0;
+  z-index: 9999;
+  position: relative;
+  background: #32313b;
+}
+
+/* line 190, app/assets/stylesheets/avendor.css.scss */
+.slide-btn-wrapper {
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 1200;
+  text-align: center;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent #32313b transparent transparent;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 202, app/assets/stylesheets/avendor.css.scss */
+.slide-panel-btn {
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  padding: 3px 0px 0px 17px;
+}
+
+/* line 210, app/assets/stylesheets/avendor.css.scss */
+.slide-panel-btn:hover, .slide-panel-btn:focus {
+  color: #fff;
+}
+
+/* line 213, app/assets/stylesheets/avendor.css.scss */
+.slide-panel-btn:after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+}
+
+/* line 217, app/assets/stylesheets/avendor.css.scss */
+.slide-panel-btn.active:after {
+  content: '\f077';
+  font-family: 'FontAwesome';
+}
+
+/*========== Header Wrapper ==========*/
+/* line 223, app/assets/stylesheets/avendor.css.scss */
+.header-wrapper {
+  position: relative;
+}
+
+/*header top*/
+/* line 227, app/assets/stylesheets/avendor.css.scss */
+.header-top {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  color: #555566;
+  font-size: 12px;
+  position: relative;
+  z-index: 1150;
+}
+
+/* line 235, app/assets/stylesheets/avendor.css.scss */
+.header-top ul, .header-top ol, .header-top dl {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+/* line 240, app/assets/stylesheets/avendor.css.scss */
+.header-top ul .fa {
+  margin-right: 10px;
+}
+
+/* line 243, app/assets/stylesheets/avendor.css.scss */
+.header-top p {
+  margin: 0;
+}
+
+/* line 246, app/assets/stylesheets/avendor.css.scss */
+.header-top-left {
+  float: left;
+  width: 100%;
+}
+
+/* line 250, app/assets/stylesheets/avendor.css.scss */
+.header-top-right {
+  float: right;
+  width: 100%;
+}
+
+/*header top navigation */
+/* line 255, app/assets/stylesheets/avendor.css.scss */
+.top-menu {
+  list-style: none;
+  padding-left: 0;
+  float: right;
+}
+
+/* line 260, app/assets/stylesheets/avendor.css.scss */
+.top-menu li:first-child {
+  border-left: 1px solid #ececec;
+}
+
+/* line 263, app/assets/stylesheets/avendor.css.scss */
+.top-menu li {
+  border-right: 1px solid #ececec;
+  display: inline-block;
+}
+
+/* line 267, app/assets/stylesheets/avendor.css.scss */
+.top-menu li a {
+  color: inherit;
+  padding: 10px 12px;
+  display: block;
+}
+
+/* line 272, app/assets/stylesheets/avendor.css.scss */
+.header-top .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* line 275, app/assets/stylesheets/avendor.css.scss */
+.header-top .dropdown-menu {
+  border: 1px solid #ececec;
+  margin-top: 0px;
+  margin-left: -4px;
+}
+
+/* line 280, app/assets/stylesheets/avendor.css.scss */
+.header-top .dropdown-menu > li {
+  display: block;
+  border: none;
+}
+
+/* social top */
+/* line 285, app/assets/stylesheets/avendor.css.scss */
+.social-top {
+  list-style: none;
+  padding-left: 0;
+  float: left;
+}
+
+/* line 290, app/assets/stylesheets/avendor.css.scss */
+.social-top li:first-child {
+  border-left: 1px solid #ececec;
+}
+
+/* line 293, app/assets/stylesheets/avendor.css.scss */
+.social-top li {
+  border-right: 1px solid #ececec;
+  display: inline-block;
+}
+
+/* line 297, app/assets/stylesheets/avendor.css.scss */
+.social-top li a {
+  color: inherit;
+  padding: 8px 12px;
+  display: block;
+  font-size: 14px;
+}
+
+/* line 303, app/assets/stylesheets/avendor.css.scss */
+.social-top a:hover, .social-top a:focus {
+  text-decoration: none;
+}
+
+/* line 306, app/assets/stylesheets/avendor.css.scss */
+.social-top .fa {
+  margin-right: 0 !important;
+}
+
+/* line 309, app/assets/stylesheets/avendor.css.scss */
+.top-menu a {
+  color: inherit;
+}
+
+/* line 312, app/assets/stylesheets/avendor.css.scss */
+.top-menu a:hover, .top-menu a:focus {
+  text-decoration: none;
+}
+
+/*header main*/
+/* line 316, app/assets/stylesheets/avendor.css.scss */
+.header-main {
+  width: 100%;
+  position: relative;
+  z-index: 1100;
+  background: #FFF;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(214, 224, 230, 0.6);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(214, 224, 230, 0.6);
+  box-shadow: 0px 3px 0px 0px rgba(214, 224, 230, 0.6);
+  -webkit-transform: translateZ(0);
+}
+
+/* line 326, app/assets/stylesheets/avendor.css.scss */
+.main-navigation {
+  position: relative;
+}
+
+/* line 329, app/assets/stylesheets/avendor.css.scss */
+.logo {
+  line-height: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 336, app/assets/stylesheets/avendor.css.scss */
+.logo img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 342, app/assets/stylesheets/avendor.css.scss */
+.header-main.shrink .logo {
+  line-height: 60px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 349, app/assets/stylesheets/avendor.css.scss */
+.header-main.shrink .logo img {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/*========== Slider Wrapper ==========*/
+/* line 357, app/assets/stylesheets/avendor.css.scss */
+.slider-wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Revolution Slider Overwrite */
+/* line 362, app/assets/stylesheets/avendor.css.scss */
+.tp-caption a {
+  color: #ffffff;
+}
+
+/* line 365, app/assets/stylesheets/avendor.css.scss */
+.tp-caption a:hover {
+  color: #ffffff;
+}
+
+/* line 368, app/assets/stylesheets/avendor.css.scss */
+.tp-caption a.btn.btn-white {
+  color: #778899;
+}
+
+/* line 371, app/assets/stylesheets/avendor.css.scss */
+.tp-caption a.btn.btn-white.btn-alt {
+  color: #ffffff;
+}
+
+/* line 374, app/assets/stylesheets/avendor.css.scss */
+.tp-caption a.btn.btn-white.btn-alt:hover, .tp-caption a.btn.btn-white.btn-alt:focus {
+  color: #778899;
+}
+
+/*========== Main Wrapper Header ==========*/
+/* line 378, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header {
+  padding: 50px 0;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ececec;
+}
+
+/* line 385, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header .page-title h1, .page-title h2, .page-title h3 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 2;
+}
+
+/* line 390, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header .breadcrumbs-wrapper {
+  text-align: right;
+}
+
+/* line 393, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header .breadcrumbs-wrapper .breadcrumb {
+  margin: 0;
+  line-height: 2.8;
+  background: none;
+  padding: 8px 0;
+}
+
+/* line 399, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header .breadcrumbs-wrapper .breadcrumb li {
+  float: none;
+  width: auto;
+}
+
+/* line 403, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header .breadcrumbs-wrapper .breadcrumb > li + li:before {
+  content: "\f138";
+  font-family: 'FontAwesome';
+  padding: 0 8px;
+}
+
+/* line 408, app/assets/stylesheets/avendor.css.scss */
+.main-wrapper-header .breadcrumbs-wrapper .breadcrumb > .active {
+  color: #32313b;
+}
+
+/* Fancy Header*/
+/* line 414, app/assets/stylesheets/avendor.css.scss */
+.fancy-header .page-title h1, .fancy-header .page-title h2, .fancy-header .page-title h3 {
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* line 419, app/assets/stylesheets/avendor.css.scss */
+.fancy-header .breadcrumbs-wrapper {
+  text-align: center;
+}
+
+/* Dark Header */
+/* line 423, app/assets/stylesheets/avendor.css.scss */
+.dark-header .page-title h1, .dark-header .page-title h2, .dark-header .page-title h3 {
+  color: #ffffff;
+}
+
+/* line 426, app/assets/stylesheets/avendor.css.scss */
+.dark-header .breadcrumbs-wrapper .breadcrumb > li + li:before {
+  color: #ffffff !important;
+}
+
+/* line 429, app/assets/stylesheets/avendor.css.scss */
+.dark-header .breadcrumbs-wrapper .breadcrumb > li a {
+  color: #ffffff;
+}
+
+/* line 432, app/assets/stylesheets/avendor.css.scss */
+.dark-header .breadcrumbs-wrapper .breadcrumb > li a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 435, app/assets/stylesheets/avendor.css.scss */
+.dark-header .breadcrumbs-wrapper .breadcrumb > .active {
+  color: #ffffff;
+}
+
+/*========== Main Navigation ==========*/
+/* line 440, app/assets/stylesheets/avendor.css.scss */
+.navbar-header {
+  float: none;
+}
+
+/* line 443, app/assets/stylesheets/avendor.css.scss */
+.nav-right .navbar-header {
+  float: right;
+}
+
+/* line 446, app/assets/stylesheets/avendor.css.scss */
+.nav-left .navbar-header {
+  float: left;
+}
+
+/* line 449, app/assets/stylesheets/avendor.css.scss */
+.nav-left .gfx-nav {
+  float: right;
+}
+
+/* line 452, app/assets/stylesheets/avendor.css.scss */
+.nav-centered .navbar-header {
+  float: none;
+  text-align: center;
+}
+
+/* line 456, app/assets/stylesheets/avendor.css.scss */
+.nav-centered .nav > li {
+  display: inline-block;
+}
+
+/* line 459, app/assets/stylesheets/avendor.css.scss */
+.nav-centered .navbar-nav > li {
+  float: none;
+}
+
+/* line 462, app/assets/stylesheets/avendor.css.scss */
+.nav-centered .gfx-nav {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 467, app/assets/stylesheets/avendor.css.scss */
+  .nav > li > a {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  /* line 471, app/assets/stylesheets/avendor.css.scss */
+  .navbar-nav > li > a {
+    line-height: 76px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 476, app/assets/stylesheets/avendor.css.scss */
+  .nav-right .navbar-header {
+    float: none;
+    width: 100%;
+    text-align: right;
+  }
+  /* line 481, app/assets/stylesheets/avendor.css.scss */
+  .nav-left .navbar-header {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  /* line 486, app/assets/stylesheets/avendor.css.scss */
+  .nav-right .navbar-toggle {
+    left: 0;
+  }
+  /* line 489, app/assets/stylesheets/avendor.css.scss */
+  .nav-left .navbar-toggle {
+    right: 0;
+  }
+  /* line 492, app/assets/stylesheets/avendor.css.scss */
+  .nav-left .gfx-nav {
+    float: none;
+  }
+}
+
+/* line 496, app/assets/stylesheets/avendor.css.scss */
+.navbar, .navbar-nav {
+  margin: 0;
+  min-height: inherit;
+}
+
+/* line 500, app/assets/stylesheets/avendor.css.scss */
+.navbar-collapse {
+  max-height: inherit;
+  padding: 0;
+  background-color: white;
+}
+
+/* line 505, app/assets/stylesheets/avendor.css.scss */
+.navbar-default {
+  background: none;
+  border: none;
+}
+
+/* line 509, app/assets/stylesheets/avendor.css.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #32313b;
+  border-top: 3px solid transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* line 519, app/assets/stylesheets/avendor.css.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+}
+
+/* line 522, app/assets/stylesheets/avendor.css.scss */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+}
+
+/* line 525, app/assets/stylesheets/avendor.css.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  border-top: 3px solid;
+}
+
+/* line 528, app/assets/stylesheets/avendor.css.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  text-decoration: none;
+  background-color: none;
+}
+
+/* line 532, app/assets/stylesheets/avendor.css.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background: none;
+  color: #32313b;
+}
+
+/* line 536, app/assets/stylesheets/avendor.css.scss */
+.navbar-toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+  float: none;
+  text-align: center;
+  right: 0;
+  margin: 0;
+  padding: 9px 10px;
+  background-color: #32313b;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 553, app/assets/stylesheets/avendor.css.scss */
+.navbar-toggle:focus {
+  outline: none;
+}
+
+/* line 556, app/assets/stylesheets/avendor.css.scss */
+.navbar-toggle:after {
+  content: '\f0c9';
+  font-family: FontAwesome;
+}
+
+/* line 560, app/assets/stylesheets/avendor.css.scss */
+.slider-wrapper {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 564, app/assets/stylesheets/avendor.css.scss */
+  .navbar-nav > li > a {
+    padding: 9px 16px 12px;
+    line-height: 76px;
+  }
+  /* line 568, app/assets/stylesheets/avendor.css.scss */
+  .header-main.shrink .navbar-nav > li > a {
+    line-height: 41px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  /* line 577, app/assets/stylesheets/avendor.css.scss */
+  .navbar-nav > li > a.current::before, .navbar-nav > li > a.current::after, .navbar-nav > li > a:hover::before, .navbar-nav > li > a:focus::before, .navbar-nav > li > a:hover::after, .navbar-nav > li > a:focus::after, .navbar-nav > li > a.highlighted:before, .navbar-nav > li > a.highlighted:after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+/* Mega Menu */
+/* line 585, app/assets/stylesheets/avendor.css.scss */
+.gfx-mega .nav, .gfx-mega .collapse, .gfx-mega .dropup, .gfx-mega .dropdown {
+  position: static;
+}
+
+/* line 588, app/assets/stylesheets/avendor.css.scss */
+.gfx-mega .container {
+  position: relative;
+}
+
+/* line 591, app/assets/stylesheets/avendor.css.scss */
+.gfx-mega .dropdown-menu {
+  left: auto;
+}
+
+/* line 594, app/assets/stylesheets/avendor.css.scss */
+.gfx-mega .nav.navbar-right .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+/* line 598, app/assets/stylesheets/avendor.css.scss */
+.gfx-mega .gfx-mega-content {
+  padding: 0px 15px;
+}
+
+/* line 601, app/assets/stylesheets/avendor.css.scss */
+.gfx-mega .dropdown.gfx-mega-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+  z-index: 9999;
+}
+
+/* Mega Menu Elements styling*/
+/* lists */
+/* line 609, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 614, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list > li {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* line 619, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list > li > a {
+  color: #32313b;
+  display: block;
+  padding: 10px;
+}
+
+/* line 624, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list > li.active > a {
+  color: #ffffff !important;
+}
+
+/* line 627, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list > li > a:hover, .mega-menu-list > li > a:focus {
+  background: #f2f2f2;
+}
+
+/* line 630, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list .title-header {
+  color: #778899;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* line 636, app/assets/stylesheets/avendor.css.scss */
+.gfx-nav h1, .gfx-nav h2, .gfx-nav h3, .gfx-nav h4, .gfx-nav h5, .gfx-nav h6 {
+  color: #778899;
+  padding: 10px 0;
+}
+
+/* dropdowns */
+/* line 641, app/assets/stylesheets/avendor.css.scss */
+.dropdown-menu {
+  background: #ffffff;
+  padding: 15px 0;
+  border: none;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(214, 224, 230, 0.6);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(214, 224, 230, 0.6);
+  box-shadow: 0px 3px 0px 0px rgba(214, 224, 230, 0.6);
+}
+
+/* line 649, app/assets/stylesheets/avendor.css.scss */
+.dropdown-menu > li > a {
+  color: #333;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+/* line 656, app/assets/stylesheets/avendor.css.scss */
+.dropdown-menu .divider {
+  background: #ececec;
+}
+
+/* line 661, app/assets/stylesheets/avendor.css.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #f2f2f2;
+}
+
+/*========== Slider Wrapper ==========*/
+/*========== Main Wrapper ==========*/
+/*========== Footer Wrapper ==========*/
+/*Footer Top*/
+/* line 671, app/assets/stylesheets/avendor.css.scss */
+.footer-top {
+  background: #32313b;
+}
+
+/* line 674, app/assets/stylesheets/avendor.css.scss */
+.footer-top h1, .footer-top h2, .footer-top h3, .footer-top h4, .footer-top h5, .footer-top h6 {
+  color: #fff;
+}
+
+/*Footer Middle*/
+/* line 678, app/assets/stylesheets/avendor.css.scss */
+.footer-middle {
+  color: #ffffff;
+  background: #25242c;
+  padding: 40px 0;
+  border-bottom: 1px solid #32313b;
+}
+
+/* line 684, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .footer-title {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* line 688, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-default {
+  margin-bottom: 0;
+}
+
+/* twitter footer */
+/* line 694, app/assets/stylesheets/avendor.css.scss */
+.footer-middle .footer-widget .tweet_list li {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 698, app/assets/stylesheets/avendor.css.scss */
+.footer-middle .footer-widget .tweet_list li:before {
+  content: '\f099';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+}
+
+/* line 707, app/assets/stylesheets/avendor.css.scss */
+.footer-middle .footer-widget .tweet_list li .tweet_time {
+  display: block;
+  text-align: right;
+  color: #778899;
+}
+
+/*Footer Bottom*/
+/* line 713, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom {
+  color: #778899;
+  background: #25242c;
+  padding: 40px 0;
+}
+
+/* line 718, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom a {
+  color: inherit;
+}
+
+/* line 723, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .menu-footer {
+  padding: 20px 0 10px;
+}
+
+/* line 726, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .menu-footer ul {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 730, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .menu-footer ul li {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* line 734, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .copyright {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 738, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .copyright p {
+  margin-bottom: 0;
+  line-height: 1.9;
+}
+
+/* line 742, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .social-footer {
+  padding: 10px 0 20px;
+}
+
+/* line 745, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .social-list {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 749, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .social-list li {
+  margin-left: 5px;
+}
+
+/* line 752, app/assets/stylesheets/avendor.css.scss */
+.footer-bottom .social-list li a {
+  display: block;
+  min-width: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/*===============================
+========== Typography ==========
+===============================*/
+/* line 761, app/assets/stylesheets/avendor.css.scss */
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 764, app/assets/stylesheets/avendor.css.scss */
+h1, h2, h3 {
+  color: #32313b;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+}
+
+/* line 771, app/assets/stylesheets/avendor.css.scss */
+h4, h5, h6 {
+  color: #32313b;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizelegibility;
+}
+
+/* line 778, app/assets/stylesheets/avendor.css.scss */
+h1 {
+  font-size: 58px;
+  margin-top: 0;
+  padding: 10px 10px;
+}
+
+/* line 783, app/assets/stylesheets/avendor.css.scss */
+h2 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+/* line 787, app/assets/stylesheets/avendor.css.scss */
+h3 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+/* line 791, app/assets/stylesheets/avendor.css.scss */
+h4 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+/* line 795, app/assets/stylesheets/avendor.css.scss */
+h5 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/* line 799, app/assets/stylesheets/avendor.css.scss */
+h6 {
+  margin-top: 0;
+}
+
+/* line 802, app/assets/stylesheets/avendor.css.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+  color: #778899;
+  font-weight: 300;
+}
+
+/* line 806, app/assets/stylesheets/avendor.css.scss */
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-rendering: optimizelegibility;
+}
+
+/* Lead Paragraph*/
+/* line 814, app/assets/stylesheets/avendor.css.scss */
+.lead {
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+/* line 819, app/assets/stylesheets/avendor.css.scss */
+.lead.lead-small {
+  font-size: 1.2em;
+}
+
+/* line 822, app/assets/stylesheets/avendor.css.scss */
+.lead.lead-big {
+  font-size: 2em;
+}
+
+/* Special Headings */
+/* line 826, app/assets/stylesheets/avendor.css.scss */
+.title-large {
+  font-size: 72px;
+}
+
+/* line 829, app/assets/stylesheets/avendor.css.scss */
+.title-medium {
+  font-size: 64px;
+}
+
+/* line 832, app/assets/stylesheets/avendor.css.scss */
+.script-font {
+  font-family: 'Playball', cursive !important;
+  letter-spacing: 0 !important;
+}
+
+/* Fancy Title */
+/* line 837, app/assets/stylesheets/avendor.css.scss */
+.fancy-title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* line 841, app/assets/stylesheets/avendor.css.scss */
+.fancy-title:after {
+  content: "";
+  background: #ececec;
+  display: block;
+  height: 1px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* line 850, app/assets/stylesheets/avendor.css.scss */
+.fancy-title span:after {
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 20px 0 -3px;
+  position: relative;
+  width: 10%;
+  z-index: 2;
+}
+
+/* line 859, app/assets/stylesheets/avendor.css.scss */
+.text-center.fancy-title:after {
+  content: "";
+  background: #ececec;
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  position: relative;
+  width: 30%;
+}
+
+/* line 868, app/assets/stylesheets/avendor.css.scss */
+.text-center.fancy-title span:after {
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 20px auto -3px;
+  position: relative;
+  width: 10%;
+}
+
+/* line 876, app/assets/stylesheets/avendor.css.scss */
+.text-right.fancy-title:after {
+  content: "";
+  background: #ececec;
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+/* line 885, app/assets/stylesheets/avendor.css.scss */
+.text-right.fancy-title span:after {
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 20px 0 -3px 90%;
+  position: relative;
+  width: 10%;
+}
+
+/* line 893, app/assets/stylesheets/avendor.css.scss */
+h5.fancy-title span:after, h6.fancy-title span:after {
+  margin-top: 10px !important;
+}
+
+/* line 896, app/assets/stylesheets/avendor.css.scss */
+h5.fancy-title, h6.fancy-title {
+  margin-bottom: 20px !important;
+}
+
+/* Font Weight */
+/* line 900, app/assets/stylesheets/avendor.css.scss */
+.xlight {
+  font-weight: 100 !important;
+}
+
+/* line 903, app/assets/stylesheets/avendor.css.scss */
+.light {
+  font-weight: 300 !important;
+}
+
+/* line 906, app/assets/stylesheets/avendor.css.scss */
+.bold {
+  font-weight: 500 !important;
+}
+
+/* line 909, app/assets/stylesheets/avendor.css.scss */
+.xbold {
+  font-weight: 900 !important;
+}
+
+/* Dropcaps */
+/* line 914, app/assets/stylesheets/avendor.css.scss */
+.firstletter {
+  float: left;
+  font-size: 2.4em;
+  line-height: 1.2;
+  margin-right: 0.3em;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+/* line 923, app/assets/stylesheets/avendor.css.scss */
+.drop-fullround .firstletter {
+  background-color: #848494;
+  float: left;
+  font-size: 2.4em;
+  line-height: 1.6;
+  margin-right: 0.3em;
+  margin-top: 0.1em;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 938, app/assets/stylesheets/avendor.css.scss */
+.drop-border .firstletter {
+  float: left;
+  font-size: 2.4em;
+  line-height: 1.6;
+  margin-right: 0.3em;
+  margin-top: 0.1em;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+/*===============================
+========== Revolution Slider ==========
+===============================*/
+/* line 956, app/assets/stylesheets/avendor.css.scss */
+.tp-loader {
+  z-index: 9999;
+}
+
+/* line 959, app/assets/stylesheets/avendor.css.scss */
+.tp-loader.spinner0 {
+  background-image: url(/assets/Revolutionslider/loader-77037c7f5944d54310efa3de13b7d443e34b32d97e3bc78438001915e9a6046d.gif) no-repeat center center;
+}
+
+/* line 962, app/assets/stylesheets/avendor.css.scss */
+.tp-banner-container {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  height: 300px !important;
+}
+
+/* line 968, app/assets/stylesheets/avendor.css.scss */
+.tp-banner {
+  width: 100%;
+  position: relative;
+}
+
+/* line 972, app/assets/stylesheets/avendor.css.scss */
+.tp-banner-fullscreen-container {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+/*===============================
+========== Team Members ==========
+===============================*/
+/* line 980, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper {
+  text-align: center;
+  margin-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 987, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 991, app/assets/stylesheets/avendor.css.scss */
+.team-member {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 995, app/assets/stylesheets/avendor.css.scss */
+.team-photo {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+/* line 1000, app/assets/stylesheets/avendor.css.scss */
+.team-details {
+  overflow: hidden;
+  position: absolute;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 1013, app/assets/stylesheets/avendor.css.scss */
+.team-contact {
+  padding: 10px 0;
+  background: #ffffff;
+}
+
+/* line 1017, app/assets/stylesheets/avendor.css.scss */
+.team-contact ul {
+  margin: 0;
+}
+
+/* line 1020, app/assets/stylesheets/avendor.css.scss */
+.team-contact ul li a {
+  padding: 5px;
+  display: block;
+  font-size: 16px;
+}
+
+/* line 1025, app/assets/stylesheets/avendor.css.scss */
+.team-description {
+  padding: 20px 10px;
+  height: 100%;
+  color: #ffffff;
+  background: #000;
+  /* fallback for browser that not support rgba */
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  /* Works on all modern browsers */
+}
+
+/* line 1033, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper.cardtoggle .team-details {
+  right: 0%;
+  top: 0;
+}
+
+/* line 1037, app/assets/stylesheets/avendor.css.scss */
+.team-info {
+  padding: 10px 5px;
+  background: #ffffff;
+}
+
+/* line 1041, app/assets/stylesheets/avendor.css.scss */
+.team-info .team-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* line 1045, app/assets/stylesheets/avendor.css.scss */
+.team-info .team-role {
+  margin: 0;
+}
+
+/* Alternative 1*/
+/* line 1049, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt {
+  cursor: default;
+}
+
+/* line 1052, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt .team-info {
+  background: none;
+}
+
+/* Alternative 1*/
+/* line 1056, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt .overlay-wrapper .overlay-details {
+  padding: 10px;
+  top: 10%;
+}
+
+/* line 1060, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt .overlay-wrapper:hover .overlay-details {
+  bottom: auto;
+  top: 10%;
+  z-index: 2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1070, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt:hover .overlay-wrapper .overlay-details {
+  bottom: auto;
+  top: 10%;
+  z-index: 2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1078, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt:hover .overlay-wrapper .overlay-wrapper-content {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+  backface-visibility: hidden;
+  /* W3C */
+  -webkit-backface-visibility: hidden;
+  /* Safari & Chrome */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+  -o-backface-visibility: hidden;
+  /* Opera */
+}
+
+/* line 1088, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt:hover .overlay-wrapper .overlay-bg {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 1095, app/assets/stylesheets/avendor.css.scss */
+.team-wrapper-alt .overlay-wrapper .overlay-details a {
+  margin-bottom: 10px;
+}
+
+/*===============================
+========== Elements ==========
+===============================*/
+/*========== Parallax ==========*/
+/* line 1104, app/assets/stylesheets/avendor.css.scss */
+.parallax {
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-background-size: cover !important;
+  /* For WebKit*/
+  -moz-background-size: cover !important;
+  /* Mozilla*/
+  -o-background-size: cover !important;
+  /* Opera*/
+  background-size: cover !important;
+  /* Generic*/
+}
+
+/* line 1114, app/assets/stylesheets/avendor.css.scss */
+.parallax-background1 {
+  background-image: url(/assets/parallax/parallax-back1-f7fda3e008bad69aa63b58614bff3988f7cec731caaa8815647ac6cdcbc2ed90.jpg);
+}
+
+/* line 1117, app/assets/stylesheets/avendor.css.scss */
+.parallax-background2 {
+  background-image: url(/assets/parallax/parallax-back2-052fc49ff24d20548244ed3d560e51e16348b088364e36b640e22a41580c3cdc.jpg);
+}
+
+/* line 1120, app/assets/stylesheets/avendor.css.scss */
+.parallax-background3 {
+  background-image: url(/assets/parallax/parallax-back3-8ef63cac0ff0b9c2688ed98becfd96403ba1f48d0da529c9bbd3f12931451023.jpg);
+}
+
+/* line 1123, app/assets/stylesheets/avendor.css.scss */
+.parallax-background4 {
+  background-image: url(/assets/parallax/parallax-back4-425d6f0bb5cdc1d34ef48cd38fb5aab4c4312d6ee56bd28f089407c33bab049b.jpg);
+}
+
+/* line 1126, app/assets/stylesheets/avendor.css.scss */
+.parallax-background5 {
+  background-image: url(/assets/parallax/parallax-back5-511386b3547a209f3d5eae65959a83c5a05fa7ecdc916d5b36f4b62e48cd7412.jpg);
+}
+
+/* line 1129, app/assets/stylesheets/avendor.css.scss */
+.parallax-background6 {
+  background-image: url(/assets/parallax/parallax-back6-730346f98785439f0f6faf28f8ae2bf0efaf254c97ea423975164bf92c7debcc.jpg);
+}
+
+/* line 1132, app/assets/stylesheets/avendor.css.scss */
+.parallax-background7 {
+  background-image: url(/assets/parallax/parallax-back7-69a321199737d7251f0f2e9816aa2d1125a842a1462f0ca13b911259141e8a5a.jpg);
+}
+
+/* line 1135, app/assets/stylesheets/avendor.css.scss */
+.parallax-background8 {
+  background-image: url(/assets/parallax/parallax-back8-2234cd054429b92926824647de68e4ad9ecdd86376a5f7a3dbd7fc2bbc33f2ff.jpg);
+}
+
+/* line 1138, app/assets/stylesheets/avendor.css.scss */
+.parallax-background9 {
+  background-image: url(/assets/parallax/parallax-back9-e8cd76f056901aae3af70a658fcd18ac17bfa633a2f8fa5dc6c41b2b4587ffa8.jpg);
+}
+
+/* line 1141, app/assets/stylesheets/avendor.css.scss */
+.parallax-background10 {
+  background-image: url(/assets/parallax/parallax-back10-e3069cc919c45f6eca9acd92911ee9818a289c07f3702b9dc6d6850c0c994bc5.jpg);
+}
+
+/* line 1144, app/assets/stylesheets/avendor.css.scss */
+.parallax-background11 {
+  background-image: url(/assets/parallax/parallax-back11-b0d3c9538390e1db4d954b72eed92e6bc3cb76ffb0d21022a5c468720969e1ee.jpg);
+}
+
+/* line 1147, app/assets/stylesheets/avendor.css.scss */
+.parallax-background12 {
+  background-image: url(/assets/parallax/parallax-back12-af62f0b654f9d61bb7da5b5179d9cb20d07ce93472ec50c0c79540c351ec8a78.jpg);
+}
+
+/* line 1150, app/assets/stylesheets/avendor.css.scss */
+.parallax-background13 {
+  background-image: url(/assets/parallax/parallax-back13-a936c25bbdd5c56a6edf807556155f6e32e8acce18133568cad2924dbcc576c5.jpg);
+}
+
+/* line 1153, app/assets/stylesheets/avendor.css.scss */
+.parallax-background14 {
+  background-image: url(/assets/parallax/parallax-back14-0e27abb49d7c83740df6a77bf3cbe489c32a178e60b45c615f8f83a1727151bd.jpg);
+}
+
+/* line 1156, app/assets/stylesheets/avendor.css.scss */
+.parallax-background15 {
+  background-image: url(/assets/parallax/parallax-back15-2224d4d9b3d2203b58c6a2e020b43f76fb069e3afc4765668c19301857818862.jpg);
+}
+
+/* line 1159, app/assets/stylesheets/avendor.css.scss */
+.parallax-background16 {
+  background-image: url(/assets/parallax/parallax-back16-b039da3d5eb1342f8ff8bfd6971f66ad346a50123f454ba7d3d4fa11521aab50.jpg);
+}
+
+/* line 1162, app/assets/stylesheets/avendor.css.scss */
+.parallax-background-hike {
+  background-image: url(/assets/parallax/parallax-hike-4c0b179c1ab1f9d8ac46482662d29c0b46adf432011ad23ad6f1390601734c9c.png);
+}
+
+/* line 1165, app/assets/stylesheets/avendor.css.scss */
+.parallax-background-tucks {
+  background-image: url(/assets/parallax/parallax-tucks-3-f5f5dd492f2dae67f21fe5eee8ae149aead2c0e3b765b64ca833e840eb9f2be5.png);
+}
+
+/* line 1168, app/assets/stylesheets/avendor.css.scss */
+.parallax-background-summit {
+  background-image: url(/assets/parallax/parallax-summit-sign-ed9038b6ae4911cab638460b16fe013a344667f3afbbdcc8a77f494da2995baf.png);
+}
+
+/* line 1171, app/assets/stylesheets/avendor.css.scss */
+.parallax-background-dropin {
+  background-image: url(/assets/parallax/parallax-dropin-e0926f9b94b622eeef1c4e0954ba34651477f9072bedecb4d75f0f9be22edee3.jpg);
+}
+
+/* line 1174, app/assets/stylesheets/avendor.css.scss */
+.parallax-background-fields {
+  background-image: url(/assets/parallax/parallax-field-snow-2-be363d1c8cc61ba8f233324527b6a8504b4a8fa439dae072eb7d61383b247e5b.jpg);
+}
+
+/* line 1177, app/assets/stylesheets/avendor.css.scss */
+.parallax-breadcrumbs {
+  background-image: url(/assets/parallax/parallax-breadcrumbs-f4f3f33385b8ecc7c28011c6e67ec91d26fa9ac936e46ee6072b4730a89f7a64.jpg);
+}
+
+/* line 1180, app/assets/stylesheets/avendor.css.scss */
+.parallax-blog {
+  background-image: url(/assets/parallax/parallax-blog-bef6bfacd1566bdd651d242eac07d5e63ea466dbc659a99dd3fe21c0fa56551a.jpg);
+}
+
+/* line 1183, app/assets/stylesheets/avendor.css.scss */
+.parallax-about {
+  background-image: url(/assets/parallax/parallax-about-40982e2a52f990c718040b9d6be6d139c0d337f7333185bd13c32cfccf681300.jpg);
+}
+
+/* line 1186, app/assets/stylesheets/avendor.css.scss */
+.parallax-services {
+  background-image: url(/assets/parallax/parallax-services-376035efc3a26fe32f1484dcb2233bf2286805e91ea88458d1358e4b0fc12c1e.jpg);
+}
+
+/* line 1189, app/assets/stylesheets/avendor.css.scss */
+.parallax-team {
+  background-image: url(/assets/parallax/parallax-team-4be795c766ad50577a48efd1fa900aee7dd903cbef9ea45184ea4b34a67c3248.jpg);
+}
+
+/* line 1192, app/assets/stylesheets/avendor.css.scss */
+.parallax-landing {
+  background-image: url(/assets/parallax/parallax-landing-fe8db132c359f9427e43c046814b878d18b9974e4ef3595f92fa2bbf90558faf.jpg);
+}
+
+/* line 1195, app/assets/stylesheets/avendor.css.scss */
+.parallax-404 {
+  background-image: url(/assets/parallax/parallax-404-76688ea1ee365413c824dd74ed31151933d7241377c16c9420371e8812ddc406.jpg);
+}
+
+/* line 1198, app/assets/stylesheets/avendor.css.scss */
+.parallax-search {
+  background-image: url(/assets/parallax/parallax-search-35a2281b4fae7c496ef57d745cd875d99a33606f659c5a7028a324c78d7d91bd.jpg);
+}
+
+/* line 1201, app/assets/stylesheets/avendor.css.scss */
+.parallax-shop {
+  background-image: url(/assets/parallax/parallax-shop-cc97eabd006d4d3e150f49275df80fa2eca12c448fb81ec76dca2c91f3ea6163.jpg);
+}
+
+/* line 1204, app/assets/stylesheets/avendor.css.scss */
+.parallax-portfolio {
+  background-image: url(/assets/parallax/parallax-portfolio-deb7481b62a9962decc10b9e083b1bcd5f7d7c1a30e3a8b1814c86c317610a42.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 1208, app/assets/stylesheets/avendor.css.scss */
+  .parallax {
+    background-position: 50% 50% !important;
+    background-attachment: scroll;
+  }
+}
+
+/* Background Overlay*/
+/* line 1214, app/assets/stylesheets/avendor.css.scss */
+.bg-overlay {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  /* Safari 1.x */
+  -khtml-opacity: 0.6;
+  /* Modern browsers */
+  opacity: 0.6;
+}
+
+/* line 1225, app/assets/stylesheets/avendor.css.scss */
+.bg-overlay-solid {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1230, app/assets/stylesheets/avendor.css.scss */
+.bg-overlay.bg-overlay-light {
+  background: #f4f4f4;
+}
+
+/* line 1233, app/assets/stylesheets/avendor.css.scss */
+.bg-overlay.bg-overlay-glight {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(50%, rgba(255, 255, 255, 0.6)), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, white 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, white 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#ffffff', GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1245, app/assets/stylesheets/avendor.css.scss */
+.bg-overlay.bg-overlay-dark {
+  background: #000;
+}
+
+/* line 1248, app/assets/stylesheets/avendor.css.scss */
+.bg-overlay.bg-overlay-gdark {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(37, 36, 44, 0.5) 0%, rgba(37, 36, 44, 0.75) 50%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(37, 36, 44, 0.5)), color-stop(50%, rgba(37, 36, 44, 0.75)), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(37, 36, 44, 0.5) 0%, rgba(37, 36, 44, 0.75) 50%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(37, 36, 44, 0.5) 0%, rgba(37, 36, 44, 0.75) 50%, black 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(37, 36, 44, 0.5) 0%, rgba(37, 36, 44, 0.75) 50%, black 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(37, 36, 44, 0.5) 0%, rgba(37, 36, 44, 0.75) 50%, black 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8025242c', endColorstr='#000000', GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/*========== Portfolio ==========*/
+/* line 1262, app/assets/stylesheets/avendor.css.scss */
+.isotope-item {
+  z-index: 2;
+}
+
+/* line 1265, app/assets/stylesheets/avendor.css.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* line 1269, app/assets/stylesheets/avendor.css.scss */
+.isotope, .isotope .isotope-item {
+  -webkit-transition-duration: 1200ms;
+  -moz-transition-duration: 1200ms;
+  -ms-transition-duration: 1200ms;
+  -o-transition-duration: 1200ms;
+  transition-duration: 1200ms;
+}
+
+/* line 1276, app/assets/stylesheets/avendor.css.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 1283, app/assets/stylesheets/avendor.css.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/* line 1290, app/assets/stylesheets/avendor.css.scss */
+ul#filters {
+  list-style: none;
+  margin: 0 auto 40px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+
+/* line 1298, app/assets/stylesheets/avendor.css.scss */
+ul#filters li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 1304, app/assets/stylesheets/avendor.css.scss */
+ul#filters li a.filter {
+  padding: 8px 15px;
+  color: #ccc;
+  background: none;
+  border: 1px solid #ececec;
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 1313, app/assets/stylesheets/avendor.css.scss */
+ul#filters li a.filter.selected {
+  color: #fff;
+}
+
+/* line 1320, app/assets/stylesheets/avendor.css.scss */
+.element img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 1324, app/assets/stylesheets/avendor.css.scss */
+.portfolio-classic .element-inner {
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+/* Start Columns */
+/* line 1329, app/assets/stylesheets/avendor.css.scss */
+.portfolio-1-cols .element {
+  width: 100%;
+}
+
+/* line 1332, app/assets/stylesheets/avendor.css.scss */
+.portfolio-2-cols .element {
+  width: 50%;
+}
+
+/* line 1335, app/assets/stylesheets/avendor.css.scss */
+.portfolio-3-cols .element {
+  width: 33.3333%;
+}
+
+/* line 1338, app/assets/stylesheets/avendor.css.scss */
+.portfolio-4-cols .element {
+  width: 25%;
+}
+
+/* line 1341, app/assets/stylesheets/avendor.css.scss */
+.portfolio-6-cols .element {
+  width: 16.6667%;
+}
+
+/* line 1344, app/assets/stylesheets/avendor.css.scss */
+.portfolio-2-cols .element.size-2x {
+  width: 100%;
+}
+
+/* line 1347, app/assets/stylesheets/avendor.css.scss */
+.portfolio-3-cols .element.size-2x {
+  width: 66.60%;
+}
+
+/* line 1350, app/assets/stylesheets/avendor.css.scss */
+.portfolio-4-cols .element.size-2x {
+  width: 50%;
+}
+
+/* line 1353, app/assets/stylesheets/avendor.css.scss */
+.portfolio-6-cols .element.size-2x {
+  width: 33.3333%;
+}
+
+/* line 1356, app/assets/stylesheets/avendor.css.scss */
+.portfolio-2-cols .element.size-3x {
+  width: 100%;
+}
+
+/* line 1359, app/assets/stylesheets/avendor.css.scss */
+.portfolio-3-cols .element.size-3x {
+  width: 100%;
+}
+
+/* line 1362, app/assets/stylesheets/avendor.css.scss */
+.portfolio-4-cols .element.size-3x {
+  width: 75%;
+}
+
+/* line 1365, app/assets/stylesheets/avendor.css.scss */
+.portfolio-6-cols .element.size-3x {
+  width: 50%;
+}
+
+/* line 1368, app/assets/stylesheets/avendor.css.scss */
+.element.size-full {
+  width: 100%;
+}
+
+/* End Columns */
+@media only screen and (max-width: 980px) {
+  /* line 1376, app/assets/stylesheets/avendor.css.scss */
+  .element, .portfolio-1-cols .element, .portfolio-2-cols .element, .portfolio-3-cols .element, .portfolio-4-cols .element, .portfolio-6-cols .element, .portfolio-12-cols .element, .portfolio-2-cols .element.size-2x, .portfolio-3-cols .element.size-2x, .portfolio-4-cols .element.size-2x, .portfolio-6-cols .element.size-2x {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 1381, app/assets/stylesheets/avendor.css.scss */
+  .element, .portfolio-1-cols .element, .portfolio-2-cols .element, .portfolio-3-cols .element, .portfolio-4-cols .element, .portfolio-6-cols .element, .portfolio-12-cols .element, .portfolio-2-cols .element.size-2x, .portfolio-3-cols .element.size-2x, .portfolio-4-cols .element.size-2x, .portfolio-6-cols .element.size-2x {
+    width: 100%;
+  }
+}
+
+/* Colio - Basic Styles */
+/* line 1386, app/assets/stylesheets/avendor.css.scss */
+.colio {
+  position: relative;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* line 1393, app/assets/stylesheets/avendor.css.scss */
+.colio-container {
+  padding: 40px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1400, app/assets/stylesheets/avendor.css.scss */
+.colio-content {
+  display: none;
+  overflow: hidden;
+}
+
+/* line 1404, app/assets/stylesheets/avendor.css.scss */
+.colio-close, .colio-prev, .colio-next {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 1408, app/assets/stylesheets/avendor.css.scss */
+.colio-no-prev, .colio-no-next {
+  cursor: pointer;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;
+}
+
+/* navigation, close */
+/* line 1416, app/assets/stylesheets/avendor.css.scss */
+.colio-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* line 1421, app/assets/stylesheets/avendor.css.scss */
+.colio-navigation {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* line 1426, app/assets/stylesheets/avendor.css.scss */
+.colio-navigation a {
+  margin-right: 5px;
+}
+
+/* placement */
+/* line 1430, app/assets/stylesheets/avendor.css.scss */
+.colio-placement-inside, .colio-placement-before {
+  margin-bottom: 20px;
+}
+
+/* line 1433, app/assets/stylesheets/avendor.css.scss */
+.colio-placement-after {
+  margin: 0px;
+}
+
+/* Colio GFX Theme Style */
+/* container */
+/* colio close */
+/* line 1442, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-close span {
+  display: block;
+  font-size: 28px;
+  line-height: 1.7;
+}
+
+/* line 1447, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-close {
+  position: absolute;
+  color: #ffffff;
+  height: 50px;
+  margin-right: -25px;
+  right: 50%;
+  text-align: center;
+  top: 25px;
+  width: 50px;
+}
+
+/* line 1457, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-close:hover {
+  color: #ffffff;
+  background: #32313B;
+}
+
+/* line 1461, app/assets/stylesheets/avendor.css.scss */
+.colio-container {
+  padding: 100px 0px;
+}
+
+/* colio navigation */
+/* line 1465, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-navigation span {
+  display: block;
+  font-size: 28px;
+  line-height: 1.7;
+}
+
+/* line 1470, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-navigation {
+  top: auto;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -55px;
+}
+
+/* line 1476, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-navigation a {
+  float: left;
+  margin-right: 5px;
+  color: #ffffff;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+/* line 1484, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-navigation a:hover {
+  color: #ffffff;
+  background: #32313B;
+}
+
+/* line 1488, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-prev span:before {
+  content: '\f053';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+}
+
+/* line 1493, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-next span:before {
+  content: '\f054';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+}
+
+/* line 1498, app/assets/stylesheets/avendor.css.scss */
+.colio-theme-gfx .colio-no-prev, .colio-theme-gfx .colio-no-next {
+  color: #ffffff;
+  background: #f2f2f2;
+}
+
+/* Portfolio Element */
+/* Project Item */
+/* line 1504, app/assets/stylesheets/avendor.css.scss */
+.portfolio-item .project-meta {
+  padding: 10px;
+}
+
+/* line 1507, app/assets/stylesheets/avendor.css.scss */
+.portfolio-item-content {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+/* line 1511, app/assets/stylesheets/avendor.css.scss */
+.portfolio-item-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 1515, app/assets/stylesheets/avendor.css.scss */
+.portfolio-item-content p {
+  margin-bottom: 0;
+}
+
+/* line 1518, app/assets/stylesheets/avendor.css.scss */
+.portfolio-item-content.panel {
+  margin-top: -4px;
+  padding: 20px 10px;
+}
+
+/*========== Carousel ==========*/
+/* line 1523, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-item .carousel-item {
+  margin: 0px;
+}
+
+/* line 1526, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls {
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+/* line 1530, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 0px;
+  padding: 5px 15px;
+  font-size: 24px;
+  position: absolute;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 1545, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-buttons .owl-prev {
+  top: 40%;
+  left: 0px;
+}
+
+/* line 1549, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-buttons .owl-next {
+  top: 40%;
+  right: 0px;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* line 1555, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+/* line 1561, app/assets/stylesheets/avendor.css.scss */
+.owl-pagination {
+  margin-top: 10px;
+}
+
+/* line 1564, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+
+/* line 1569, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-page span {
+  display: block;
+  width: 24px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  margin: 5px 4px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+
+/* line 1578, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-page.active span, .carousel .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+
+/* line 1582, app/assets/stylesheets/avendor.css.scss */
+.carousel .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+/* preloading images */
+/* line 1590, app/assets/stylesheets/avendor.css.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background-image: url(/assets/AjaxLoader-aedb9e1903494df6b202bed780aa3905b79233e2d14a7fdff79e5daa46497175.gif) no-repeat center center;
+}
+
+/* mouse grab icon */
+/* line 1595, app/assets/stylesheets/avendor.css.scss */
+.grabbing {
+  cursor: url(/assets/grabbing-ee1b8a651d43f07f2c61f5097ba384132d61d3909612d9c08a60b5e1f8ab7d89.png) 8 8, move;
+}
+
+/* line 1598, app/assets/stylesheets/avendor.css.scss */
+.owl-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Carousel Theme */
+/* line 1603, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-theme-round .owl-controls .owl-buttons div {
+  background: none;
+  border: 2px solid #ececec;
+  color: #ececec;
+  padding: 5px 18px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 1612, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-theme-round .owl-controls .owl-page span {
+  height: 14px;
+  width: 14px;
+  background: none;
+  border: 2px solid #ececec;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 1621, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-theme-round .owl-controls .owl-buttons .owl-prev {
+  left: 10px;
+}
+
+/* line 1624, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-theme-round .owl-controls .owl-buttons .owl-next {
+  right: 10px;
+}
+
+/* line 1627, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-theme-round.carousel-nav-out .owl-controls .owl-buttons .owl-prev {
+  left: -50px;
+}
+
+/* line 1630, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-theme-round.carousel-nav-out .owl-controls .owl-buttons .owl-next {
+  right: -50px;
+}
+
+@media (max-width: 768px) {
+  /* line 1634, app/assets/stylesheets/avendor.css.scss */
+  .carousel.carousel-theme-round.carousel-nav-out .owl-controls .owl-buttons .owl-prev {
+    left: 10px;
+  }
+  /* line 1637, app/assets/stylesheets/avendor.css.scss */
+  .carousel.carousel-theme-round.carousel-nav-out .owl-controls .owl-buttons .owl-next {
+    right: 10px;
+  }
+}
+
+/* Carousel*/
+/* line 1642, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-simple .owl-item .carousel-item {
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+
+/* line 1646, app/assets/stylesheets/avendor.css.scss */
+.carousel.carousel-simple .carousel.carousel-default .owl-item .carousel-item {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/* Sync Carousel */
+/* line 1651, app/assets/stylesheets/avendor.css.scss */
+#full-sync .item {
+  text-align: center;
+}
+
+/* line 1654, app/assets/stylesheets/avendor.css.scss */
+#full-sync .item img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 1658, app/assets/stylesheets/avendor.css.scss */
+#thumb-sync .item {
+  cursor: pointer;
+  max-height: 140px;
+}
+
+/* line 1662, app/assets/stylesheets/avendor.css.scss */
+#thumb-sync .item img {
+  width: 100%;
+  height: auto;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+  /* Modern browsers */
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 1674, app/assets/stylesheets/avendor.css.scss */
+#thumb-sync .item:hover img {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1679, app/assets/stylesheets/avendor.css.scss */
+#thumb-sync .item h1 {
+  font-size: 18px;
+}
+
+/*========== Counters ==========*/
+/* line 1683, app/assets/stylesheets/avendor.css.scss */
+.counter-block {
+  padding: 20px 10px;
+  border: 2px dotted #ececec;
+  margin-bottom: 40px;
+}
+
+/* line 1688, app/assets/stylesheets/avendor.css.scss */
+.timer {
+  margin-bottom: 20px;
+}
+
+/*========== Testimonials ==========*/
+/* line 1692, app/assets/stylesheets/avendor.css.scss */
+.testimonials {
+  margin: 0;
+}
+
+/* line 1697, app/assets/stylesheets/avendor.css.scss */
+.testimonial-item blockquote {
+  margin: 0;
+}
+
+/* line 1700, app/assets/stylesheets/avendor.css.scss */
+.testimonial-item blockquote p {
+  font-style: italic;
+}
+
+/* Blockquote */
+/* line 1704, app/assets/stylesheets/avendor.css.scss */
+blockquote {
+  border: none;
+}
+
+/* line 1707, app/assets/stylesheets/avendor.css.scss */
+blockquote:before {
+  content: '\f10e';
+  font-family: 'FontAwesome';
+  top: 0;
+  font-size: 2em;
+  color: #ececec;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  /* Safari 1.x */
+  -khtml-opacity: 0.6;
+  /* Modern browsers */
+  opacity: 0.6;
+}
+
+/* line 1717, app/assets/stylesheets/avendor.css.scss */
+blockquote footer:before, blockquote small:before, blockquote .small:before {
+  content: "";
+}
+
+/* line 1720, app/assets/stylesheets/avendor.css.scss */
+blockquote footer, blockquote small, blockquote .small {
+  font-weight: 600;
+}
+
+/* line 1723, app/assets/stylesheets/avendor.css.scss */
+blockquote cite {
+  font-weight: 300;
+}
+
+/*========== Simple Slider ==========*/
+/*========== Twitter ==========*/
+/*twitter carousel*/
+/* line 1732, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel {
+  text-align: center;
+}
+
+/* line 1735, app/assets/stylesheets/avendor.css.scss */
+.tweet_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 1740, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel .twitterfeed .tweet_text {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+/* line 1744, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel .twitterfeed .tweet_time {
+  display: block;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* line 1749, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel .twitterfeed .tweet_avatar {
+  display: inline-block;
+  margin: 10px auto 0;
+}
+
+/* line 1753, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel .twitterfeed .owl-item {
+  padding: 0 40px;
+}
+
+/* line 1756, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel .carousel .owl-controls .owl-buttons .owl-prev {
+  top: 30%;
+}
+
+/* line 1759, app/assets/stylesheets/avendor.css.scss */
+.twitter-carousel .carousel .owl-controls .owl-buttons .owl-next {
+  top: 30%;
+}
+
+/* twitter widget*/
+/* line 1765, app/assets/stylesheets/avendor.css.scss */
+.twitter .tweet_list li {
+  margin-bottom: 20px;
+}
+
+/* line 1768, app/assets/stylesheets/avendor.css.scss */
+.twitter .tweet_list .tweet_avatar {
+  display: block;
+  float: left;
+  margin: 10px;
+  max-width: 48px;
+  text-align: center;
+}
+
+/* line 1775, app/assets/stylesheets/avendor.css.scss */
+.twitter .tweet_list .tweet_avatar img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 1780, app/assets/stylesheets/avendor.css.scss */
+.twitter .tweet_list .tweet_text {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ececec;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 1788, app/assets/stylesheets/avendor.css.scss */
+.twitter .tweet_list .tweet_time {
+  display: block;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+/*========== Images ==========*/
+/* line 1797, app/assets/stylesheets/avendor.css.scss */
+.thumbnail {
+  border: 1px solid #ececec;
+  padding: 8px;
+}
+
+/* line 1801, app/assets/stylesheets/avendor.css.scss */
+.img-thumbnail {
+  border: 1px solid #ececec;
+  padding: 8px;
+}
+
+/* line 1805, app/assets/stylesheets/avendor.css.scss */
+.img-rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* Align*/
+/* line 1811, app/assets/stylesheets/avendor.css.scss */
+.alignleft {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+/* line 1815, app/assets/stylesheets/avendor.css.scss */
+.alignright {
+  float: right;
+  margin: 0 0 10px 20px;
+}
+
+/* line 1819, app/assets/stylesheets/avendor.css.scss */
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* line 1824, app/assets/stylesheets/avendor.css.scss */
+.alignnone {
+  float: none;
+  margin: 0 auto;
+}
+
+/* List Images */
+/* line 1829, app/assets/stylesheets/avendor.css.scss */
+ul.gallery {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1835, app/assets/stylesheets/avendor.css.scss */
+ul.gallery li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1840, app/assets/stylesheets/avendor.css.scss */
+ul.gallery li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* class for 2 columns */
+/* line 1845, app/assets/stylesheets/avendor.css.scss */
+ul.gallery.columns-2 li {
+  width: 50%;
+}
+
+/* class for 3 columns */
+/* line 1849, app/assets/stylesheets/avendor.css.scss */
+ul.gallery.columns-3 li {
+  width: 33.3%;
+}
+
+/* Overlay Image */
+/* line 1853, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 1857, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/* line 1866, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper .project-meta {
+  padding: 10px;
+}
+
+/* overlay */
+/* line 1870, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper .overlay-details {
+  display: block;
+  color: #ffffff;
+  position: absolute;
+  right: 0px;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Modern browsers */
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+/* line 1887, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper-content {
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1895, app/assets/stylesheets/avendor.css.scss */
+.overlay-bg {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  /* Safari 1.x */
+  -khtml-opacity: 0.8;
+  /* Modern browsers */
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 1916, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper:hover .overlay-wrapper-content, .overlay-wrapper:focus .overlay-wrapper-content {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+  backface-visibility: hidden;
+  /* W3C */
+  -webkit-backface-visibility: hidden;
+  /* Safari & Chrome */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+  -o-backface-visibility: hidden;
+  /* Opera */
+}
+
+/* line 1926, app/assets/stylesheets/avendor.css.scss */
+.overlay-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100%;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  z-index: 3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Modern browsers */
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/* line 1943, app/assets/stylesheets/avendor.css.scss */
+.overlay-title h2, .overlay-title h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+/* line 1953, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper:hover .overlay-title {
+  position: absolute;
+  top: 5px;
+  border: 2px solid #ffffff;
+  z-index: 3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1962, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper:hover .overlay-bg, .overlay-wrapper:focus .overlay-bg {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 1969, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper:hover .overlay-details, .overlay-wrapper:focus .overlay-details {
+  bottom: 40%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 1975, app/assets/stylesheets/avendor.css.scss */
+.overlay-details a {
+  color: #ffffff;
+  font-size: 22px;
+  border: 2px solid;
+  width: 48px;
+  height: 48px;
+  margin-left: 10px;
+  line-height: 1.8;
+  display: inline-block;
+}
+
+/* line 1985, app/assets/stylesheets/avendor.css.scss */
+.overlay-details a span.fa {
+  line-height: 2;
+}
+
+/* line 1988, app/assets/stylesheets/avendor.css.scss */
+.overlay-details a [class^="gfx-"]:before, .overlay-details a [class*=" gfx-"]:before {
+  top: 0;
+}
+
+/* line 1991, app/assets/stylesheets/avendor.css.scss */
+.overlay-details:hover, .overlay-details:focus {
+  color: #ffffff;
+}
+
+/* transparency */
+/* line 1995, app/assets/stylesheets/avendor.css.scss */
+.img-transparency {
+  width: 100%;
+  height: auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  /* Safari 1.x */
+  -khtml-opacity: 0.4;
+  /* Modern browsers */
+  opacity: 0.4;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/* line 2007, app/assets/stylesheets/avendor.css.scss */
+.img-transparency:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+  backface-visibility: hidden;
+  /* W3C */
+  -webkit-backface-visibility: hidden;
+  /* Safari & Chrome */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+  -o-backface-visibility: hidden;
+  /* Opera */
+}
+
+/* line 2017, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper:hover .img-transparency, .overlay-wrapper:focus .img-transparency {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+  backface-visibility: hidden;
+  /* W3C */
+  -webkit-backface-visibility: hidden;
+  /* Safari & Chrome */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+  -o-backface-visibility: hidden;
+  /* Opera */
+}
+
+/* zoom */
+/* line 2028, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper .img-zoom {
+  width: 100%;
+  height: auto;
+}
+
+/* line 2032, app/assets/stylesheets/avendor.css.scss */
+.overlay-wrapper:hover .img-zoom, .overlay-wrapper:focus .img-zoom {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/*========== Tooltips ==========*/
+/* line 2045, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip {
+  position: absolute;
+  z-index: 9999;
+  display: block;
+  visibility: visible;
+  font-size: 13px;
+}
+
+/* line 2052, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip-inner {
+  padding: 15px 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 2061, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.bl, .o-tooltip.bc, .o-tooltip.br {
+  margin-top: -12px;
+}
+
+/* line 2064, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.ml {
+  margin-left: 12px;
+}
+
+/* line 2067, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.tl, .o-tooltip.tc, .o-tooltip.tl, .o-tooltip.tr {
+  margin-top: 12px;
+}
+
+/* line 2070, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.mr {
+  margin-left: -12px;
+}
+
+/* line 2073, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.bc .o-tooltip-arrow {
+  left: 50%;
+  margin-left: -12px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid;
+}
+
+/* line 2080, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.mr .o-tooltip-arrow {
+  top: 50%;
+  right: -12px;
+  margin-top: -12px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid;
+}
+
+/* line 2088, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.tc .o-tooltip-arrow {
+  left: 50%;
+  margin-left: -12px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid;
+}
+
+/* line 2095, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.ml .o-tooltip-arrow {
+  top: 50%;
+  left: -12px;
+  margin-top: -12px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid;
+}
+
+/* line 2103, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.tl .o-tooltip-arrow {
+  left: 0;
+  border-top: 12px solid rgba(0, 0, 0, 0);
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid;
+}
+
+/* line 2109, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.bl .o-tooltip-arrow {
+  left: 0;
+  border-top: 12px solid rgba(0, 0, 0, 0);
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid;
+}
+
+/* line 2115, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.tr .o-tooltip-arrow {
+  right: 0;
+  border-top: 12px solid rgba(0, 0, 0, 0);
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid;
+}
+
+/* line 2121, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.br .o-tooltip-arrow {
+  top: 100%;
+  right: 0;
+  margin-top: -13px;
+  border-top: 12px solid rgba(0, 0, 0, 0);
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid;
+}
+
+/* Tooltip arrow bottom */
+/* line 2130, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.bl .o-tooltip-arrow, .o-tooltip.bc .o-tooltip-arrow, .o-tooltip.br .o-tooltip-arrow {
+  bottom: -11px;
+}
+
+/* Tooltip arrow top */
+/* line 2134, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.tl .o-tooltip-arrow, .o-tooltip.tc .o-tooltip-arrow, .o-tooltip.tr .o-tooltip-arrow {
+  top: -12px;
+}
+
+/* line 2137, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 2142, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip-close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #137861;
+  cursor: pointer;
+  left: 100%;
+  margin-left: -15px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomleft: 2px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 2px;
+}
+
+/* line 2157, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip-close span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  line-height: 4px;
+  font-size: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -4px 0 0 -2px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/* line 2170, app/assets/stylesheets/avendor.css.scss */
+.o-tooltip.mr .o-tooltip-close, .o-tooltip.tr .o-tooltip-close {
+  left: 0px;
+  margin: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 1px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomright: 1px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 1px;
+}
+
+/*========== Lists ==========*/
+/* line 2183, app/assets/stylesheets/avendor.css.scss */
+.list-default li {
+  padding: 4px 0;
+  line-height: 2;
+}
+
+/* line 2187, app/assets/stylesheets/avendor.css.scss */
+.list-default.fa-ul li .fa {
+  line-height: 2.2;
+}
+
+/* line 2190, app/assets/stylesheets/avendor.css.scss */
+.list-default.fa-ul li .icon {
+  line-height: 2.2;
+}
+
+/* line 2193, app/assets/stylesheets/avendor.css.scss */
+.list-default.fa-ul li .livicon {
+  margin-left: -2.14286em;
+  width: 2.14286em !important;
+}
+
+/* Icon Lists */
+/* line 2198, app/assets/stylesheets/avendor.css.scss */
+.fa-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Divider List */
+/* line 2207, app/assets/stylesheets/avendor.css.scss */
+.divider-list li {
+  padding: 10px 0;
+  border-top: 1px solid #ececec;
+}
+
+/* line 2211, app/assets/stylesheets/avendor.css.scss */
+.divider-list li .fa {
+  padding: 8px 0;
+}
+
+/* line 2214, app/assets/stylesheets/avendor.css.scss */
+.divider-list li .icon {
+  padding: 8px 0;
+}
+
+/* line 2217, app/assets/stylesheets/avendor.css.scss */
+.divider-list li:first-child {
+  border-top: none;
+}
+
+/* Big-list */
+/* line 2221, app/assets/stylesheets/avendor.css.scss */
+.biglist li {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+/* line 2225, app/assets/stylesheets/avendor.css.scss */
+.biglist li .fa {
+  padding: 5px 0;
+}
+
+/* line 2228, app/assets/stylesheets/avendor.css.scss */
+.biglist li .icon {
+  padding: 5px 0;
+}
+
+/* Widget List */
+/* line 2234, app/assets/stylesheets/avendor.css.scss */
+.widget-list li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* line 2238, app/assets/stylesheets/avendor.css.scss */
+.widget-list li .fa {
+  border: 1px solid;
+  height: 1.2em;
+  width: 1.2em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* Recent Posts */
+/* line 2247, app/assets/stylesheets/avendor.css.scss */
+.recent-post {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2252, app/assets/stylesheets/avendor.css.scss */
+.recent-post li {
+  margin-bottom: 20px;
+  display: table;
+  width: 100%;
+}
+
+/* line 2257, app/assets/stylesheets/avendor.css.scss */
+.recent-post li a {
+  font-weight: 500;
+  color: #32313b;
+}
+
+/* line 2261, app/assets/stylesheets/avendor.css.scss */
+.recent-post li img {
+  max-width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 2266, app/assets/stylesheets/avendor.css.scss */
+.recent-post li .rating {
+  text-align: left;
+  position: relative;
+  background: none;
+  top: 0;
+  bottom: 0;
+}
+
+/* Media Lists */
+/* line 2274, app/assets/stylesheets/avendor.css.scss */
+.media, .media .media {
+  margin-top: 30px;
+}
+
+/* List Footer Latest */
+/* line 2278, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-latest {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2283, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-latest li {
+  padding: 4px 0;
+  line-height: 1.8;
+}
+
+/* line 2287, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-latest li:first-child {
+  padding-top: 0;
+}
+
+/* line 2290, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-latest li .latest-date {
+  display: block;
+  color: #778899;
+  font-size: 13px;
+}
+
+/* line 2295, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-latest li a {
+  color: inherit;
+}
+
+/* line 2298, app/assets/stylesheets/avendor.css.scss */
+.footer-widget .list-latest li a:hover, .footer-widget .list-latest li a:focus {
+  color: #778899;
+}
+
+/* Font Awesome Custom List - can be removed in production websites */
+/* line 2304, app/assets/stylesheets/avendor.css.scss */
+.fontawesome-icon-list .fa-hover a {
+  display: block;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/* line 2309, app/assets/stylesheets/avendor.css.scss */
+.fontawesome-icon-list .fa-hover a .fa {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* line 2313, app/assets/stylesheets/avendor.css.scss */
+.fontawesome-icon-list .fa-hover:hover a {
+  background: #f2f2f2;
+}
+
+/* Avendor Icons list - can be removed in production website */
+/* line 2317, app/assets/stylesheets/avendor.css.scss */
+.glyphs.css-mapping {
+  padding: 30px 0 20px 30px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 2322, app/assets/stylesheets/avendor.css.scss */
+.glyphs.css-mapping li {
+  margin: 0 30px 20px 0;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* line 2328, app/assets/stylesheets/avendor.css.scss */
+.glyphs.css-mapping .icon {
+  margin: 0;
+  margin-right: 10px;
+  padding: 13px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  float: left;
+  font-size: 24px;
+}
+
+/* line 2338, app/assets/stylesheets/avendor.css.scss */
+.glyphs.css-mapping input {
+  margin: 0;
+  margin-top: 5px;
+  padding: 8px;
+  line-height: 16px;
+  font-size: 16px;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #fff;
+  outline: 0;
+  float: right;
+}
+
+/* line 2354, app/assets/stylesheets/avendor.css.scss */
+.glyphs.css-mapping input:focus {
+  border: 1px solid;
+}
+
+/* line 2357, app/assets/stylesheets/avendor.css.scss */
+.glyphs.css-mapping input:hover {
+  border: 1px solid;
+}
+
+/*========== Buttons ==========*/
+/* line 2361, app/assets/stylesheets/avendor.css.scss */
+.btn {
+  border: none;
+}
+
+/* line 2364, app/assets/stylesheets/avendor.css.scss */
+.btn:hover, .btn:focus {
+  color: #778899;
+}
+
+/* line 2367, app/assets/stylesheets/avendor.css.scss */
+.btn:active, .btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*button default*/
+/* line 2372, app/assets/stylesheets/avendor.css.scss */
+.btn-default {
+  color: #778899;
+  background-color: #f4f4f4;
+  border: none;
+}
+
+/* line 2377, app/assets/stylesheets/avendor.css.scss */
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ececec;
+}
+
+/* line 2381, app/assets/stylesheets/avendor.css.scss */
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default.active[disabled], fieldset[disabled] .btn-default.active {
+  background-color: #f0f0f0;
+}
+
+/*alt*/
+/* line 2385, app/assets/stylesheets/avendor.css.scss */
+.btn-default.btn-alt {
+  color: #999;
+  border: 2px solid;
+  border-color: #ececec;
+  background-color: transparent;
+}
+
+/* line 2391, app/assets/stylesheets/avendor.css.scss */
+.btn-default.btn-alt:hover, .btn-default.btn-alt:focus, .btn-default.btn-alt:active, .btn-default.btn-alt.active, .open .dropdown-toggle.btn-default.btn-alt {
+  background-color: #ececec;
+  border: 2px solid;
+  border-color: #ececec;
+}
+
+/*button primary*/
+/* line 2397, app/assets/stylesheets/avendor.css.scss */
+.btn-primary {
+  color: #ffffff;
+}
+
+/* line 2400, app/assets/stylesheets/avendor.css.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+}
+
+/* line 2403, app/assets/stylesheets/avendor.css.scss */
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active {
+  background-color: #ff9966;
+}
+
+/* line 2406, app/assets/stylesheets/avendor.css.scss */
+.btn-primary .badge {
+  color: #428bca;
+  background-color: #ffffff;
+}
+
+/*alt*/
+/* line 2411, app/assets/stylesheets/avendor.css.scss */
+.btn-primary.btn-alt {
+  border: 2px solid;
+  background-color: transparent;
+}
+
+/* line 2415, app/assets/stylesheets/avendor.css.scss */
+.btn-primary.btn-alt:hover, .btn-primary.btn-alt:focus, .btn-primary.btn-alt:active, .btn-primary.btn-alt.active, .open .dropdown-toggle.btn-primary.btn-alt {
+  color: #ffffff;
+  border: 2px solid;
+}
+
+/*button success*/
+/* line 2420, app/assets/stylesheets/avendor.css.scss */
+.btn-success {
+  color: #ffffff;
+  background-color: #9dd55d;
+}
+
+/* line 2424, app/assets/stylesheets/avendor.css.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #8dbd0a;
+}
+
+/* line 2428, app/assets/stylesheets/avendor.css.scss */
+.btn-success.disabled, .btn-success[disabled], fieldset[disabled] .btn-success, .btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, .btn-success.disabled:active, .btn-success[disabled]:active, fieldset[disabled] .btn-success:active, .btn-success.disabled.active, .btn-success.active[disabled], fieldset[disabled] .btn-success.active {
+  background-color: #bbdb66;
+}
+
+/* line 2431, app/assets/stylesheets/avendor.css.scss */
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #ffffff;
+}
+
+/*alt*/
+/* line 2436, app/assets/stylesheets/avendor.css.scss */
+.btn-success.btn-alt {
+  color: #9dd55d;
+  border: 2px solid;
+  border-color: #9dd55d;
+  background-color: transparent;
+}
+
+/* line 2442, app/assets/stylesheets/avendor.css.scss */
+.btn-success.btn-alt:hover, .btn-success.btn-alt:focus, .btn-success.btn-alt:active, .btn-success.btn-alt.active, .open .dropdown-toggle.btn-success.btn-alt {
+  color: #ffffff;
+  background-color: #9dd55d;
+  border: 2px solid;
+  border-color: #9dd55d;
+}
+
+/*button info*/
+/* line 2449, app/assets/stylesheets/avendor.css.scss */
+.btn-info {
+  color: #ffffff;
+  background-color: #22d2d2;
+}
+
+/* line 2453, app/assets/stylesheets/avendor.css.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #0cc0c0;
+}
+
+/* line 2457, app/assets/stylesheets/avendor.css.scss */
+.btn-info.disabled, .btn-info[disabled], fieldset[disabled] .btn-info, .btn-info.disabled:hover, .btn-info[disabled]:hover, fieldset[disabled] .btn-info:hover, .btn-info.disabled:focus, .btn-info[disabled]:focus, fieldset[disabled] .btn-info:focus, .btn-info.disabled:active, .btn-info[disabled]:active, fieldset[disabled] .btn-info:active, .btn-info.disabled.active, .btn-info.active[disabled], fieldset[disabled] .btn-info.active {
+  background-color: #66eeee;
+}
+
+/* line 2460, app/assets/stylesheets/avendor.css.scss */
+.btn-info .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+
+/*alt*/
+/* line 2465, app/assets/stylesheets/avendor.css.scss */
+.btn-info.btn-alt {
+  color: #22d2d2;
+  border: 2px solid;
+  border-color: #22d2d2;
+  background-color: transparent;
+}
+
+/* line 2471, app/assets/stylesheets/avendor.css.scss */
+.btn-info.btn-alt:hover, .btn-info.btn-alt:focus, .btn-info.btn-alt:active, .btn-info.btn-alt.active, .open .dropdown-toggle.btn-info.btn-alt {
+  color: #ffffff;
+  background-color: #22d2d2;
+  border: 2px solid;
+  border-color: #22d2d2;
+}
+
+/*button warning*/
+/* line 2478, app/assets/stylesheets/avendor.css.scss */
+.btn-warning {
+  color: #ffffff;
+  background-color: #f4aa44;
+}
+
+/* line 2482, app/assets/stylesheets/avendor.css.scss */
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #ee8820;
+}
+
+/* line 2486, app/assets/stylesheets/avendor.css.scss */
+.btn-warning.disabled, .btn-warning[disabled], fieldset[disabled] .btn-warning, .btn-warning.disabled:hover, .btn-warning[disabled]:hover, fieldset[disabled] .btn-warning:hover, .btn-warning.disabled:focus, .btn-warning[disabled]:focus, fieldset[disabled] .btn-warning:focus, .btn-warning.disabled:active, .btn-warning[disabled]:active, fieldset[disabled] .btn-warning:active, .btn-warning.disabled.active, .btn-warning.active[disabled], fieldset[disabled] .btn-warning.active {
+  background-color: #ffcc99;
+}
+
+/* line 2489, app/assets/stylesheets/avendor.css.scss */
+.btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+
+/*alt*/
+/* line 2494, app/assets/stylesheets/avendor.css.scss */
+.btn-warning.btn-alt {
+  color: #f4aa44;
+  border: 2px solid;
+  border-color: #f4aa44;
+  background-color: transparent;
+}
+
+/* line 2500, app/assets/stylesheets/avendor.css.scss */
+.btn-warning.btn-alt:hover, .btn-warning.btn-alt:focus, .btn-warning.btn-alt:active, .btn-warning.btn-alt.active, .open .dropdown-toggle.btn-warning.btn-alt {
+  color: #ffffff;
+  background-color: #f4aa44;
+  border: 2px solid;
+  border-color: #f4aa44;
+}
+
+/*button danger*/
+/* line 2507, app/assets/stylesheets/avendor.css.scss */
+.btn-danger {
+  color: #ffffff;
+  background-color: #f33440;
+}
+
+/* line 2511, app/assets/stylesheets/avendor.css.scss */
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #dd3333;
+}
+
+/* line 2515, app/assets/stylesheets/avendor.css.scss */
+.btn-danger.disabled, .btn-danger[disabled], fieldset[disabled] .btn-danger, .btn-danger.disabled:hover, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger:hover, .btn-danger.disabled:focus, .btn-danger[disabled]:focus, fieldset[disabled] .btn-danger:focus, .btn-danger.disabled:active, .btn-danger[disabled]:active, fieldset[disabled] .btn-danger:active, .btn-danger.disabled.active, .btn-danger.active[disabled], fieldset[disabled] .btn-danger.active {
+  background-color: #ff9999;
+}
+
+/* line 2518, app/assets/stylesheets/avendor.css.scss */
+.btn-danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+
+/*alt*/
+/* line 2523, app/assets/stylesheets/avendor.css.scss */
+.btn-danger.btn-alt {
+  color: #f33440;
+  border: 2px solid;
+  border-color: #f33440;
+  background-color: transparent;
+}
+
+/* line 2529, app/assets/stylesheets/avendor.css.scss */
+.btn-danger.btn-alt:hover, .btn-danger.btn-alt:focus, .btn-danger.btn-alt:active, .btn-danger.btn-alt.active, .open .dropdown-toggle.btn-danger.btn-alt {
+  color: #ffffff;
+  background-color: #f33440;
+  border: 2px solid;
+  border-color: #f33440;
+}
+
+/*button white*/
+/* line 2536, app/assets/stylesheets/avendor.css.scss */
+.btn-white {
+  color: #778899;
+  background-color: #fff;
+}
+
+/* line 2540, app/assets/stylesheets/avendor.css.scss */
+.btn-white:hover, .btn-white:focus, .btn-white:active, .btn-white.active, .open .dropdown-toggle.btn-white {
+  background-color: #ececec;
+}
+
+/* line 2543, app/assets/stylesheets/avendor.css.scss */
+.btn-white.disabled, .btn-white[disabled], fieldset[disabled] .btn-white, .btn-white.disabled:hover, .btn-white[disabled]:hover, fieldset[disabled] .btn-white:hover, .btn-white.disabled:focus, .btn-white[disabled]:focus, fieldset[disabled] .btn-white:focus, .btn-white.disabled:active, .btn-white[disabled]:active, fieldset[disabled] .btn-white:active, .btn-white.disabled.active, .btn-white.active[disabled], fieldset[disabled] .btn-white.active {
+  color: #cccccc;
+  background-color: #f5f5f5;
+}
+
+/* line 2547, app/assets/stylesheets/avendor.css.scss */
+.btn-white .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+
+/*alt*/
+/* line 2552, app/assets/stylesheets/avendor.css.scss */
+.btn-white.btn-alt {
+  color: #ffffff;
+  border: 2px solid;
+  border-color: #fff;
+  background-color: transparent;
+}
+
+/* line 2558, app/assets/stylesheets/avendor.css.scss */
+.btn-white.btn-alt:hover, .btn-white.btn-alt:focus, .btn-white.btn-alt:active, .btn-white.btn-alt.active, .open .dropdown-toggle.btn-white.btn-alt {
+  color: #778899;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+
+/*button sizes*/
+/* line 2565, app/assets/stylesheets/avendor.css.scss */
+.btn {
+  padding: 18px 28px;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 2571, app/assets/stylesheets/avendor.css.scss */
+.btn-lg, .btn-group-lg > .btn {
+  padding: 24px 48px;
+  font-size: 18px;
+}
+
+/* line 2575, app/assets/stylesheets/avendor.css.scss */
+.btn-sm, .btn-group-sm > .btn {
+  padding: 14px 20px;
+  font-size: 14px;
+}
+
+/* line 2579, app/assets/stylesheets/avendor.css.scss */
+.btn-xs, .btn-group-xs > .btn {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+/*==========  Creative Links ==========*/
+/* Effect 1: Brackets */
+/* line 2586, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-1 a::before, .cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+/* line 2593, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-1 a::before {
+  margin-right: 2px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* line 2600, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-1 a::after {
+  margin-left: 2px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+/* line 2607, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-1 a:hover::before, .cl-effect-1 a:hover::after, .cl-effect-1 a:focus::before, .cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* Effect 2: second border slides up */
+/* line 2614, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-2 {
+  position: relative;
+}
+
+/* line 2617, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-2 a {
+  padding: 8px 2px;
+}
+
+/* line 2620, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-2 a::before, .cl-effect-2 a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 2634, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-2 a::after {
+  opacity: 0;
+  -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+/* line 2640, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-2 a:hover::before, .cl-effect-2 a:hover::after, .cl-effect-2 a:focus::before, .cl-effect-2 a:focus::after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 2645, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-2 a:hover::after, .cl-effect-2 a:focus::after {
+  top: 0%;
+  opacity: 1;
+}
+
+/* Effect 3: circle */
+/* line 2650, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-3 {
+  position: relative;
+}
+
+/* line 2653, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-3 a::before, .cl-effect-3 a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+  transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+/* line 2670, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-3 a::after {
+  width: 70px;
+  height: 70px;
+  border-width: 6px;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+/* line 2678, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-3 a:hover::before, .cl-effect-3 a:hover::after, .cl-effect-3 a:focus::before, .cl-effect-3 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+/* Effect 4: three circles */
+/* line 2685, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-4 {
+  position: relative;
+}
+
+/* line 2688, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-4 a {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/* line 2693, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-4 a::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: transparent;
+  content: '\2022';
+  text-shadow: 0 0 transparent;
+  font-size: 1.2em;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* Effect 5: cross */
+/* line 2714, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 2718, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a {
+  padding: 0 5px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/* line 2724, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a::before {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 80%;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+/* line 2738, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 60%;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+/* line 2752, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a::before {
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+/* line 2757, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a::after {
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+/* line 2764, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a:hover::before, .cl-effect-5 a:hover::after, .cl-effect-5 a:focus::before, .cl-effect-5 a:focus::after {
+  opacity: 0.7;
+}
+
+/* line 2767, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a:hover::before, .cl-effect-5 a:focus::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 2772, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-5 a:hover::after, .cl-effect-5 a:focus::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* Effect 6: borders slight translate */
+/* line 2778, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-6 {
+  position: relative;
+}
+
+/* line 2781, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-6 a {
+  padding: 2px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/* line 2787, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-6 a::before, .cl-effect-6 a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* line 2801, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-6 a::before {
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* line 2807, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-6 a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+/* line 2815, app/assets/stylesheets/avendor.css.scss */
+.cl-effect-6 a:hover::before, .cl-effect-6 a:focus::before, .cl-effect-6 a:hover::after, .cl-effect-6 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/*========== Alerts ==========*/
+/* line 2822, app/assets/stylesheets/avendor.css.scss */
+.alert {
+  border: none;
+  background-color: #32313b;
+}
+
+/* line 2826, app/assets/stylesheets/avendor.css.scss */
+.alert-clean {
+  background: none;
+  border: 1px solid #ececec;
+}
+
+/* line 2830, app/assets/stylesheets/avendor.css.scss */
+.alert.alert-success {
+  background-color: #e0f090;
+  border: none;
+}
+
+/* line 2834, app/assets/stylesheets/avendor.css.scss */
+.alert.alert-info {
+  background-color: #b6e6e6;
+  border: none;
+}
+
+/* line 2838, app/assets/stylesheets/avendor.css.scss */
+.alert.alert-warning {
+  background-color: #ecc992;
+  border: none;
+  color: #cc6600;
+}
+
+/* line 2843, app/assets/stylesheets/avendor.css.scss */
+.alert.alert-danger {
+  background-color: #ff9999;
+  border: none;
+}
+
+/* Alerts Alternative*/
+/* line 2848, app/assets/stylesheets/avendor.css.scss */
+.alert-alt {
+  padding-left: 50px;
+  position: relative;
+}
+
+/* line 2852, app/assets/stylesheets/avendor.css.scss */
+.alert-alt.alert-clean:before {
+  content: "\f024";
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  color: #ececec;
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+/* line 2862, app/assets/stylesheets/avendor.css.scss */
+.alert-alt.alert-success:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  color: #9dd55d;
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+/* line 2872, app/assets/stylesheets/avendor.css.scss */
+.alert-alt.alert-info:before {
+  content: "\f129";
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  color: #22d2d2;
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+/* line 2882, app/assets/stylesheets/avendor.css.scss */
+.alert-alt.alert-warning:before {
+  content: "\f071";
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  color: #f4aa44;
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+/* line 2892, app/assets/stylesheets/avendor.css.scss */
+.alert-alt.alert-danger:before {
+  content: "\f05e";
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  color: #f33440;
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+/*========== Icons ==========*/
+/* line 2903, app/assets/stylesheets/avendor.css.scss */
+.iconleft {
+  margin-right: 14px;
+}
+
+/* line 2906, app/assets/stylesheets/avendor.css.scss */
+.iconright {
+  margin-left: 14px;
+}
+
+/* line 2909, app/assets/stylesheets/avendor.css.scss */
+.btn .iconleft {
+  margin-right: 14px;
+}
+
+/* line 2912, app/assets/stylesheets/avendor.css.scss */
+.btn .iconright {
+  margin-left: 14px;
+}
+
+/* line 2915, app/assets/stylesheets/avendor.css.scss */
+.btn-sm .iconleft, .btn-xs .iconleft {
+  margin-right: 6px;
+}
+
+/* line 2918, app/assets/stylesheets/avendor.css.scss */
+.btn-sm .iconright, .btn-xs .iconright {
+  margin-left: 6px;
+}
+
+/* line 2921, app/assets/stylesheets/avendor.css.scss */
+[class^="gfx-"]:before, [class*=" gfx-"]:before {
+  vertical-align: middle;
+  position: relative;
+  top: -0.14em;
+}
+
+/*========== LivIcons ==========*/
+/* line 2927, app/assets/stylesheets/avendor.css.scss */
+.livicon {
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+/*========== Icon Boxes ==========*/
+/* line 2933, app/assets/stylesheets/avendor.css.scss */
+.iconbox {
+  padding: 10px;
+}
+
+/* line 2936, app/assets/stylesheets/avendor.css.scss */
+.iconbox .iconbox-wrapper {
+  float: left;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 2943, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.pull-right {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* line 2947, app/assets/stylesheets/avendor.css.scss */
+.iconbox .iconbox-content {
+  overflow: hidden;
+}
+
+/* line 2950, app/assets/stylesheets/avendor.css.scss */
+.iconbox-list {
+  margin-bottom: 0px;
+}
+
+/* line 2953, app/assets/stylesheets/avendor.css.scss */
+.iconbox-list li {
+  margin-top: 20px;
+}
+
+/* line 2956, app/assets/stylesheets/avendor.css.scss */
+.iconbox-list li:first-child {
+  margin-top: 0px;
+}
+
+/* livicons iconbox*/
+/* line 2960, app/assets/stylesheets/avendor.css.scss */
+.iconbox .livicon {
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* icon box vertical*/
+/* line 2966, app/assets/stylesheets/avendor.css.scss */
+.iconbox.vertical {
+  text-align: center;
+}
+
+/* line 2969, app/assets/stylesheets/avendor.css.scss */
+.iconbox.vertical .iconbox-wrapper {
+  float: none;
+  margin: 0 auto 30px;
+}
+
+/* line 2973, app/assets/stylesheets/avendor.css.scss */
+.iconbox.vertical .livicon {
+  margin-bottom: 6px;
+  float: none;
+  margin-right: 0px;
+  line-height: 1;
+}
+
+/* icon box icon size*/
+/* line 2980, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.iconbox-2x {
+  font-size: 38px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+}
+
+/* line 2986, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.iconbox-3x {
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+/* line 2992, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.iconbox-2x .livicon {
+  margin-bottom: 8px;
+}
+
+/* line 2995, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.iconbox-3x .livicon {
+  margin-bottom: 12px;
+}
+
+/* icon box circle*/
+/* line 2999, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.circle {
+  background: #f2f2f2;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 3010, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.circle.border {
+  background: none;
+  border: 2px solid;
+}
+
+/* line 3014, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.circle.iconbox-2x {
+  font-size: 32px !important;
+  width: 68px !important;
+  height: 68px !important;
+  line-height: 68px !important;
+}
+
+/* line 3020, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.circle.iconbox-3x {
+  font-size: 60px !important;
+  width: 110px !important;
+  height: 110px !important;
+  line-height: 110px !important;
+}
+
+/* icon box square*/
+/* line 3027, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.square {
+  background: #f2f2f2;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 3038, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.square.border {
+  background: none;
+  border: 2px solid;
+}
+
+/* line 3042, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.square.iconbox-2x {
+  font-size: 38px !important;
+  width: 68px !important;
+  height: 68px !important;
+  line-height: 68px !important;
+}
+
+/* line 3048, app/assets/stylesheets/avendor.css.scss */
+.iconbox-wrapper.square.iconbox-3x {
+  font-size: 60px !important;
+  width: 110px !important;
+  height: 110px !important;
+  line-height: 110px !important;
+}
+
+/*========== Progress bars ==========*/
+/* line 3055, app/assets/stylesheets/avendor.css.scss */
+.progress {
+  background: #f1f1f1;
+  height: 40px;
+  margin-bottom: 40px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 3063, app/assets/stylesheets/avendor.css.scss */
+.progress-bar {
+  line-height: 40px;
+  text-align: left;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 3069, app/assets/stylesheets/avendor.css.scss */
+.pb-content-text {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2.5;
+  padding: 5px 10px;
+}
+
+/* line 3076, app/assets/stylesheets/avendor.css.scss */
+.pb-icon {
+  float: left;
+  padding: 10px;
+  line-height: 1;
+  font-size: 18px;
+}
+
+/* line 3082, app/assets/stylesheets/avendor.css.scss */
+.pb-slim {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 3086, app/assets/stylesheets/avendor.css.scss */
+.pb-slim .pb-content-text {
+  line-height: 1;
+  padding: 4px 10px;
+}
+
+/* line 3090, app/assets/stylesheets/avendor.css.scss */
+.pb-slim .pb-icon {
+  padding: 2px 10px;
+  font-size: 16px;
+}
+
+/*progress bar align right - default is left*/
+/* line 3095, app/assets/stylesheets/avendor.css.scss */
+.pb-right .progress-bar {
+  float: right;
+}
+
+/* line 3098, app/assets/stylesheets/avendor.css.scss */
+.pb-right .pb-content-text {
+  text-align: right;
+}
+
+/*progress bar colors*/
+/* line 3102, app/assets/stylesheets/avendor.css.scss */
+.progress-bar-success {
+  background-color: #9dd55d !important;
+}
+
+/* line 3105, app/assets/stylesheets/avendor.css.scss */
+.progress-bar-info {
+  background-color: #22d2d2 !important;
+}
+
+/* line 3108, app/assets/stylesheets/avendor.css.scss */
+.progress-bar-warning {
+  background-color: #f4aa44 !important;
+}
+
+/* line 3111, app/assets/stylesheets/avendor.css.scss */
+.progress-bar-danger {
+  background-color: #f33440 !important;
+}
+
+/* line 3114, app/assets/stylesheets/avendor.css.scss */
+.progress-bar-dark {
+  background-color: #555566 !important;
+}
+
+/*========== Pie Chart ==========*/
+/* line 3118, app/assets/stylesheets/avendor.css.scss */
+.progress-pie-wrapper {
+  text-align: center;
+}
+
+/* line 3121, app/assets/stylesheets/avendor.css.scss */
+.progress-pie {
+  display: inline-block;
+}
+
+/* line 3124, app/assets/stylesheets/avendor.css.scss */
+.progress-pie.center-block {
+  display: block;
+}
+
+/* line 3127, app/assets/stylesheets/avendor.css.scss */
+.progress-pie.center-block .chart {
+  margin: 0 auto;
+}
+
+/* line 3130, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .chart {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 3140, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .chart canvas {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 3149, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .pie-content {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 20px 0;
+  z-index: 2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: black transparent;
+  /* RGBa with 0.6 opacity */
+  background: rgba(50, 49, 59, 0.8);
+}
+
+/* line 3165, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .pie-content .title-pie {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  padding: 0 12px;
+}
+
+/* line 3171, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .pie-content .percent {
+  font-size: 40px;
+  display: block;
+  padding-top: 5px;
+  line-height: 1.4;
+}
+
+/* line 3177, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .pie-content .percent.icon-only {
+  line-height: 1.5;
+  font-size: 48px;
+}
+
+/* line 3181, app/assets/stylesheets/avendor.css.scss */
+.progress-pie .pie-content .percent.counter {
+  line-height: 1.2;
+}
+
+/*========== Video BG ==========*/
+/*========== Forms ==========*/
+/* line 3188, app/assets/stylesheets/avendor.css.scss */
+.form-control {
+  height: 50px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  color: #778899;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 3197, app/assets/stylesheets/avendor.css.scss */
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 3201, app/assets/stylesheets/avendor.css.scss */
+.form-group [class*="col-sm-"], .form-group [class*="col-md-"], .form-group [class*="col-lg-"] {
+  margin-bottom: 15px;
+}
+
+/* line 3204, app/assets/stylesheets/avendor.css.scss */
+.form-group [class*="col-sm-"]:last-child, .form-group [class*="col-md-"]:last-child, .form-group [class*="col-lg-"]:last-child {
+  margin-bottom: 0;
+}
+
+/* line 3207, app/assets/stylesheets/avendor.css.scss */
+.form-control::-moz-placeholder {
+  color: #cccccc;
+}
+
+/*dark form*/
+/*========== Lightbox ==========*/
+/* line 3214, app/assets/stylesheets/avendor.css.scss */
+.mfp-preloader {
+  z-index: 1046;
+}
+
+/*========== Backgrounds and Colors ==========*/
+/*bg*/
+/* line 3220, app/assets/stylesheets/avendor.css.scss */
+.bg-color-success {
+  background-color: #9dd55d !important;
+}
+
+/* line 3223, app/assets/stylesheets/avendor.css.scss */
+.bg-color-info {
+  background-color: #22d2d2 !important;
+}
+
+/* line 3226, app/assets/stylesheets/avendor.css.scss */
+.bg-color-warning {
+  background-color: #f4aa44 !important;
+}
+
+/* line 3229, app/assets/stylesheets/avendor.css.scss */
+.bg-color-danger {
+  background-color: #f33440 !important;
+}
+
+/* line 3232, app/assets/stylesheets/avendor.css.scss */
+.bg-color-light {
+  background-color: #f8f8f8 !important;
+}
+
+/* line 3235, app/assets/stylesheets/avendor.css.scss */
+.bg-color-dark {
+  background-color: #32313B !important;
+}
+
+/* line 3238, app/assets/stylesheets/avendor.css.scss */
+.bg-color-white {
+  background-color: #ffffff !important;
+}
+
+/* line 3241, app/assets/stylesheets/avendor.css.scss */
+.bg-color-none {
+  background-color: transparent !important;
+}
+
+/*colors*/
+/* line 3246, app/assets/stylesheets/avendor.css.scss */
+.color-success {
+  color: #9dd55d !important;
+}
+
+/* line 3249, app/assets/stylesheets/avendor.css.scss */
+.color-info {
+  color: #22d2d2 !important;
+}
+
+/* line 3252, app/assets/stylesheets/avendor.css.scss */
+.color-warning {
+  color: #f4aa44 !important;
+}
+
+/* line 3255, app/assets/stylesheets/avendor.css.scss */
+.color-danger {
+  color: #f33440 !important;
+}
+
+/* line 3258, app/assets/stylesheets/avendor.css.scss */
+.color-white {
+  color: #ffffff !important;
+}
+
+/* line 3261, app/assets/stylesheets/avendor.css.scss */
+.color-dark {
+  color: #32313B !important;
+}
+
+/*========== White Space ==========*/
+/* line 3265, app/assets/stylesheets/avendor.css.scss */
+.white-space {
+  display: block;
+  width: 100%;
+}
+
+/* line 3269, app/assets/stylesheets/avendor.css.scss */
+.white-space.space-mini {
+  padding: 5px 0;
+}
+
+/* line 3272, app/assets/stylesheets/avendor.css.scss */
+.white-space.space-xsmall {
+  padding: 10px 0;
+}
+
+/* line 3275, app/assets/stylesheets/avendor.css.scss */
+.white-space.space-small {
+  padding: 20px 0;
+}
+
+/* line 3278, app/assets/stylesheets/avendor.css.scss */
+.white-space.space-medium {
+  padding: 30px 0;
+}
+
+/* line 3281, app/assets/stylesheets/avendor.css.scss */
+.white-space.space-big {
+  padding: 50px 0;
+}
+
+/*========== Dividers ==========*/
+/* line 3285, app/assets/stylesheets/avendor.css.scss */
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* hr fancy */
+/* line 3290, app/assets/stylesheets/avendor.css.scss */
+hr.hr-fancy {
+  border: 0 solid #ececec;
+  border-top-width: 1px;
+  height: 0;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+/* line 3298, app/assets/stylesheets/avendor.css.scss */
+hr.hr-fancy:after {
+  content: " ";
+  width: 30%;
+  height: 5px;
+  position: relative;
+  bottom: 3px;
+  display: block;
+}
+
+/* line 3306, app/assets/stylesheets/avendor.css.scss */
+hr.text-center.hr-fancy:after {
+  margin: 0 auto;
+}
+
+/* line 3309, app/assets/stylesheets/avendor.css.scss */
+hr.text-right.hr-fancy:after {
+  float: right;
+}
+
+/* hr fade margins */
+/* line 3313, app/assets/stylesheets/avendor.css.scss */
+hr.hr-fade {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(179, 179, 196, 0), rgba(179, 179, 196, 0.75), rgba(179, 179, 196, 0));
+  background-image: -moz-linear-gradient(left, rgba(179, 179, 196, 0), rgba(179, 179, 196, 0.75), rgba(179, 179, 196, 0));
+  background-image: -ms-linear-gradient(left, rgba(179, 179, 196, 0), rgba(179, 179, 196, 0.75), rgba(179, 179, 196, 0));
+  background-image: -o-linear-gradient(left, rgba(179, 179, 196, 0), rgba(179, 179, 196, 0.75), rgba(179, 179, 196, 0));
+}
+
+/* hr double border */
+/* line 3322, app/assets/stylesheets/avendor.css.scss */
+hr.hr-double {
+  padding: 4px;
+  border: none;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+/* hr icon */
+/* line 3329, app/assets/stylesheets/avendor.css.scss */
+.hr-icon {
+  position: relative;
+  display: block;
+}
+
+/* line 3333, app/assets/stylesheets/avendor.css.scss */
+.icon-divider {
+  background-color: #FFFFFF;
+  display: block;
+  font-size: 38px;
+  height: 50px;
+  left: 50%;
+  line-height: 50px;
+  margin-left: -40px;
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  top: -25px;
+}
+
+/*========== Labels ==========*/
+/* line 3347, app/assets/stylesheets/avendor.css.scss */
+.label {
+  vertical-align: middle;
+  padding: 0.2em 0.6em 0.2em;
+}
+
+/* line 3351, app/assets/stylesheets/avendor.css.scss */
+.label-default {
+  background-color: #778899;
+}
+
+/* line 3354, app/assets/stylesheets/avendor.css.scss */
+.label-default[href]:hover, .label-default[href]:focus {
+  background-color: #5e5e5e;
+}
+
+/* line 3361, app/assets/stylesheets/avendor.css.scss */
+.label-success {
+  background-color: #9dd55d;
+}
+
+/* line 3364, app/assets/stylesheets/avendor.css.scss */
+.label-success[href]:hover, .label-success[href]:focus {
+  background-color: #8dbd0a;
+}
+
+/* line 3367, app/assets/stylesheets/avendor.css.scss */
+.label-info {
+  background-color: #22d2d2;
+}
+
+/* line 3370, app/assets/stylesheets/avendor.css.scss */
+.label-info[href]:hover, .label-info[href]:focus {
+  background-color: #0cc0c0;
+}
+
+/* line 3373, app/assets/stylesheets/avendor.css.scss */
+.label-warning {
+  background-color: #f4aa44;
+}
+
+/* line 3376, app/assets/stylesheets/avendor.css.scss */
+.label-warning[href]:hover, .label-warning[href]:focus {
+  background-color: #ee8820;
+}
+
+/* line 3379, app/assets/stylesheets/avendor.css.scss */
+.label-danger {
+  background-color: #f33440;
+}
+
+/* line 3382, app/assets/stylesheets/avendor.css.scss */
+.label-danger[href]:hover, .label-danger[href]:focus {
+  background-color: #dd3333;
+}
+
+/*===============================
+========== Google Maps ==========
+===============================*/
+/* line 3388, app/assets/stylesheets/avendor.css.scss */
+.gmap-button {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px 0;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 3397, app/assets/stylesheets/avendor.css.scss */
+.gmap-button:hover {
+  background: #f8f8f8;
+  color: #32313B;
+}
+
+/* line 3401, app/assets/stylesheets/avendor.css.scss */
+.gmap-button:after {
+  content: "\f103";
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  margin-left: 16px;
+  text-decoration: inherit;
+}
+
+/* line 3409, app/assets/stylesheets/avendor.css.scss */
+.gmap-button.show-map:after {
+  content: "\f102";
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  margin-left: 16px;
+  text-decoration: inherit;
+}
+
+/* line 3419, app/assets/stylesheets/avendor.css.scss */
+#google-map-footer {
+  display: none;
+  height: 500px;
+  width: 100%;
+}
+
+/* line 3424, app/assets/stylesheets/avendor.css.scss */
+#google-map {
+  height: 450px;
+  width: 100%;
+}
+
+/* line 3428, app/assets/stylesheets/avendor.css.scss */
+#google-map.small-map {
+  height: 300px;
+}
+
+/* line 3431, app/assets/stylesheets/avendor.css.scss */
+.map-marker {
+  padding: 20px;
+}
+
+/* line 3434, app/assets/stylesheets/avendor.css.scss */
+.map-marker p {
+  margin: 0;
+}
+
+/*Panels*/
+/* line 3438, app/assets/stylesheets/avendor.css.scss */
+.panel {
+  background: none;
+}
+
+/* line 3441, app/assets/stylesheets/avendor.css.scss */
+.panel-default {
+  border-color: #ececec;
+}
+
+/* line 3444, app/assets/stylesheets/avendor.css.scss */
+.panel-light {
+  border-color: #f8f8f8;
+}
+
+/*===============================
+========== Tabs ==========
+===============================*/
+/* line 3451, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs {
+  border-bottom: none;
+}
+
+/* line 3454, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0px;
+}
+
+/* line 3458, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs > li > a {
+  padding: 15px 15px;
+  margin-right: 1px;
+  line-height: 1.42857143;
+  border: none;
+  border-radius: 0;
+  background: #32313b;
+  color: #fff;
+  border-bottom: 4px solid;
+}
+
+/* line 3468, app/assets/stylesheets/avendor.css.scss */
+.sidebar-widget .nav-tabs > li > a {
+  padding: 15px 5px;
+}
+
+/* line 3471, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs > li > a:hover {
+  border-color: #ececec;
+  background: #f5f5f5;
+}
+
+/* line 3475, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #fff;
+  cursor: default;
+  border: 0;
+  border-bottom: 4px solid;
+}
+
+/* line 3481, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+/* line 3485, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+
+/* line 3488, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* line 3492, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+/* line 3496, app/assets/stylesheets/avendor.css.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  /* line 3500, app/assets/stylesheets/avendor.css.scss */
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  /* line 3504, app/assets/stylesheets/avendor.css.scss */
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+/* line 3508, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-right: 1px;
+  border-radius: 0;
+}
+
+/* line 3512, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+  border: none;
+  border-bottom: 4px solid;
+}
+
+@media (min-width: 768px) {
+  /* line 3517, app/assets/stylesheets/avendor.css.scss */
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 4px solid;
+    border-radius: 0;
+  }
+  /* line 3521, app/assets/stylesheets/avendor.css.scss */
+  .nav-tabs.nav-justified.tabs-alt > li > a {
+    border-bottom: transparent;
+  }
+}
+
+/* line 3527, app/assets/stylesheets/avendor.css.scss */
+.nav-pills {
+  margin-bottom: 10px;
+}
+
+/* line 3530, app/assets/stylesheets/avendor.css.scss */
+.nav-pills > li {
+  float: left;
+}
+
+/* line 3533, app/assets/stylesheets/avendor.css.scss */
+.nav-pills > li > a {
+  border-radius: none;
+  margin-right: 2px;
+}
+
+/* line 3537, app/assets/stylesheets/avendor.css.scss */
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+/* line 3540, app/assets/stylesheets/avendor.css.scss */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: #fff;
+}
+
+/* line 3543, app/assets/stylesheets/avendor.css.scss */
+.nav-stacked > li {
+  float: none;
+}
+
+/* line 3546, app/assets/stylesheets/avendor.css.scss */
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+/* line 3550, app/assets/stylesheets/avendor.css.scss */
+.nav-justified {
+  width: 100%;
+}
+
+/* line 3553, app/assets/stylesheets/avendor.css.scss */
+.nav-justified > li {
+  float: none;
+}
+
+/* line 3556, app/assets/stylesheets/avendor.css.scss */
+.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* line 3560, app/assets/stylesheets/avendor.css.scss */
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 3565, app/assets/stylesheets/avendor.css.scss */
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  /* line 3569, app/assets/stylesheets/avendor.css.scss */
+  .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+/* line 3573, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+/* line 3576, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+/* line 3580, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs-justified > .active > a, .nav-tabs-justified > .active > a:hover, .nav-tabs-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  /* line 3584, app/assets/stylesheets/avendor.css.scss */
+  .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  /* line 3588, app/assets/stylesheets/avendor.css.scss */
+  .nav-tabs-justified > .active > a, .nav-tabs-justified > .active > a:hover, .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+/* line 3592, app/assets/stylesheets/avendor.css.scss */
+.tab-content > .tab-pane {
+  display: none;
+}
+
+/* line 3595, app/assets/stylesheets/avendor.css.scss */
+.tab-content > .active {
+  display: block;
+  padding: 30px 10px;
+  border: 1px solid #ececec;
+}
+
+/* line 3600, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Tabs Alternative */
+/* line 3606, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.tabs-alt > li > a {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+  color: #778899;
+}
+
+/* line 3616, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.tabs-alt > li.active > a:after {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 3634, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.tabs-alt > li > a:hover {
+  margin-right: -1px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  color: #778899;
+}
+
+/* line 3640, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.tabs-alt > li.active > a {
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #fff;
+  background: #ffffff;
+}
+
+/* line 3645, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.tabs-alt > li.active > a:hover {
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #fff;
+  background: #ffffff;
+}
+
+/* line 3650, app/assets/stylesheets/avendor.css.scss */
+.nav-tabs.tabs-alt > li.active > a:focus {
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #fff;
+  background: #ffffff;
+}
+
+/* line 3655, app/assets/stylesheets/avendor.css.scss */
+.tabs-alt.tab-content > .active {
+  border: none;
+  border-top: 1px solid #ececec;
+}
+
+/*===============================
+========== Accordions & Toggle ==========
+===============================*/
+/* line 3663, app/assets/stylesheets/avendor.css.scss */
+.accordion .panel {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+/* line 3670, app/assets/stylesheets/avendor.css.scss */
+.accordion.panel-group {
+  margin: 20px 0;
+}
+
+/* line 3673, app/assets/stylesheets/avendor.css.scss */
+.accordion .panel .panel-heading {
+  border: 1px solid #ececec;
+  padding: 0;
+  background: none;
+}
+
+/* line 3678, app/assets/stylesheets/avendor.css.scss */
+.accordion .panel-title {
+  font-weight: 500;
+  font-size: inherit;
+}
+
+/* line 3682, app/assets/stylesheets/avendor.css.scss */
+.accordion .panel-title a {
+  display: block;
+  padding: 15px;
+}
+
+/* line 3686, app/assets/stylesheets/avendor.css.scss */
+.accordion .panel-title a .fa {
+  margin-right: 10px;
+}
+
+/* line 3689, app/assets/stylesheets/avendor.css.scss */
+.accordion .panel-body {
+  border: none !important;
+}
+
+/* line 3692, app/assets/stylesheets/avendor.css.scss */
+.accordion .accordion-toggle.collapsed-icon:after {
+  content: "\f147";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  float: right;
+}
+
+/* line 3700, app/assets/stylesheets/avendor.css.scss */
+.accordion .accordion-toggle.collapsed.collapsed-icon:after {
+  content: "\f196";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  float: right;
+}
+
+/* line 3708, app/assets/stylesheets/avendor.css.scss */
+.accordion .accordion-toggle.collapsed-icon-left.collapsed-icon:after {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 3712, app/assets/stylesheets/avendor.css.scss */
+.accordion .accordion-toggle.collapsed-icon-left.collapsed.collapsed-icon:after {
+  float: left;
+  margin-right: 10px;
+}
+
+/* Accordion & Toggle - default stytle  */
+/* line 3719, app/assets/stylesheets/avendor.css.scss */
+.accordion .accordion-toggle.collapsed {
+  color: #848494;
+}
+
+/* Accordion & Toggle - alternativestytle  */
+/* line 3725, app/assets/stylesheets/avendor.css.scss */
+.accordion.accordion-alt .panel-heading {
+  border: none;
+  background: #f8f8f8;
+}
+
+/* line 3729, app/assets/stylesheets/avendor.css.scss */
+.accordion.accordion-alt .accordion-toggle {
+  color: #fff;
+}
+
+/* line 3732, app/assets/stylesheets/avendor.css.scss */
+.accordion.accordion-alt .accordion-toggle.collapsed {
+  background: #f8f8f8;
+  color: #848494;
+}
+
+/* line 3736, app/assets/stylesheets/avendor.css.scss */
+.accordion.accordion-alt .accordion-toggle.collapsed:hover {
+  color: #fff;
+}
+
+/*===============================
+========== Pricing Table ==========
+===============================*/
+/* line 3742, app/assets/stylesheets/avendor.css.scss */
+.pricing-table {
+  border: 1px solid #ececec;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* line 3750, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head {
+  background: #f8f8f8;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+/* line 3755, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head .pricing-head-title {
+  margin: 0px 5% 20px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 3765, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head .iconbox-wrapper {
+  margin-bottom: 20px;
+}
+
+/* line 3768, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head .pricing-head-price {
+  font-size: 72px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #32313b;
+  font-weight: 400;
+}
+
+/* line 3775, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head .pricing-head-price .curency {
+  font-size: 16px;
+  position: relative;
+  top: -30px;
+}
+
+/* line 3780, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head .pricing-head-price .period {
+  font-size: 16px;
+  position: relative;
+  bottom: -10px;
+}
+
+/* line 3785, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-head .pricing-head-description {
+  margin-bottom: 0;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+/* line 3790, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-content {
+  padding: 20px 0;
+  text-align: left;
+}
+
+/* line 3794, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-content p {
+  padding: 0 14px;
+  margin: 0;
+}
+
+/* line 3798, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-footer {
+  padding: 20px 0;
+  border-top: 1px solid #ececec;
+  background: #f8f8f8;
+}
+
+/* line 3803, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-content .pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 3808, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-content .pricing-list li {
+  padding: 14px;
+  border-top: 1px solid #ececec;
+  color: #32313b;
+}
+
+/* line 3813, app/assets/stylesheets/avendor.css.scss */
+.pricing-table .pricing-table-content .pricing-list li:first-child {
+  border-top: 0;
+}
+
+/*===============================
+========== Video Responsive ==========
+===============================*/
+/* line 3820, app/assets/stylesheets/avendor.css.scss */
+iframe {
+  border: none;
+}
+
+/* line 3823, app/assets/stylesheets/avendor.css.scss */
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 56.4%;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 3830, app/assets/stylesheets/avendor.css.scss */
+.flex-video.widescreen {
+  padding-bottom: 50%;
+}
+
+/* line 3833, app/assets/stylesheets/avendor.css.scss */
+.flex-video.vimeo {
+  padding-top: 0;
+}
+
+/* line 3836, app/assets/stylesheets/avendor.css.scss */
+.flex-video.youtube {
+  padding-top: 0;
+}
+
+/* line 3839, app/assets/stylesheets/avendor.css.scss */
+.flex-video.html5 {
+  padding-top: 0;
+}
+
+/* line 3842, app/assets/stylesheets/avendor.css.scss */
+.flex-video .video-js {
+  width: 100%;
+}
+
+/* line 3845, app/assets/stylesheets/avendor.css.scss */
+.flex-video iframe, .flex-video object, .flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  /* line 3853, app/assets/stylesheets/avendor.css.scss */
+  .flex-video {
+    padding-top: 0;
+  }
+}
+
+/* Margins */
+/*top*/
+/* line 3860, app/assets/stylesheets/avendor.css.scss */
+.margin-top0 {
+  margin-top: 0px !important;
+}
+
+/* line 3863, app/assets/stylesheets/avendor.css.scss */
+.margin-top10 {
+  margin-top: 10px !important;
+}
+
+/* line 3866, app/assets/stylesheets/avendor.css.scss */
+.margin-top20 {
+  margin-top: 20px !important;
+}
+
+/* line 3869, app/assets/stylesheets/avendor.css.scss */
+.margin-top30 {
+  margin-top: 30px !important;
+}
+
+/* line 3872, app/assets/stylesheets/avendor.css.scss */
+.margin-top40 {
+  margin-top: 40px !important;
+}
+
+/* line 3875, app/assets/stylesheets/avendor.css.scss */
+.margin-top50 {
+  margin-top: 50px !important;
+}
+
+/* line 3878, app/assets/stylesheets/avendor.css.scss */
+.margin-top60 {
+  margin-top: 60px !important;
+}
+
+/* line 3881, app/assets/stylesheets/avendor.css.scss */
+.margin-top70 {
+  margin-top: 70px !important;
+}
+
+/* line 3884, app/assets/stylesheets/avendor.css.scss */
+.margin-top80 {
+  margin-top: 80px !important;
+}
+
+/* line 3887, app/assets/stylesheets/avendor.css.scss */
+.margin-top90 {
+  margin-top: 90px !important;
+}
+
+/* line 3890, app/assets/stylesheets/avendor.css.scss */
+.margin-top100 {
+  margin-top: 100px !important;
+}
+
+/*bottom*/
+/* line 3894, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom0 {
+  margin-bottom: 0px !important;
+}
+
+/* line 3897, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom10 {
+  margin-bottom: 10px !important;
+}
+
+/* line 3900, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom20 {
+  margin-bottom: 20px !important;
+}
+
+/* line 3903, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom30 {
+  margin-bottom: 30px !important;
+}
+
+/* line 3906, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom40 {
+  margin-bottom: 40px !important;
+}
+
+/* line 3909, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom50 {
+  margin-bottom: 50px !important;
+}
+
+/* line 3912, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom60 {
+  margin-bottom: 60px !important;
+}
+
+/* line 3915, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom70 {
+  margin-bottom: 70px !important;
+}
+
+/* line 3918, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom80 {
+  margin-bottom: 80px !important;
+}
+
+/* line 3921, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom90 {
+  margin-bottom: 90px !important;
+}
+
+/* line 3924, app/assets/stylesheets/avendor.css.scss */
+.margin-bottom100 {
+  margin-bottom: 100px !important;
+}
+
+/* Padding */
+/*top*/
+/* line 3930, app/assets/stylesheets/avendor.css.scss */
+.padding-top0 {
+  padding-top: 0px !important;
+}
+
+/* line 3933, app/assets/stylesheets/avendor.css.scss */
+.padding-top10 {
+  padding-top: 10px !important;
+}
+
+/* line 3936, app/assets/stylesheets/avendor.css.scss */
+.padding-top20 {
+  padding-top: 20px !important;
+}
+
+/* line 3939, app/assets/stylesheets/avendor.css.scss */
+.padding-top30 {
+  padding-top: 30px !important;
+}
+
+/* line 3942, app/assets/stylesheets/avendor.css.scss */
+.padding-top40 {
+  padding-top: 40px !important;
+}
+
+/* line 3945, app/assets/stylesheets/avendor.css.scss */
+.padding-top50 {
+  padding-top: 50px !important;
+}
+
+/* line 3948, app/assets/stylesheets/avendor.css.scss */
+.padding-top60 {
+  padding-top: 60px !important;
+}
+
+/* line 3951, app/assets/stylesheets/avendor.css.scss */
+.padding-top70 {
+  padding-top: 70px !important;
+}
+
+/* line 3954, app/assets/stylesheets/avendor.css.scss */
+.padding-top80 {
+  padding-top: 80px !important;
+}
+
+/* line 3957, app/assets/stylesheets/avendor.css.scss */
+.padding-top90 {
+  padding-top: 90px !important;
+}
+
+/* line 3960, app/assets/stylesheets/avendor.css.scss */
+.padding-top100 {
+  padding-top: 100px !important;
+}
+
+/*bottom*/
+/* line 3964, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom0 {
+  padding-bottom: 0px !important;
+}
+
+/* line 3967, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom10 {
+  padding-bottom: 10px !important;
+}
+
+/* line 3970, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom20 {
+  padding-bottom: 20px !important;
+}
+
+/* line 3973, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom30 {
+  padding-bottom: 30px !important;
+}
+
+/* line 3976, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom40 {
+  padding-bottom: 40px !important;
+}
+
+/* line 3979, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom50 {
+  padding-bottom: 50px !important;
+}
+
+/* line 3982, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom60 {
+  padding-bottom: 60px !important;
+}
+
+/* line 3985, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom70 {
+  padding-bottom: 70px !important;
+}
+
+/* line 3988, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom80 {
+  padding-bottom: 80px !important;
+}
+
+/* line 3991, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom90 {
+  padding-bottom: 90px !important;
+}
+
+/* line 3994, app/assets/stylesheets/avendor.css.scss */
+.padding-bottom100 {
+  padding-bottom: 100px !important;
+}
+
+/*===============================
+========== Back To Top ==========
+===============================*/
+/* line 4000, app/assets/stylesheets/avendor.css.scss */
+.scrollup {
+  border: 2px solid #ececec;
+  color: #ececec;
+  display: none;
+  font-size: 26px;
+  line-height: 1.3;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  z-index: 1100;
+}
+
+/* line 4014, app/assets/stylesheets/avendor.css.scss */
+.scrollup:hover, .scrollup:focus {
+  border: 2px solid;
+}
+
+/*===============================
+========== General Pages ==========
+===============================*/
+/* Sidebar */
+/* line 4022, app/assets/stylesheets/avendor.css.scss */
+.content-with-sidebar {
+  overflow: hidden;
+}
+
+/* line 4025, app/assets/stylesheets/avendor.css.scss */
+.content-with-sidebar .sidebar:before {
+  content: "";
+  display: block;
+  height: 6000px;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 4032, app/assets/stylesheets/avendor.css.scss */
+.sidebar.sidebar-right:before {
+  background: #ececec;
+  margin-left: -8px;
+}
+
+/* line 4036, app/assets/stylesheets/avendor.css.scss */
+.sidebar.sidebar-left:before {
+  background: #ececec;
+  right: 7px;
+}
+
+/* line 4040, app/assets/stylesheets/avendor.css.scss */
+.sidebar.sidebar-right .sidebar-content {
+  position: relative;
+  padding-left: 15px;
+}
+
+/* line 4044, app/assets/stylesheets/avendor.css.scss */
+.sidebar.sidebar-left .sidebar-content {
+  position: relative;
+  padding-right: 15px;
+}
+
+/* widget */
+/* line 4049, app/assets/stylesheets/avendor.css.scss */
+.sidebar-widget {
+  margin-bottom: 40px;
+}
+
+/* line 4052, app/assets/stylesheets/avendor.css.scss */
+.sidebar-widget .title-widget {
+  font-weight: 300;
+  text-transform: none;
+}
+
+/* line 4056, app/assets/stylesheets/avendor.css.scss */
+.sidebar-widget .title-widget.fancy-title span:after {
+  margin: 20px 0 -3px;
+}
+
+/* nav sidebar */
+/* line 4062, app/assets/stylesheets/avendor.css.scss */
+.nav .nav {
+  padding-left: 20px;
+}
+
+/* Pagination */
+/* line 4067, app/assets/stylesheets/avendor.css.scss */
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  border-color: #ececec;
+}
+
+/* line 4070, app/assets/stylesheets/avendor.css.scss */
+.pagination > li > a, .pagination > li > span {
+  border-color: #ececec;
+  color: #778899;
+  margin-left: 4px;
+  padding: 8px 16px;
+}
+
+/* line 4078, app/assets/stylesheets/avendor.css.scss */
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: #ffffff;
+}
+
+/* working contact form */
+/* line 4082, app/assets/stylesheets/avendor.css.scss */
+#contactForm label.error {
+  font-weight: 300;
+}
+
+/* line 4085, app/assets/stylesheets/avendor.css.scss */
+#contactForm label.error:before {
+  content: "\f06a";
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+}
+
+/*===============================
+========== Blog Pages ==========
+===============================*/
+/* line 4094, app/assets/stylesheets/avendor.css.scss */
+.blog-post {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* line 4098, app/assets/stylesheets/avendor.css.scss */
+.blog-post .blog-post-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+}
+
+/* line 4104, app/assets/stylesheets/avendor.css.scss */
+.blog-post .blog-post-side .blog-post-date {
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 4112, app/assets/stylesheets/avendor.css.scss */
+.blog-post .blog-post-side .blog-post-date .date-day {
+  margin-bottom: 0;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* line 4118, app/assets/stylesheets/avendor.css.scss */
+.blog-post .blog-post-side .blog-post-date .date-month {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* line 4123, app/assets/stylesheets/avendor.css.scss */
+.blog-post .blog-post-content {
+  padding: 20px;
+  margin-right: 15px;
+  border: 1px solid #ececec;
+  margin-left: 85px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 4132, app/assets/stylesheets/avendor.css.scss */
+.post-media {
+  margin-bottom: 20px;
+}
+
+/* line 4135, app/assets/stylesheets/avendor.css.scss */
+.post-media img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 4139, app/assets/stylesheets/avendor.css.scss */
+.post-format {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 2.4;
+  font-size: 28px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  margin-top: 10px;
+}
+
+/* line 4152, app/assets/stylesheets/avendor.css.scss */
+.post-format-standard .post-format:before {
+  content: "\f040";
+  font-family: 'FontAwesome';
+}
+
+/* line 4156, app/assets/stylesheets/avendor.css.scss */
+.post-format-link .post-format:before {
+  content: "\f0c1";
+  font-family: 'FontAwesome';
+}
+
+/* line 4160, app/assets/stylesheets/avendor.css.scss */
+.post-format-quote .post-format:before {
+  content: "\f10e";
+  font-family: 'FontAwesome';
+}
+
+/* line 4164, app/assets/stylesheets/avendor.css.scss */
+.post-format-gallery .post-format:before {
+  content: "\f03e";
+  font-family: 'FontAwesome';
+}
+
+/* line 4168, app/assets/stylesheets/avendor.css.scss */
+.post-format-video .post-format:before {
+  content: "\f03d";
+  font-family: 'FontAwesome';
+}
+
+/* line 4172, app/assets/stylesheets/avendor.css.scss */
+.post-format-image .post-format:before {
+  content: "\f030";
+  font-family: 'FontAwesome';
+}
+
+/* line 4176, app/assets/stylesheets/avendor.css.scss */
+.post-format-music .post-format:before {
+  content: "\f001";
+  font-family: 'FontAwesome';
+}
+
+/* line 4180, app/assets/stylesheets/avendor.css.scss */
+.post-meta-info {
+  font-style: italic;
+  color: #778899;
+  margin: 10px 0;
+}
+
+/* line 4185, app/assets/stylesheets/avendor.css.scss */
+.post-meta-info a {
+  color: #778899;
+  font-size: 13px;
+}
+
+/* line 4191, app/assets/stylesheets/avendor.css.scss */
+.meta-comments:before {
+  content: "\f075";
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+  font-style: normal;
+}
+
+/* line 4197, app/assets/stylesheets/avendor.css.scss */
+.meta-date:before {
+  content: "\f073";
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+  font-style: normal;
+}
+
+/* line 4203, app/assets/stylesheets/avendor.css.scss */
+.meta-tags:before {
+  content: "\f02c";
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+  font-style: normal;
+}
+
+/* Posts List */
+/* line 4212, app/assets/stylesheets/avendor.css.scss */
+.post-item {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+/* line 4217, app/assets/stylesheets/avendor.css.scss */
+.post-image {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+/* line 4223, app/assets/stylesheets/avendor.css.scss */
+.post-image img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 4228, app/assets/stylesheets/avendor.css.scss */
+.post-item-title {
+  font-weight: 600;
+  color: #32313b;
+}
+
+/* Comments List */
+/* line 4233, app/assets/stylesheets/avendor.css.scss */
+.comments-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 4237, app/assets/stylesheets/avendor.css.scss */
+.comments-list li {
+  margin-top: 20px;
+  line-height: 1.6;
+  padding-left: 30px;
+}
+
+/* line 4242, app/assets/stylesheets/avendor.css.scss */
+.comments-list li:before {
+  content: "\f0e6";
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  margin-left: -1.3em;
+  width: 1.3em;
+  font-size: 18px;
+}
+
+/* line 4252, app/assets/stylesheets/avendor.css.scss */
+.comments-list li:first-child {
+  margin-top: 0;
+}
+
+/* line 4255, app/assets/stylesheets/avendor.css.scss */
+a.comment-user {
+  padding: 5px 10px;
+  background: #32313b;
+  margin-right: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 4265, app/assets/stylesheets/avendor.css.scss */
+a.comment-user:hover {
+  background: #778899;
+}
+
+/* Blog Masonry */
+/* line 4273, app/assets/stylesheets/avendor.css.scss */
+.element-inner .blog-post .blog-post-side {
+  position: relative;
+  width: 100%;
+  clear: both;
+  margin: 0 auto 20px;
+  display: table;
+}
+
+/* line 4280, app/assets/stylesheets/avendor.css.scss */
+.element-inner .blog-post .blog-post-content {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 4284, app/assets/stylesheets/avendor.css.scss */
+.element-inner .blog-post .post-title {
+  font-size: 28px;
+}
+
+/* line 4287, app/assets/stylesheets/avendor.css.scss */
+.element-inner .blog-post .blog-post-side {
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+
+/* line 4292, app/assets/stylesheets/avendor.css.scss */
+.element-inner .blog-post .blog-post-side .blog-post-date {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 4298, app/assets/stylesheets/avendor.css.scss */
+.element-inner .blog-post .post-format {
+  float: left;
+  margin: 0;
+}
+
+/*===============================
+========== Search Results ==========
+===============================*/
+/* line 4305, app/assets/stylesheets/avendor.css.scss */
+.search-results {
+  border-top: 1px solid #ececec;
+}
+
+/* line 4308, app/assets/stylesheets/avendor.css.scss */
+.search-results-item {
+  padding: 40px 0 40px 60px;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+/* line 4313, app/assets/stylesheets/avendor.css.scss */
+.search-number {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ececec;
+  font-size: 18px;
+  text-align: center;
+  line-height: 2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/*===============================
+========== Under Construction ==========
+===============================*/
+/* line 4330, app/assets/stylesheets/avendor.css.scss */
+.counter-block {
+  color: #FFF;
+  border: 1px solid #ececec;
+  text-align: center;
+  font-size: 64px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 4339, app/assets/stylesheets/avendor.css.scss */
+.counter-block span {
+  display: block;
+  font-size: 16px;
+  border-top: 1px solid #ececec;
+  padding: 10px 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/*===============================
+========== Shop Pages ==========
+===============================*/
+/* line 4350, app/assets/stylesheets/avendor.css.scss */
+.shop-product {
+  padding-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 4358, app/assets/stylesheets/avendor.css.scss */
+.shop-product:hover {
+  background: #fbfbfb;
+}
+
+/* line 4361, app/assets/stylesheets/avendor.css.scss */
+.shop-product .shop-product-info {
+  display: block;
+  text-align: center;
+  padding: 20px 0 10px;
+  border-bottom: 4px solid #ececec;
+  margin: 0 5px 10px;
+}
+
+/* line 4368, app/assets/stylesheets/avendor.css.scss */
+.shop-product .shop-product-info .product-name {
+  margin-bottom: 2px;
+}
+
+/* line 4371, app/assets/stylesheets/avendor.css.scss */
+.shop-product .shop-product-info .product-category {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* line 4375, app/assets/stylesheets/avendor.css.scss */
+.shop-product .shop-product-info .product-price {
+  display: block;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #32313b;
+  line-height: 1;
+}
+
+/* line 4382, app/assets/stylesheets/avendor.css.scss */
+.product-links {
+  text-align: center;
+}
+
+/* line 4385, app/assets/stylesheets/avendor.css.scss */
+.product-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 4390, app/assets/stylesheets/avendor.css.scss */
+.product-links ul li {
+  display: inline-block;
+  width: 23%;
+  padding: 10px 0;
+  text-align: center;
+  border-left: 1px solid #ececec;
+}
+
+/* line 4397, app/assets/stylesheets/avendor.css.scss */
+.product-links ul li a {
+  display: block;
+  font-size: 16px;
+  color: #778899;
+}
+
+/* line 4404, app/assets/stylesheets/avendor.css.scss */
+.product-links ul li:first-child {
+  border-left: none;
+}
+
+/* line 4407, app/assets/stylesheets/avendor.css.scss */
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  /* Modern browsers */
+  opacity: 0;
+}
+
+/* line 4415, app/assets/stylesheets/avendor.css.scss */
+.shop-product:hover .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Modern browsers */
+  opacity: 1;
+}
+
+/* line 4424, app/assets/stylesheets/avendor.css.scss */
+.rating {
+  direction: rtl;
+  font-size: 16px;
+  unicode-bidi: bidi-override;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  bottom: -32px;
+  height: 32px;
+  line-height: 2;
+  width: 100%;
+  color: #32313b;
+  background: #ffffff;
+  /* fallback for browser that not support rgba */
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  /* Works on all modern browsers */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 4445, app/assets/stylesheets/avendor.css.scss */
+.shop-product:hover .rating {
+  bottom: 0;
+}
+
+/* line 4448, app/assets/stylesheets/avendor.css.scss */
+.rating span.star {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 4454, app/assets/stylesheets/avendor.css.scss */
+.rating span.star:hover {
+  cursor: pointer;
+}
+
+/* line 4457, app/assets/stylesheets/avendor.css.scss */
+.rating span.star:before {
+  content: "\f006";
+  padding-right: 5px;
+}
+
+/* line 4461, app/assets/stylesheets/avendor.css.scss */
+.rating span.star.star-full:before {
+  content: "\f005";
+  color: gold;
+}
+
+/* line 4465, app/assets/stylesheets/avendor.css.scss */
+.rating span.star.star-half:before {
+  content: "\f123";
+  color: gold;
+}
+
+/* line 4469, app/assets/stylesheets/avendor.css.scss */
+.rating:hover span.star.star-full:before {
+  content: "\f006";
+  color: #32313b;
+}
+
+/* line 4473, app/assets/stylesheets/avendor.css.scss */
+.rating:hover span.star.star-half:before {
+  content: "\f006";
+  color: #32313b;
+}
+
+/* line 4477, app/assets/stylesheets/avendor.css.scss */
+.rating span.star:hover:before, .rating span.star:hover ~ span.star:before {
+  color: gold;
+  content: "\f005";
+}
+
+/* line 4481, app/assets/stylesheets/avendor.css.scss */
+.rating span.star.star-full:hover:before, .rating span.star.star-full:hover ~ span.star.star-full:before {
+  color: gold;
+  content: "\f005";
+}
+
+/* line 4485, app/assets/stylesheets/avendor.css.scss */
+.rating span.star.star-half:hover:before, .rating span.star.star-half:hover ~ span.star.star-half:before {
+  color: gold;
+  content: "\f005";
+}
+
+/* shop lists */
+/* line 4490, app/assets/stylesheets/avendor.css.scss */
+.shop-product-categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 4495, app/assets/stylesheets/avendor.css.scss */
+.shop-product-categories li {
+  padding: 15px 10px;
+  border-top: 1px solid #ececec;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 4506, app/assets/stylesheets/avendor.css.scss */
+.shop-product-categories li:hover, .shop-product-categories li:focus {
+  background: #f8f8f8;
+}
+
+/* line 4509, app/assets/stylesheets/avendor.css.scss */
+.shop-product-categories li.active {
+  background: #f8f8f8;
+}
+
+/* line 4512, app/assets/stylesheets/avendor.css.scss */
+.shop-product-categories li:first-child {
+  border-top: none;
+}
+
+/* line 4515, app/assets/stylesheets/avendor.css.scss */
+.shop-product-categories li span.count {
+  float: right;
+}
+
+/* shop filters */
+/* line 4521, app/assets/stylesheets/avendor.css.scss */
+.shop-filters .form-control {
+  width: auto;
+  display: inline-block;
+}
+
+/* line 4525, app/assets/stylesheets/avendor.css.scss */
+.shop-filters label {
+  font-weight: 300;
+}
+
+/* line 4528, app/assets/stylesheets/avendor.css.scss */
+.show-results {
+  float: right;
+  line-height: 3;
+}
+
+@media (max-width: 540px) {
+  /* line 4533, app/assets/stylesheets/avendor.css.scss */
+  .show-results {
+    float: none;
+    margin: 20px 0 0;
+    display: block;
+  }
+}
+
+/* shop product info */
+/* line 4540, app/assets/stylesheets/avendor.css.scss */
+.product-info {
+  border: 1px solid #ececec;
+  padding: 40px 20px;
+}
+
+/* line 4544, app/assets/stylesheets/avendor.css.scss */
+.product-info h2, .product-info h3 {
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+/* line 4548, app/assets/stylesheets/avendor.css.scss */
+.product-info .product-price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: inherit;
+  margin: 20px 0;
+  color: #32313b;
+}
+
+/* line 4555, app/assets/stylesheets/avendor.css.scss */
+.product-info .rating {
+  text-align: left;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 4563, app/assets/stylesheets/avendor.css.scss */
+.inputQty {
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+/* line 4567, app/assets/stylesheets/avendor.css.scss */
+.input-quantity {
+  height: 50px;
+  border: 1px solid #ececec;
+  padding: 10px;
+  float: left;
+  max-width: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 4576, app/assets/stylesheets/avendor.css.scss */
+.qselect {
+  height: 50px;
+  width: 30px;
+  font-size: 18px;
+  float: left;
+  text-align: center;
+  line-height: 2.6;
+  cursor: pointer;
+  border: 1px solid #ececec;
+}
+
+/* line 4586, app/assets/stylesheets/avendor.css.scss */
+.qselect.qup {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+}
+
+/* line 4593, app/assets/stylesheets/avendor.css.scss */
+.qselect.qdown {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  margin-right: -1px;
+}
+
+/* shop rating lists */
+/* line 4603, app/assets/stylesheets/avendor.css.scss */
+.ratings li {
+  position: relative;
+}
+
+/* line 4606, app/assets/stylesheets/avendor.css.scss */
+.ratings li .rating-final {
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: auto;
+  line-height: 1;
+  position: absolute;
+}
+
+/* line 4614, app/assets/stylesheets/avendor.css.scss */
+.ratings li .rating-final span.star {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 4620, app/assets/stylesheets/avendor.css.scss */
+.ratings li .rating-final span.star:before {
+  content: "\f006";
+  padding-right: 5px;
+}
+
+/* line 4624, app/assets/stylesheets/avendor.css.scss */
+.ratings li .rating-final span.star.star-full:before {
+  color: gold;
+  content: "\f005";
+}
+
+/* line 4628, app/assets/stylesheets/avendor.css.scss */
+.ratings li .rating-final span.star.star-half:before {
+  color: gold;
+  content: "\f123";
+}
+
+/* line 4632, app/assets/stylesheets/avendor.css.scss */
+.ratings .media-object {
+  max-width: 80px;
+  height: auto;
+}
+
+/* line 4636, app/assets/stylesheets/avendor.css.scss */
+.ratings .media-heading {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 4640, app/assets/stylesheets/avendor.css.scss */
+.ratings .rating-date {
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 14px;
+  color: #778899;
+}
+
+@media (max-width: 540px) {
+  /* line 4647, app/assets/stylesheets/avendor.css.scss */
+  .ratings li .rating-final {
+    position: relative;
+  }
+}
+
+/* Cart Table */
+/* line 4652, app/assets/stylesheets/avendor.css.scss */
+.cart-table {
+  border: 1px solid #ececec;
+}
+
+/* line 4655, app/assets/stylesheets/avendor.css.scss */
+.cart-table .btn {
+  margin-bottom: 0;
+}
+
+/* line 4658, app/assets/stylesheets/avendor.css.scss */
+.cart-table.table > thead > tr > th, .cart-table.table > tbody > tr > th, .cart-table.table > tfoot > tr > th, .cart-table.table > thead > tr > td, .cart-table.table > tbody > tr > td, .cart-table.table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+/* line 4661, app/assets/stylesheets/avendor.css.scss */
+.cart-table > thead > tr > th {
+  border-bottom-color: #ececec;
+}
+
+/* line 4664, app/assets/stylesheets/avendor.css.scss */
+.cart-table .td-cart-image {
+  padding: 10px;
+}
+
+/* line 4667, app/assets/stylesheets/avendor.css.scss */
+.cart-table .td-cart-image img {
+  width: 100px;
+  height: auto;
+}
+
+/* line 4673, app/assets/stylesheets/avendor.css.scss */
+.cart-table .input-lg, .cart-table .form-horizontal .form-group-lg .form-control {
+  border: 1px solid #ececec;
+}
+
+/* Post Navigation */
+/* line 4679, app/assets/stylesheets/avendor.css.scss */
+.article-nav {
+  /* default fallback */
+  background: #25242c transparent;
+  /* nice browsers */
+  background: rgba(37, 36, 44, 0.2);
+  color: #FFFFFF;
+  height: 120px;
+  margin-top: -60px;
+  padding: 15px;
+  position: fixed;
+  text-decoration: none;
+  top: 50%;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* line 4692, app/assets/stylesheets/avendor.css.scss */
+.article-nav.article-prev {
+  left: 0;
+}
+
+/* line 4695, app/assets/stylesheets/avendor.css.scss */
+.article-nav.article-next {
+  right: 0;
+}
+
+/* line 4698, app/assets/stylesheets/avendor.css.scss */
+.nav-icon {
+  height: 22px;
+  line-height: 22px;
+  margin-top: -11px;
+  position: absolute;
+  top: 50%;
+}
+
+/* line 4705, app/assets/stylesheets/avendor.css.scss */
+.article-prev .nav-icon {
+  left: 10px;
+}
+
+/* line 4708, app/assets/stylesheets/avendor.css.scss */
+.article-next .nav-icon {
+  right: 10px;
+}
+
+/* line 4711, app/assets/stylesheets/avendor.css.scss */
+.nav-info-wrapper {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 4722, app/assets/stylesheets/avendor.css.scss */
+.article-prev .nav-info {
+  margin: 0 0 0 15px;
+}
+
+/* line 4725, app/assets/stylesheets/avendor.css.scss */
+.article-next .nav-info {
+  margin: 0 15px 0 0;
+  text-align: right;
+}
+
+/* line 4729, app/assets/stylesheets/avendor.css.scss */
+.nav-info {
+  display: table;
+  height: 90px;
+  width: 210px;
+}
+
+/* line 4734, app/assets/stylesheets/avendor.css.scss */
+.nav-info-title {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 4738, app/assets/stylesheets/avendor.css.scss */
+.article-nav:hover {
+  color: #fff;
+  /* default fallback */
+  background: #25242c transparent;
+  /* nice browsers */
+  background: rgba(37, 36, 44, 0.8);
+}
+
+/* line 4743, app/assets/stylesheets/avendor.css.scss */
+.article-nav:hover .nav-info-wrapper {
+  width: 225px;
+}
+
+/* Single Post */
+/* line 4747, app/assets/stylesheets/avendor.css.scss */
+.about {
+  padding-left: 116px;
+  position: relative;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 50px;
+}
+
+/* line 4754, app/assets/stylesheets/avendor.css.scss */
+.author-avatar {
+  max-width: 96px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 4760, app/assets/stylesheets/avendor.css.scss */
+.author-avatar img {
+  width: 100%;
+  height: auto;
+}
+
+/* comments article */
+/* line 4765, app/assets/stylesheets/avendor.css.scss */
+.comments-article {
+  margin-bottom: 50px;
+}
+
+/* line 4768, app/assets/stylesheets/avendor.css.scss */
+.comments-article img {
+  max-width: 64px;
+}
+
+/* line 4773, app/assets/stylesheets/avendor.css.scss */
+.comment-date {
+  color: #778899;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* line 4778, app/assets/stylesheets/avendor.css.scss */
+.comments-article .media-heading {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/*===============================
+========== RTL STYLES ==========
+===============================*/
+/* line 4786, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .social-top {
+  float: right;
+  padding: 0;
+}
+
+/* line 4790, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .social-top li:first-child {
+  border-left: none;
+}
+
+/* line 4793, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .social-top li:last-child {
+  border-left: 1px solid #ececec;
+}
+
+/* line 4796, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .top-menu {
+  float: left;
+  padding: 0;
+}
+
+/* line 4800, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .top-menu li:first-child {
+  border-left: none;
+}
+
+/* line 4803, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .top-menu li:last-child {
+  border-left: 1px solid #ececec;
+}
+
+/* line 4806, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .header-top ul .fa {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* line 4810, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .social-top .fa {
+  margin-left: 0 !important;
+}
+
+/* line 4813, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .slide-panel-btn {
+  margin-right: -40px;
+}
+
+/* line 4816, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .gfx-mega .dropdown-menu {
+  left: auto;
+  right: auto;
+}
+
+/* line 4820, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .iconbox .iconbox-wrapper {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* line 4825, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .iconbox.vertical .iconbox-wrapper {
+  float: none;
+  margin: 0 auto 15px;
+}
+
+/* line 4829, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .progress-pie .pie-content {
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+/* line 4833, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .gmap-button:after {
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+/* line 4837, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .btn .iconleft {
+  margin-right: 0px;
+  margin-left: 14px;
+}
+
+/* line 4841, app/assets/stylesheets/avendor.css.scss */
+html[dir="rtl"] .btn .iconright {
+  margin-right: 14px;
+  margin-left: 0px;
+}
+
+/*===============================
+========== Responsive Media Queries ==========
+===============================*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 4853, app/assets/stylesheets/avendor.css.scss */
+  .logo {
+    line-height: 105px !important;
+  }
+  /* line 4856, app/assets/stylesheets/avendor.css.scss */
+  .gfx-nav {
+    float: none;
+  }
+  /* line 4859, app/assets/stylesheets/avendor.css.scss */
+  ul.gallery {
+    margin-left: 0;
+  }
+  /* line 4862, app/assets/stylesheets/avendor.css.scss */
+  ul.gallery li {
+    width: 50% !important;
+    /* this value + 2% should = 50% */
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 4871, app/assets/stylesheets/avendor.css.scss */
+  .header-top-left {
+    padding: 0px;
+  }
+  /* line 4874, app/assets/stylesheets/avendor.css.scss */
+  .social-top {
+    text-align: center;
+    float: none;
+  }
+  /* line 4878, app/assets/stylesheets/avendor.css.scss */
+  .top-menu {
+    float: none;
+    text-align: center;
+  }
+  /* line 4882, app/assets/stylesheets/avendor.css.scss */
+  .top-menu li {
+    border-top: 1px solid #ececec;
+  }
+  /* line 4885, app/assets/stylesheets/avendor.css.scss */
+  .logo {
+    line-height: 105px !important;
+  }
+  /* line 4888, app/assets/stylesheets/avendor.css.scss */
+  .gfx-nav {
+    float: none;
+  }
+  /* line 4891, app/assets/stylesheets/avendor.css.scss */
+  .header-main.shrink .gfx-nav a {
+    line-height: 1.4;
+  }
+  /* line 4894, app/assets/stylesheets/avendor.css.scss */
+  .main-wrapper-header .breadcrumbs-wrapper {
+    text-align: left;
+  }
+  /* line 4897, app/assets/stylesheets/avendor.css.scss */
+  .fancy-header .breadcrumbs-wrapper {
+    text-align: center;
+  }
+  /* line 4900, app/assets/stylesheets/avendor.css.scss */
+  ul.gallery {
+    margin-left: 0;
+  }
+  /* line 4903, app/assets/stylesheets/avendor.css.scss */
+  ul.gallery li {
+    width: 50% !important;
+    /* this value + 2% should = 50% */
+  }
+  /* line 4906, app/assets/stylesheets/avendor.css.scss */
+  .blog-post-side {
+    position: relative !important;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  /* line 4911, app/assets/stylesheets/avendor.css.scss */
+  .blog-post-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* RTL */
+  /* line 4916, app/assets/stylesheets/avendor.css.scss */
+  html[dir="rtl"] .top-menu {
+    float: none;
+    text-align: center;
+  }
+  /* line 4920, app/assets/stylesheets/avendor.css.scss */
+  html[dir="rtl"] .social-top {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  /* line 4926, app/assets/stylesheets/avendor.css.scss */
+  ul.gallery {
+    margin-left: 0;
+  }
+  /* line 4929, app/assets/stylesheets/avendor.css.scss */
+  ul.gallery li {
+    width: 100% !important;
+    /* this value + 2% should = 100% */
+  }
+}
+
+/* line 4933, app/assets/stylesheets/avendor.css.scss */
+.parallax-background-summit {
+  color: White;
+}
+
+/* line 4937, app/assets/stylesheets/avendor.css.scss */
+.gfx-nav .livicon {
+  margin-top: -20px;
+}
+
+/* line 4941, app/assets/stylesheets/avendor.css.scss */
+.authform {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* line 4946, app/assets/stylesheets/avendor.css.scss */
+.mega-menu-list li {
+  width: 100px;
+}
+
+/* line 4950, app/assets/stylesheets/avendor.css.scss */
+homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+
+/* line 4955, app/assets/stylesheets/avendor.css.scss */
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+
+/* line 4959, app/assets/stylesheets/avendor.css.scss */
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+
+/* line 4963, app/assets/stylesheets/avendor.css.scss */
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+/* line 4972, app/assets/stylesheets/avendor.css.scss */
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+/* line 4977, app/assets/stylesheets/avendor.css.scss */
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+/* line 4983, app/assets/stylesheets/avendor.css.scss */
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+/* line 4988, app/assets/stylesheets/avendor.css.scss */
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+/* line 4991, app/assets/stylesheets/avendor.css.scss */
+.heroText {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* line 5001, app/assets/stylesheets/avendor.css.scss */
+.heroText h1, .heroText h2 {
+  color: #fff;
+  text-shadow: -1px 1px 4px rgba(0, 0, 0, 0.6);
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 5007, app/assets/stylesheets/avendor.css.scss */
+.heroText h1 {
+  font-size: 48px;
+}
+
+/* line 5010, app/assets/stylesheets/avendor.css.scss */
+.heroText h2 {
+  font-size: 30px;
+}
+
+/* line 5015, app/assets/stylesheets/avendor.css.scss */
+.main-nav {
+  height: 75px;
+  padding-top: 10px;
+}
+
+/* line 5019, app/assets/stylesheets/avendor.css.scss */
+.wp {
+  padding-top: 25px;
+}
